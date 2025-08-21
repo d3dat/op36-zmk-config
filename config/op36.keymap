@@ -506,19 +506,19 @@
 
         nav {
             bindings = <
-  &m_to_ru      &none      &kp ESCAPE    &key_repeat  &tog 6                       &kp INS        &kp HOME       &kp PG_UP  &kp PG_DN  &kp END
-  &sk LEFT_GUI  &sk LALT   &sk LCTRL     &sk LSHFT    &swap_win                    &kp TAB        &kp LEFT       &kp UP     &kp DOWN   &kp RIGHT
-  &kp LC(Z)     &kp LC(X)  &lt 18 LC(C)  &tt 9 LC(V)  &swap_tab                    &kp RET        &kp BACKSPACE  &m_comma   &m_dot     &kp DEL
-                                         &trans       &trans     &trans    &trans  &kp BACKSPACE  &trans
+  &m_to_ru      &kp BACKSPACE  &kp ESCAPE    &key_repeat  &tog 6                       &kp INS        &kp HOME       &kp PG_UP  &kp PG_DN  &kp END
+  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT    &swap_win                    &kp TAB        &kp LEFT       &kp UP     &kp DOWN   &kp RIGHT
+  &kp LC(Z)     &kp LC(X)      &lt 18 LC(C)  &tt 9 LC(V)  &swap_tab                    &kp RET        &kp BACKSPACE  &m_comma   &m_dot     &kp DEL
+                                             &trans       &trans     &trans    &trans  &kp BACKSPACE  &trans
             >;
         };
 
         nav_ru {
             bindings = <
-  &m_to_en      &none      &kp ESCAPE    &key_repeat  &tog 7                       &kp INS        &kp HOME       &kp PG_UP    &kp PG_DN  &kp END
-  &sk LEFT_GUI  &sk LALT   &sk LCTRL     &sk LSHFT    &swap_win                    &kp TAB        &kp LEFT       &kp UP       &kp DOWN   &kp RIGHT
-  &kp LC(Z)     &kp LC(X)  &lt 19 LC(C)  &tt 9 LC(V)  &swap_tab                    &kp RET        &kp BACKSPACE  &m_comma_ru  &m_dot_ru  &kp DEL
-                                         &trans       &trans     &trans    &trans  &kp BACKSPACE  &trans
+  &m_to_en      &kp BACKSPACE  &kp ESCAPE    &key_repeat  &tog 7                       &kp INS        &kp HOME       &kp PG_UP    &kp PG_DN  &kp END
+  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT    &swap_win                    &kp TAB        &kp LEFT       &kp UP       &kp DOWN   &kp RIGHT
+  &kp LC(Z)     &kp LC(X)      &lt 19 LC(C)  &tt 9 LC(V)  &swap_tab                    &kp RET        &kp BACKSPACE  &m_comma_ru  &m_dot_ru  &kp DEL
+                                             &trans       &trans     &trans    &trans  &kp BACKSPACE  &trans
             >;
         };
 

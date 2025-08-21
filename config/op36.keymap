@@ -52,6 +52,85 @@
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;
             hold-trigger-on-release;
         };
+
+        tp: tap_preferred {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_PREFERRED";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
+        swap_win: swapper_win {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER_WIN";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+
+            ignored-key-positions = <4 16 19 20 21 22>;
+        };
+
+        swap_tab: swapper_tab {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER_TAB";
+            #binding-cells = <0>;
+            bindings = <&kt LCTRL>, <&kp TAB>, <&kt LCTRL>;
+
+            ignored-key-positions = <4 16 19 20 21 22>;
+        };
+
+        lt_sym: lt_sym {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_SYM";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&m_layer_sym>, <&kp>;
+        };
+
+        lt_num: lt_num {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_NUM";
+            bindings = <&m_mo_num>, <&m_tog_num>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <50>;
+            flavor = "tap-preferred";
+        };
+
+        lt_num_ru: lt_num_ru {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_NUM_RU";
+            bindings = <&m_mo_num_ru>, <&m_tog_num_ru>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <50>;
+            flavor = "tap-preferred";
+        };
+
+        lt_esc: lt_esc {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_ESC";
+            bindings = <&mo>, <&m_esc>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <50>;
+            flavor = "tap-preferred";
+        };
+
+        tp_warpd_hint: tp_warpd_hint {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TP_WARPD_HINT";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&m_warpd_hint>, <&kp>;
+        };
     };
 
     combos {

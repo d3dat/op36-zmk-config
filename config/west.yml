@@ -10,6 +10,8 @@ manifest:
       url-base: https://github.com/carrefinho
     - name: janpfischer
       url-base: https://github.com/janpfischer
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -26,6 +28,9 @@ manifest:
       revision: main
     - name: zmk-dongle-screen
       remote: janpfischer
+      revision: main
+    - name: zmk-tri-state
+      remote: urob
       revision: main
   self:
     path: config

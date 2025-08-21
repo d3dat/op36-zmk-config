@@ -475,6 +475,16 @@
             key-positions = <12 11>;
             layers = <0 1>;
         };
+
+        combo_bootloader_l {
+            bindings = <&bootloader>;
+            key-positions = <30 31 32>;
+        };
+
+        combo_bootloader_r {
+            bindings = <&bootloader>;
+            key-positions = <33 34 35>;
+        };
     };
 
     keymap {
@@ -623,10 +633,10 @@
 
         sup {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans         &trans   &trans   &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &kp BACKSPACE  &kp DEL  &kp RET  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans         &trans   &trans   &trans
-                          &trans  &trans  &trans    &trans  &trans  &trans
+  &trans     &trans  &trans  &trans     &trans                    &trans  &trans         &trans   &trans   &trans
+  &kp LCTRL  &trans  &trans  &kp LSHFT  &trans                    &trans  &kp BACKSPACE  &kp RET  &kp DEL  &trans
+  &trans     &trans  &trans  &trans     &trans                    &trans  &trans         &trans   &trans   &trans
+                             &trans     &trans  &trans    &trans  &trans  &trans
             >;
         };
 

@@ -190,6 +190,16 @@
             label = "LT_SUP";
             bindings = <&mo>, <&kp>;
         };
+
+        ssk: ssk {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SSK";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <60000>;
+            quick-release;
+            ignore-modifiers;
+        };
     };
 
     macros {
@@ -495,9 +505,9 @@
             require-prior-idle-ms = <50>;
         };
 
-        combo_sup {
+        c_sup {
             bindings = <&mo 15>;
-            key-positions = <12 11>;
+            key-positions = <31 32>;
             layers = <0 1>;
         };
 
@@ -513,7 +523,7 @@
 
         c_l_click {
             bindings = <&mkp LCLK>;
-            key-positions = <1 2>;
+            key-positions = <3 13>;
         };
 
         c_sym {
@@ -533,7 +543,7 @@
 
         m_lclick_r {
             bindings = <&mkp LCLK>;
-            key-positions = <7 8>;
+            key-positions = <6 16>;
         };
 
         c_scroll_up_r {
@@ -576,19 +586,19 @@
 
         nav {
             bindings = <
-  &m_to_ru      &kp BACKSPACE  &kp ESCAPE    &key_repeat  &tog 6                       &kp INS    &kp HOME       &kp PG_UP  &kp PG_DN  &kp END
-  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT    &swap_win                    &kp TAB    &kp LEFT       &kp UP     &kp DOWN   &kp RIGHT
-  &kp LC(Z)     &kp LC(X)      &lt 18 LC(C)  &tt 9 LC(V)  &swap_tab                    &kp RET    &kp BACKSPACE  &m_comma   &m_dot     &kp DEL
-                                             &trans       &trans     &trans    &trans  &sk LSHFT  &trans
+  &m_to_ru      &kp BACKSPACE  &kp ESCAPE    &key_repeat  &tog 6                       &kp INS     &kp HOME       &kp PG_UP  &kp PG_DN  &kp END
+  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT    &swap_win                    &kp TAB     &kp LEFT       &kp UP     &kp DOWN   &kp RIGHT
+  &kp LC(Z)     &kp LC(X)      &lt 18 LC(C)  &tt 9 LC(V)  &swap_tab                    &kp RET     &kp BACKSPACE  &m_comma   &m_dot     &kp DEL
+                                             &trans       &trans     &trans    &trans  &ssk LSHFT  &trans
             >;
         };
 
         nav_ru {
             bindings = <
-  &m_to_en      &kp BACKSPACE  &kp ESCAPE    &key_repeat  &tog 7                       &kp INS    &kp HOME       &kp PG_UP    &kp PG_DN  &kp END
-  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT    &swap_win                    &kp TAB    &kp LEFT       &kp UP       &kp DOWN   &kp RIGHT
-  &kp LC(Z)     &kp LC(X)      &lt 19 LC(C)  &tt 9 LC(V)  &swap_tab                    &kp RET    &kp BACKSPACE  &m_comma_ru  &m_dot_ru  &kp DEL
-                                             &trans       &trans     &trans    &trans  &sk LSHFT  &trans
+  &m_to_en      &kp BACKSPACE  &kp ESCAPE    &key_repeat  &tog 7                       &kp INS     &kp HOME       &kp PG_UP    &kp PG_DN  &kp END
+  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT    &swap_win                    &kp TAB     &kp LEFT       &kp UP       &kp DOWN   &kp RIGHT
+  &kp LC(Z)     &kp LC(X)      &lt 19 LC(C)  &tt 9 LC(V)  &swap_tab                    &kp RET     &kp BACKSPACE  &m_comma_ru  &m_dot_ru  &kp DEL
+                                             &trans       &trans     &trans    &trans  &ssk LSHFT  &trans
             >;
         };
 
@@ -657,10 +667,10 @@
 
         mouse {
             bindings = <
-  &msc SCRL_LEFT     &msc SCRL_DOWN     &msc SCRL_UP  &msc SCRL_RIGHT    &trans                                &trans            &msc SCRL_LEFT    &msc SCRL_UP  &msc SCRL_DOWN    &msc SCRL_RIGHT
-  &mmv MOVE_X(-100)  &mmv MOVE_X(-600)  &mkp RCLK     &mkp LCLK          &trans                                &trans            &mkp LCLK         &mkp RCLK     &mmv MOVE_X(600)  &mmv MOVE_X(100)
-  &trans             &kp LALT           &kp LCTRL     &kp LSHFT          &trans                                &trans            &kp RSHFT         &kp RCTRL     &kp RALT          &trans
-                                                      &mmv MOVE_Y(-100)  &mmv MOVE_Y(-600)  &tog 11    &trans  &mmv MOVE_Y(600)  &mmv MOVE_Y(100)
+  &msc SCRL_LEFT     &msc SCRL_DOWN     &msc SCRL_UP  &msc SCRL_RIGHT    &trans                                       &trans            &msc SCRL_LEFT    &msc SCRL_UP  &msc SCRL_DOWN    &msc SCRL_RIGHT
+  &mmv MOVE_X(-100)  &mmv MOVE_X(-600)  &mkp RCLK     &mkp LCLK          &trans                                       &trans            &mkp LCLK         &mkp RCLK     &mmv MOVE_X(600)  &mmv MOVE_X(100)
+  &trans             &kp LALT           &kp LCTRL     &kp LSHFT          &trans                                       &trans            &kp RSHFT         &kp RCTRL     &kp RALT          &trans
+                                                      &mmv MOVE_Y(-100)  &mmv MOVE_Y(-600)  &tog 11    &m_warpd_hint  &mmv MOVE_Y(600)  &mmv MOVE_Y(100)
             >;
         };
 
@@ -675,19 +685,19 @@
 
         mouse_l {
             bindings = <
-  &msc SCRL_LEFT     &msc SCRL_DOWN    &msc SCRL_UP       &msc SCRL_RIGHT   &none                    &none  &none      &none      &none      &none
-  &mmv MOVE_LEFT     &mmv MOVE_DOWN    &mmv MOVE_UP       &mmv MOVE_RIGHT   &none                    &none  &mkp LCLK  &mkp RCLK  &mkp MB3   &m_warpd_hint
-  &mmv MOVE_X(-200)  &mmv MOVE_Y(200)  &mmv MOVE_Y(-200)  &mmv MOVE_X(200)  &none                    &none  &mkp LCLK  &kp LSHFT  &kp LCTRL  &kp LALT
-                                                          &none             &none  &tog 13    &none  &none  &none
+  &msc SCRL_LEFT     &msc SCRL_DOWN    &msc SCRL_UP       &msc SCRL_RIGHT   &none                            &none  &none      &none      &none      &none
+  &mmv MOVE_LEFT     &mmv MOVE_DOWN    &mmv MOVE_UP       &mmv MOVE_RIGHT   &none                            &none  &mkp LCLK  &mkp RCLK  &mkp MB3   &m_warpd_hint
+  &mmv MOVE_X(-200)  &mmv MOVE_Y(200)  &mmv MOVE_Y(-200)  &mmv MOVE_X(200)  &none                            &none  &mkp LCLK  &kp LSHFT  &kp LCTRL  &kp LALT
+                                                          &none             &none  &tog 13    &m_warpd_hint  &none  &none
             >;
         };
 
         mouse_r {
             bindings = <
-  &none          &none      &none      &none      &trans                     &trans  &msc SCRL_LEFT     &msc SCRL_UP       &msc SCRL_DOWN    &msc SCRL_RIGHT
-  &m_warpd_hint  &mkp MB3   &mkp RCLK  &mkp LCLK  &trans                     &trans  &mmv MOVE_LEFT     &mmv MOVE_UP       &mmv MOVE_DOWN    &mmv MOVE_RIGHT
-  &kp LALT       &kp LCTRL  &kp LSHFT  &mkp LCLK  &trans                     &trans  &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_Y(200)  &mmv MOVE_X(200)
-                                       &none      &none   &tog 14    &trans  &none   &none
+  &none          &none      &none      &none      &trans                            &trans  &msc SCRL_LEFT     &msc SCRL_UP       &msc SCRL_DOWN    &msc SCRL_RIGHT
+  &m_warpd_hint  &mkp MB3   &mkp RCLK  &mkp LCLK  &trans                            &trans  &mmv MOVE_LEFT     &mmv MOVE_UP       &mmv MOVE_DOWN    &mmv MOVE_RIGHT
+  &kp LALT       &kp LCTRL  &kp LSHFT  &mkp LCLK  &trans                            &trans  &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_Y(200)  &mmv MOVE_X(200)
+                                       &none      &none   &tog 14    &m_warpd_hint  &none   &none
             >;
         };
 

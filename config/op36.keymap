@@ -634,7 +634,7 @@
         sup {
             bindings = <
   &trans     &trans  &trans  &trans     &trans                    &trans  &trans         &trans   &trans   &trans
-  &kp LCTRL  &trans  &trans  &kp LSHFT  &trans                    &trans  &kp BACKSPACE  &kp RET  &kp DEL  &trans
+  &kp LCTRL  &none   &none   &kp LSHFT  &trans                    &trans  &kp BACKSPACE  &kp RET  &kp DEL  &trans
   &trans     &trans  &trans  &trans     &trans                    &trans  &trans         &trans   &trans   &trans
                              &trans     &trans  &trans    &trans  &trans  &trans
             >;

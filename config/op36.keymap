@@ -666,10 +666,10 @@
 
         sym {
             bindings = <
-  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LT       &kp GT          &kp GRAVE                        &kp SQT        &kp LPAR         &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-  &kp AMPERSAND   &kp HASH         &kp AT_SIGN  &kp PIPE        &kp TILDE                        &kp PLUS       &kp MINUS        &kp DQT                &kp COLON         &kp SEMI
-  &kp PERCENT     &kp CARET        &kp DOLLAR   &kp UNDERSCORE  &kp BACKSLASH                    &kp QUESTION   &kp EXCLAMATION  &kp COMMA              &kp DOT           &kp SLASH
-                                                &trans          &trans         &trans    &trans  &kp BACKSPACE  &trans
+  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LT       &kp GT          &kp GRAVE                        &kp SQT       &kp LPAR         &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+  &kp AMPERSAND   &kp HASH         &kp AT_SIGN  &kp PIPE        &kp TILDE                        &kp PLUS      &kp MINUS        &kp DQT                &kp COLON         &kp SEMI
+  &kp PERCENT     &kp CARET        &kp DOLLAR   &kp UNDERSCORE  &kp BACKSLASH                    &kp QUESTION  &kp EXCLAMATION  &kp COMMA              &kp DOT           &kp SLASH
+                                                &trans          &trans         &trans    &trans  &trans        &trans
             >;
 
             display-name = "SYM";
@@ -677,10 +677,10 @@
 
         sym_ru {
             bindings = <
-  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LT       &kp GT          &kp GRAVE                        &kp SQT        &kp LPAR         &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-  &kp AMPERSAND   &kp HASH         &kp AT_SIGN  &kp PIPE        &kp TILDE                        &kp PLUS       &kp MINUS        &kp DQT                &kp COLON         &kp SEMI
-  &kp PERCENT     &kp CARET        &kp DOLLAR   &kp UNDERSCORE  &kp BACKSLASH                    &kp QUESTION   &kp EXCLAMATION  &kp COMMA              &kp DOT           &kp SLASH
-                                                &trans          &trans         &trans    &trans  &kp BACKSPACE  &trans
+  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LT       &kp GT          &kp GRAVE                        &kp SQT     &kp LPAR         &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+  &kp AMPERSAND   &kp HASH         &kp AT_SIGN  &kp PIPE        &kp TILDE                        &kp PLUS    &kp MINUS        &kp LS(N2)             &kp LS(N6)        &kp LS(N4)
+  &kp PERCENT     &kp CARET        &kp DOLLAR   &kp UNDERSCORE  &kp BACKSLASH                    &kp LS(N7)  &kp EXCLAMATION  &kp LS(SLASH)          &kp SLASH         &kp LS(BACKSLASH)
+                                                &trans          &trans         &trans    &trans  &trans      &trans
             >;
         };
 

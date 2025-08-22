@@ -524,6 +524,11 @@
             layers = <0 1>;
         };
 
+        c_sym {
+            bindings = <&mo 8>;
+            key-positions = <13 12>;
+        };
+
         c_bootloader_l {
             bindings = <&bootloader>;
             key-positions = <30 31 32>;
@@ -537,11 +542,6 @@
         c_l_click {
             bindings = <&mkp LCLK>;
             key-positions = <3 13>;
-        };
-
-        c_sym {
-            bindings = <&mo 8>;
-            key-positions = <13 12>;
         };
 
         c_scroll_up {
@@ -586,6 +586,7 @@
   &kp Z  &kp X  &kp C  &kp V         &kp B                                     &kp N  &kp M          &kp COMMA  &kp DOT  &kp FSLH
                        &mo 14        &lt 2 SPACE  &lt_esc 18 0    &lt 8 ENTER  &sl 4  &m_warpd_hint
             >;
+            display-name = "EN";
         };
 
         ru {
@@ -595,6 +596,7 @@
   &trans  &trans  &trans  &trans  &trans                                        &trans  &tp RBKT M  &trans  &trans      &trans
                           &trans  &lt 3 SPACE  &lt_esc 19 0    &lt_sym 0 ENTER  &sl 5   &trans
             >;
+            display-name = "RU";
         };
 
         nav {
@@ -604,6 +606,7 @@
   &kp LC(Z)     &kp LC(X)      &lt 18 LC(C)  &tt 9 LC(V)  &swap_tab                    &kp RET     &kp BACKSPACE  &m_comma   &m_dot     &kp DEL
                                              &trans       &trans     &trans    &trans  &ssk LSHFT  &trans
             >;
+            display-name = "NAV";
         };
 
         nav_ru {
@@ -613,6 +616,7 @@
   &kp LC(Z)     &kp LC(X)      &lt 19 LC(C)  &tt 9 LC(V)  &swap_tab                    &kp RET     &kp BACKSPACE  &m_comma_ru  &m_dot_ru  &kp DEL
                                              &trans       &trans     &trans    &trans  &ssk LSHFT  &trans
             >;
+            display-name = "NAV RU";
         };
 
         cmd {
@@ -622,6 +626,7 @@
   &none  &none    &none          &none      &none                       &none   &tog 11    &m_warpd_hint  &none     &none
                                  &trans     &m_to_ru  &trans    &trans  &trans  &trans
             >;
+            display-name = "CMD";
         };
 
         cmd_ru {
@@ -631,6 +636,7 @@
   &none  &none    &none          &none      &none                        &none   &tog 11    &m_warpd_hint  &none     &none
                                  &trans     &m_to_en   &trans    &trans  &trans  &trans
             >;
+            display-name = "CMD RU";
         };
 
         num {
@@ -640,6 +646,7 @@
   &kp PERCENT  &kp ASTERISK  &kp MINUS   &kp PLUS    &kp LT                                             &kp GT         &kp EQUAL   &kp COMMA   &kp DOT     &kp SLASH
                                          &trans      &lt_num 0 SPACE  &m_tog_num ESC    &m_tog_num RET  &kp BACKSPACE  &trans
             >;
+            display-name = "NUM";
         };
 
         num_ru {
@@ -649,6 +656,7 @@
   &kp PERCENT  &kp ASTERISK  &kp MINUS   &kp PLUS    &m_kp_en LT                                                 &m_kp_en GT    &kp EQUAL   &kp LS(SLASH)  &kp SLASH   &kp LS(BACKSLASH)
                                          &trans      &lt_num_ru 0 SPACE  &m_tog_num_ru ESC    &m_tog_num_ru RET  &kp BACKSPACE  &trans
             >;
+            display-name = "NUM RU";
         };
 
         sym {
@@ -658,6 +666,7 @@
   &kp PERCENT     &kp CARET        &kp DOLLAR   &kp UNDERSCORE  &kp BACKSLASH                    &kp QUESTION   &kp EXCLAMATION  &kp COMMA              &kp DOT           &kp SLASH
                                                 &trans          &trans         &trans    &trans  &kp BACKSPACE  &trans
             >;
+            display-name = "SYM";
         };
 
         fn {
@@ -667,6 +676,7 @@
   &none     &none     &none      &none      &none                           &none   &m_fn F1  &m_fn F2   &m_fn F3   &m_fn F4
                                  &trans     &tog 9  &m_fn ESC    &m_fn RET  &tog 9  &trans
             >;
+            display-name = "FN";
         };
 
         hint {
@@ -676,6 +686,7 @@
   &kp Z  &kp X  &kp C  &kp V   &kp B                                   &kp N   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH
                        &trans  &trans  &m_warpd_esc    &m_warpd_click  &trans  &trans
             >;
+            display-name = "HINT";
         };
 
         mouse {
@@ -685,6 +696,7 @@
   &trans             &kp LALT           &kp LCTRL     &kp LSHFT          &trans                                       &trans            &kp RSHFT         &kp RCTRL     &kp RALT          &trans
                                                       &mmv MOVE_Y(-100)  &mmv MOVE_Y(-600)  &tog 11    &m_warpd_hint  &mmv MOVE_Y(600)  &mmv MOVE_Y(100)
             >;
+            display-name = "MOUSE";
         };
 
         sys {
@@ -694,6 +706,7 @@
   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
                           &trans  &trans  &trans    &trans  &trans  &trans
             >;
+            display-name = "SYS";
         };
 
         mouse_l {
@@ -703,6 +716,7 @@
   &mmv MOVE_X(-200)  &mmv MOVE_Y(200)  &mmv MOVE_Y(-200)  &mmv MOVE_X(200)  &none                            &none  &mkp LCLK  &kp LSHFT  &kp LCTRL  &kp LALT
                                                           &none             &none  &tog 13    &m_warpd_hint  &none  &none
             >;
+            display-name = "MOUSE L";
         };
 
         mouse_r {
@@ -712,6 +726,7 @@
   &kp LALT       &kp LCTRL  &kp LSHFT  &mkp LCLK  &trans                            &trans  &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_Y(200)  &mmv MOVE_X(200)
                                        &none      &none   &tog 14    &m_warpd_hint  &none   &none
             >;
+            display-name = "MOUSE R";
         };
 
         sup {
@@ -721,6 +736,7 @@
   &trans     &trans  &trans  &trans     &trans                    &trans  &trans         &trans     &trans   &trans
                              &trans     &trans  &trans    &trans  &trans  &trans
             >;
+            display-name = "SUP";
         };
 
         alt {
@@ -730,6 +746,7 @@
   &none  &none  &none  &none   &none                     &kp QUESTION  &kp EXCLAMATION  &trans     &trans         &trans
                        &trans  &trans  &trans    &trans  &trans        &trans
             >;
+            display-name = "ALT";
         };
 
         alt_ru {
@@ -739,6 +756,7 @@
   &none  &none  &none  &none   &none                     &kp LS(N7)  &kp EXCLAMATION  &kp LS(SLASH)  &kp SLASH   &kp RBKT
                        &trans  &trans  &trans    &trans  &trans      &trans
             >;
+            display-name = "ALT RU";
         };
 
         num_ {
@@ -748,6 +766,7 @@
   &kp LALT  &kp LCTRL      &none      &kp LSHIFT  &kp SPACE                    &kp COMMA      &kp N1  &kp N2  &kp N3     &kp N4
                                       &trans      &trans     &trans    &trans  &kp BACKSPACE  &trans
             >;
+            display-name = "NUM_";
         };
 
         num_ru_ {
@@ -757,52 +776,7 @@
   &kp LALT  &kp LCTRL      &none      &kp LSHFT  &kp SPACE                    &kp LS(SLASH)      &kp N1  &kp N2  &kp N3     &kp N4
                                       &trans     &trans     &trans    &trans  &kp BACKSPACE      &trans
             >;
-        };
-
-        base_ {
-            bindings = <
-  &kp Q        &kp W        &kp E         &kp R          &kp T                          &kp Y  &kp U         &kp I         &kp O        &kp P
-  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F   &kp G                          &kp H  &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr RGUI SEMICOLON
-  &kp Z        &kp X        &kp C         &kp V          &kp B                          &kp N  &kp M         &kp COMMA     &kp DOT      &kp SQT
-                                          &kp BACKSPACE  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp TAB
-            >;
-
-            display-name = "Base";
-        };
-
-        nav_ {
-            bindings = <
-  &kp N1         &kp N2    &kp N3     &kp N4     &kp N5                        &kp N6           &kp N7           &kp N8           &kp N9        &kp N0
-  &hml LGUI ESC  &kp LALT  &kp LSHFT  &kp LCTRL  &kp ENTER                     &kp PRINTSCREEN  &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP  &hmr RGUI RIGHT
-  &none          &kp HOME  &kp INS    &kp END    &kp DELETE                    &kp CAPS         &none            &kp PG_DN        &kp PG_UP     &none
-                                      &trans     &trans      &trans    &trans  &mo 3            &trans
-            >;
-
-            display-name = "Navigation";
-        };
-
-        sym_ {
-            bindings = <
-  &none           &kp LT          &kp EQUAL         &kp GT           &kp GRAVE                    &kp CARET  &kp LBKT         &kp UNDER        &kp RBKT        &none
-  &hml LGUI BSLH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                     &kp PRCNT  &hmr RCTRL LBRC  &hmr RSHFT SEMI  &hmr LALT RBRC  &hmr RGUI EXCL
-  &kp HASH        &kp STAR        &kp COLON         &kp FSLH         &none                        &none      &kp PIPE         &kp TILDE        &kp AMPS        &kp DLLR
-                                                    &trans           &mo 3      &trans    &trans  &trans     &trans
-            >;
-
-            display-name = "Symbols";
-        };
-
-        adj_ {
-            bindings = <
-  &bootloader  &kp F1        &kp F2         &kp F3         &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1         &bt BT_SEL 2       &bt BT_SEL 3        &bt BT_CLR
-  &kp LGUI     &hml LALT F5  &hml LSHFT F6  &hml LCTRL F7  &kp F8                     &out OUT_BLE  &hmr RCTRL C_VOL_DN  &hmr RSHFT C_MUTE  &hmr LALT C_VOL_UP  &kp RGUI
-  &none        &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &kp C_PREV           &kp C_PP           &kp C_NEXT          &studio_unlock
-                                            &trans         &trans   &trans    &trans  &trans        &trans
-            >;
-
-            display-name = "Adjust";
+            display-name = "NUM RU_";
         };
     };
-
-    conditional_layers { compatible = "zmk,conditional-layers"; };
 };

@@ -476,12 +476,12 @@
             layers = <0 1>;
         };
 
-        combo_bootloader_l {
+        c_bootloader_l {
             bindings = <&bootloader>;
             key-positions = <30 31 32>;
         };
 
-        combo_bootloader_r {
+        c_bootloader_r {
             bindings = <&bootloader>;
             key-positions = <33 34 35>;
         };
@@ -608,12 +608,10 @@
 
         hint {
             bindings = <
-  &kp Q  &kp W  &kp E  &kp R   &kp T                                   &kp Y   &kp U   &kp I      &kp O       &kp P
-  &kp A  &kp S  &kp D  &kp F   &kp G                                   &kp H   &kp J   &kp K      &kp L       &kp SEMICOLON
-  &kp Z  &kp X  &kp C  &kp V   &kp B                                   &kp N   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH
-                       &trans  &trans  &m_warpd_esc    &m_warpd_click  &trans  &trans
-
-            display-name = "Hint";
+  &kp Q  &kp W  &kp E  &kp R   &kp T                                   &kp Y   &kp U           &kp I      &kp O       &kp P
+  &kp A  &kp S  &kp D  &kp F   &kp G                                   &kp H   &kp J           &kp K      &kp L       &kp SEMICOLON
+  &kp Z  &kp X  &kp C  &kp V   &kp B                                   &kp N   &kp M           &kp COMMA  &kp PERIOD  &kp SLASH
+                       &trans  &trans  &m_warpd_esc    &m_warpd_click  &trans  &trans display
             >;
         };
 
@@ -663,10 +661,10 @@
 
         sup {
             bindings = <
-  &none      &none  &none  &none      &none                    &none  &none          &none    &none    &none
-  &kp LCTRL  &none  &none  &kp LSHFT  &none                    &none  &kp BACKSPACE  &kp RET  &kp DEL  &none
-  &none      &none  &none  &none      &none                    &none  &none          &none    &none    &none
-                           &none      &none   &none    &none   &none  &none
+  &none      &none  &none  &none      &none                  &none  &none          &none    &none    &none
+  &kp LCTRL  &none  &none  &kp LSHFT  &none                  &none  &kp BACKSPACE  &kp RET  &kp DEL  &none
+  &none      &none  &none  &none      &none                  &none  &none          &none    &none    &none
+                           &none      &none  &none    &none  &none  &none
             >;
 
             display-name = "Supplementary";

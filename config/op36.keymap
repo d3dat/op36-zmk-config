@@ -731,9 +731,9 @@
 
         sup {
             bindings = <
-  &trans     &trans  &trans  &trans     &trans                    &trans  &m_warpd_hint  &kp ESC    &trans   &trans
-  &kp LCTRL  &none   &none   &kp LSHFT  &trans                    &trans  &kp BACKSPACE  &kp SPACE  &kp RET  &kp DEL
-  &trans     &trans  &trans  &trans     &trans                    &trans  &trans         &trans     &trans   &trans
+  &trans     &trans  &trans  &trans     &trans                    &trans  &trans         &kp ESC        &kp SPACE  &trans
+  &kp LCTRL  &none   &none   &kp LSHFT  &trans                    &trans  &kp BACKSPACE  &m_warpd_hint  &kp RET    &kp DEL
+  &trans     &trans  &trans  &trans     &trans                    &trans  &trans         &trans         &trans     &trans
                              &trans     &trans  &trans    &trans  &trans  &trans
             >;
 

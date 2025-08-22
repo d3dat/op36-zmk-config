@@ -462,7 +462,7 @@
 
         combo_esc {
             bindings = <&kp ESC>;
-            key-positions = <>;
+            key-positions = <1 2>;
         };
 
         combo_ret {
@@ -507,23 +507,10 @@
             key-positions = <>;
         };
 
-        fn {
+        c_fn {
             bindings = <&mo 10>;
-            key-positions = <37 38>;
-            layers = <0 1>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <50>;
-        };
-
-        c_sup {
-            bindings = <&mo 16>;
             key-positions = <31 32>;
             layers = <0 1>;
-        };
-
-        c_sym {
-            bindings = <&mo 8>;
-            key-positions = <13 12>;
         };
 
         c_bootloader_l {
@@ -564,6 +551,18 @@
         c_scroll_down_r {
             bindings = <&msc SCRL_DOWN>;
             key-positions = <8 18>;
+        };
+
+        c_to_ru {
+            bindings = <&m_to_ru>;
+            key-positions = <11 12>;
+            layers = <0>;
+        };
+
+        c_to_en {
+            bindings = <&m_to_en>;
+            key-positions = <11 12>;
+            layers = <1>;
         };
     };
 
@@ -752,10 +751,10 @@
 
         sup {
             bindings = <
-  &trans    &trans     &trans    &trans     &trans                    &trans    &kp DEL        &ssk LSHFT     &kp SPACE  &trans
-  &kp LALT  &kp LCTRL  &m_to_ru  &kp LSHFT  &trans                    &m_to_ru  &kp BACKSPACE  &m_warpd_hint  &kp ESC    &kp RET
-  &trans    &trans     &trans    &trans     &trans                    &trans    &trans         &trans         &trans     &trans
-                                 &trans     &trans  &trans    &trans  &trans    &trans
+  &trans    &trans     &trans  &trans     &trans                       &trans    &kp DEL        &ssk LSHFT     &m_caps_word  &trans
+  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                       &m_to_ru  &kp BACKSPACE  &m_warpd_hint  &kp RET       &kp SPACE
+  &trans    &trans     &trans  &trans     &trans                       &trans    &none          &m_comma       &m_dot        &trans
+                               &trans     &kp SPACE  &trans    &trans  &trans    &trans
             >;
 
             display-name = "SUP";
@@ -763,10 +762,10 @@
 
         sup_ru {
             bindings = <
-  &trans    &trans     &trans    &trans     &trans                    &trans    &kp DEL        &ssk LSHFT     &kp SPACE  &trans
-  &kp LALT  &kp LCTRL  &m_to_en  &kp LSHFT  &trans                    &m_to_en  &kp BACKSPACE  &m_warpd_hint  &kp ESC    &kp RET
-  &trans    &trans     &trans    &trans     &trans                    &trans    &trans         &trans         &trans     &trans
-                                 &trans     &trans  &trans    &trans  &trans    &trans
+  &trans    &trans     &trans  &trans     &trans                       &trans    &kp DEL        &ssk LSHFT     &m_caps_word  &trans
+  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                       &m_to_en  &kp BACKSPACE  &m_warpd_hint  &kp RET       &kp SPACE
+  &trans    &trans     &trans  &trans     &trans                       &trans    &none          &m_comma_ru    &m_dot_ru     &trans
+                               &trans     &kp SPACE  &trans    &trans  &trans    &trans
             >;
         };
 

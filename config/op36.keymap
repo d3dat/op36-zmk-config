@@ -165,6 +165,31 @@
 
             hold-trigger-key-positions = <17 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
         };
+
+        st: st {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            hold-trigger-on-release;
+            label = "ST";
+            bindings = <&sk>, <&kp>;
+        };
+
+        lt_sup: lt_sup {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            hold-trigger-key-positions = <7 16 17 18 19>;
+            hold-trigger-on-release;
+            label = "LT_SUP";
+            bindings = <&mo>, <&kp>;
+        };
     };
 
     macros {
@@ -505,6 +530,21 @@
             bindings = <&msc SCRL_DOWN>;
             key-positions = <1 11>;
         };
+
+        m_lclick_r {
+            bindings = <&mkp LCLK>;
+            key-positions = <7 8>;
+        };
+
+        c_scroll_up_r {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <7 17>;
+        };
+
+        c_scroll_down_r {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <8 18>;
+        };
     };
 
     keymap {
@@ -519,9 +559,9 @@
 
             bindings = <
   &kp Q  &kp W  &kp E  &kp R         &kp T                                     &kp Y  &kp U          &kp I      &kp O    &kp P
-  &kp A  &kp S  &kp D  &hml LSHFT F  &kp G                                     &kp H  &hmr LSHFT J   &kp K      &kp L    &kp SEMI
+  &kp A  &kp S  &kp D  &lt_sup 15 F  &kp G                                     &kp H  &st LSHFT J    &kp K      &kp L    &kp SEMI
   &kp Z  &kp X  &kp C  &kp V         &kp B                                     &kp N  &kp M          &kp COMMA  &kp DOT  &kp FSLH
-                       &mo 13        &lt 2 SPACE  &lt_esc 18 0    &lt 8 ENTER  &sl 4  &m_warpd_hint
+                       &mo 14        &lt 2 SPACE  &lt_esc 18 0    &lt 8 ENTER  &sl 4  &m_warpd_hint
             >;
         };
 

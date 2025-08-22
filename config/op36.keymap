@@ -185,7 +185,7 @@
             require-prior-idle-ms = <150>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            hold-trigger-key-positions = <7 16 17 18 19>;
+            hold-trigger-key-positions = <7 16 17 18 19 6>;
             hold-trigger-on-release;
             label = "LT_SUP";
             bindings = <&mo>, <&kp>;
@@ -199,6 +199,19 @@
             release-after-ms = <60000>;
             quick-release;
             ignore-modifiers;
+        };
+
+        sk_sup: sk_sup {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            hold-trigger-key-positions = <7 16 17 18 19 6>;
+            hold-trigger-on-release;
+            label = "SK_SUP";
+            bindings = <&mo>, <&sk>;
         };
     };
 
@@ -703,7 +716,7 @@
 
         sup {
             bindings = <
-  &trans     &trans  &trans  &trans     &trans                    &trans  &trans         &kp ESC    &trans   &trans
+  &trans     &trans  &trans  &trans     &trans                    &trans  &m_warpd_hint  &kp ESC    &trans   &trans
   &kp LCTRL  &none   &none   &kp LSHFT  &trans                    &trans  &kp BACKSPACE  &kp SPACE  &kp RET  &kp DEL
   &trans     &trans  &trans  &trans     &trans                    &trans  &trans         &trans     &trans   &trans
                              &trans     &trans  &trans    &trans  &trans  &trans

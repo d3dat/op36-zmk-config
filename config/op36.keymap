@@ -503,6 +503,8 @@
   &kp Z  &kp X  &kp C  &kp V         &kp B                                     &kp N  &kp M           &kp COMMA  &kp DOT  &kp FSLH
                        &mo 9         &lt 2 SPACE  &lt_esc 18 0    &lt 8 ENTER  &sl 4  &kp RSHFT
             >;
+
+            display-name = "English";
         };
 
         ru {
@@ -512,6 +514,8 @@
   &trans  &trans  &trans  &trans  &trans                                        &trans  &tp RBKT M  &trans  &trans      &trans
                           &trans  &lt 3 SPACE  &lt_esc 19 0    &lt_sym 0 ENTER  &sl 5   &trans
             >;
+
+            display-name = "Russian";
         };
 
         nav {
@@ -521,6 +525,8 @@
   &kp LC(Z)     &kp LC(X)      &lt 18 LC(C)  &tt 9 LC(V)  &swap_tab                    &kp RET        &kp BACKSPACE  &m_comma   &m_dot     &kp DEL
                                              &trans       &trans     &trans    &trans  &kp BACKSPACE  &trans
             >;
+
+            display-name = "Navigation";
         };
 
         nav_ru {
@@ -530,6 +536,8 @@
   &kp LC(Z)     &kp LC(X)      &lt 19 LC(C)  &tt 9 LC(V)  &swap_tab                    &kp RET        &kp BACKSPACE  &m_comma_ru  &m_dot_ru  &kp DEL
                                              &trans       &trans     &trans    &trans  &kp BACKSPACE  &trans
             >;
+
+            display-name = "Navigation (RU)";
         };
 
         cmd {
@@ -539,6 +547,8 @@
   &none  &none    &none          &none      &none                       &none   &tog 11    &m_warpd_hint  &none     &none
                                  &trans     &m_to_ru  &trans    &trans  &trans  &trans
             >;
+
+            display-name = "Command";
         };
 
         cmd_ru {
@@ -548,6 +558,8 @@
   &none  &none    &none          &none      &none                        &none   &tog 11    &m_warpd_hint  &none     &none
                                  &trans     &m_to_en   &trans    &trans  &trans  &trans
             >;
+
+            display-name = "Command (RU)";
         };
 
         num {
@@ -557,6 +569,8 @@
   &kp PERCENT  &kp ASTERISK  &kp MINUS   &kp PLUS    &kp LT                                             &kp GT         &kp EQUAL   &kp COMMA   &kp DOT     &kp SLASH
                                          &trans      &lt_num 0 SPACE  &m_tog_num ESC    &m_tog_num RET  &kp BACKSPACE  &trans
             >;
+
+            display-name = "Numbers";
         };
 
         num_ru {
@@ -566,6 +580,8 @@
   &kp PERCENT  &kp ASTERISK  &kp MINUS   &kp PLUS    &m_kp_en LT                                                 &m_kp_en GT    &kp EQUAL   &kp LS(SLASH)  &kp SLASH   &kp LS(BACKSLASH)
                                          &trans      &lt_num_ru 0 SPACE  &m_tog_num_ru ESC    &m_tog_num_ru RET  &kp BACKSPACE  &trans
             >;
+
+            display-name = "Numbers (RU)";
         };
 
         sym {
@@ -575,6 +591,8 @@
   &kp PERCENT     &kp CARET        &kp DOLLAR   &kp UNDERSCORE  &kp BACKSLASH                    &kp QUESTION   &kp EXCLAMATION  &kp COMMA              &kp DOT           &kp SLASH
                                                 &trans          &trans         &trans    &trans  &kp BACKSPACE  &trans
             >;
+
+            display-name = "Symbols";
         };
 
         fn {
@@ -584,6 +602,8 @@
   &none     &none     &none      &none      &none                           &none   &m_fn F1  &m_fn F2   &m_fn F3   &m_fn F4
                                  &trans     &tog 9  &m_fn ESC    &m_fn RET  &tog 9  &trans
             >;
+
+            display-name = "Symbols (RU)";
         };
 
         hint {
@@ -592,6 +612,8 @@
   &kp A  &kp S  &kp D  &kp F   &kp G                                   &kp H   &kp J   &kp K      &kp L       &kp SEMICOLON
   &kp Z  &kp X  &kp C  &kp V   &kp B                                   &kp N   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH
                        &trans  &trans  &m_warpd_esc    &m_warpd_click  &trans  &trans
+
+            display-name = "Hint";
             >;
         };
 
@@ -602,6 +624,8 @@
   &trans             &kp LALT           &kp LCTRL     &kp LSHFT          &trans                                &trans            &kp RSHFT         &kp RCTRL     &kp RALT          &trans
                                                       &mmv MOVE_Y(-100)  &mmv MOVE_Y(-600)  &tog 11    &trans  &mmv MOVE_Y(600)  &mmv MOVE_Y(100)
             >;
+
+            display-name = "Mouse";
         };
 
         sys {
@@ -611,6 +635,8 @@
   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
                           &trans  &trans  &trans    &trans  &trans  &trans
             >;
+
+            display-name = "System";
         };
 
         mouse_l {
@@ -620,6 +646,8 @@
   &mmv MOVE_X(-200)  &mmv MOVE_Y(200)  &mmv MOVE_Y(-200)  &mmv MOVE_X(200)  &none                    &none  &mkp LCLK  &kp LSHFT  &kp LCTRL  &kp LALT
                                                           &none             &none  &tog 13    &none  &none  &none
             >;
+
+            display-name = "Mouse (Left)";
         };
 
         mouse_r {
@@ -629,15 +657,19 @@
   &kp LALT       &kp LCTRL  &kp LSHFT  &mkp LCLK  &trans                     &trans  &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_Y(200)  &mmv MOVE_X(200)
                                        &none      &none   &tog 14    &trans  &none   &none
             >;
+
+            display-name = "Mouse (Right)";
         };
 
         sup {
             bindings = <
-  &trans     &trans  &trans  &trans     &trans                    &trans  &trans         &trans   &trans   &trans
-  &kp LCTRL  &trans  &trans  &kp LSHFT  &trans                    &trans  &kp BACKSPACE  &kp RET  &kp DEL  &trans
-  &trans     &trans  &trans  &trans     &trans                    &trans  &trans         &trans   &trans   &trans
-                             &trans     &trans  &trans    &trans  &trans  &trans
+  &none      &none  &none  &none      &none                    &none  &none          &none    &none    &none
+  &kp LCTRL  &none  &none  &kp LSHFT  &none                    &none  &kp BACKSPACE  &kp RET  &kp DEL  &none
+  &none      &none  &none  &none      &none                    &none  &none          &none    &none    &none
+                           &none      &none   &none    &none   &none  &none
             >;
+
+            display-name = "Supplementary";
         };
 
         alt {
@@ -647,6 +679,8 @@
   &none  &none  &none  &none   &none                     &kp QUESTION  &kp EXCLAMATION  &trans     &trans         &trans
                        &trans  &trans  &trans    &trans  &trans        &trans
             >;
+
+            display-name = "Alternative";
         };
 
         alt_ru {
@@ -656,6 +690,8 @@
   &none  &none  &none  &none   &none                     &kp LS(N7)  &kp EXCLAMATION  &kp LS(SLASH)  &kp SLASH   &kp RBKT
                        &trans  &trans  &trans    &trans  &trans      &trans
             >;
+
+            display-name = "Alternative (RU)";
         };
 
         num_ {
@@ -665,6 +701,8 @@
   &kp LALT  &kp LCTRL      &none      &kp LSHIFT  &kp SPACE                    &kp COMMA      &kp N1  &kp N2  &kp N3     &kp N4
                                       &trans      &trans     &trans    &trans  &kp BACKSPACE  &trans
             >;
+
+            display-name = "Numbers";
         };
 
         num_ru_ {
@@ -674,6 +712,8 @@
   &kp LALT  &kp LCTRL      &none      &kp LSHFT  &kp SPACE                    &kp LS(SLASH)      &kp N1  &kp N2  &kp N3     &kp N4
                                       &trans     &trans     &trans    &trans  &kp BACKSPACE      &trans
             >;
+
+            display-name = "Numbers (RU)";
         };
 
         base_ {

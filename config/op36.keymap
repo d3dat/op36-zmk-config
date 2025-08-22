@@ -199,7 +199,7 @@
             ignore-modifiers;
         };
 
-        lth: lth {
+        hlt: hlt {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
@@ -207,7 +207,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             hold-trigger-on-release;
-            label = "LTH";
+            label = "HLT";
             bindings = <&mo>, <&kp>;
         };
     };
@@ -333,7 +333,7 @@
         m_warpd_hint: macro_warpd_hint {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F17 &tog 10>;
+            bindings = <&kp F17 &tog 11>;
             label = "MACRO_WARPD_HINT";
             wait-ms = <0>;
             tap-ms = <0>;
@@ -342,7 +342,7 @@
         m_warpd_esc: macro_warpd_esc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ESC &tog 10>;
+            bindings = <&kp ESC &tog 11>;
             label = "MACRO_WARPD_ESC";
             wait-ms = <0>;
             tap-ms = <0>;
@@ -351,7 +351,7 @@
         m_warpd_click: macro_warpd_click {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ESC &mkp LCLK &tog 10>;
+            bindings = <&kp ESC &mkp LCLK &tog 11>;
             label = "MACRO_WARPD_CLICK";
             wait-ms = <0>;
             tap-ms = <0>;
@@ -360,7 +360,7 @@
         m_warpd_normal: macro_warpd_normal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F18 &tog 10>;
+            bindings = <&kp F18 &tog 11>;
             label = "MACRO_WARPD_NORMAL";
             wait-ms = <0>;
             tap-ms = <0>;
@@ -387,7 +387,7 @@
         m_fn: macro_fn {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&tog 9 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&tog 10 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "MACRO_FN";
             wait-ms = <0>;
             tap-ms = <0>;
@@ -486,13 +486,13 @@
         };
 
         combo_mouse_l {
-            bindings = <&tog 14>;
+            bindings = <&tog 15>;
             key-positions = <>;
             layers = <2 3 0 1>;
         };
 
         combo_mouse_r {
-            bindings = <&tog 14>;
+            bindings = <&tog 15>;
             key-positions = <>;
             layers = <2 3 0 1>;
         };
@@ -508,7 +508,7 @@
         };
 
         fn {
-            bindings = <&mo 9>;
+            bindings = <&mo 10>;
             key-positions = <37 38>;
             layers = <0 1>;
             timeout-ms = <150>;
@@ -516,7 +516,7 @@
         };
 
         c_sup {
-            bindings = <&mo 15>;
+            bindings = <&mo 16>;
             key-positions = <31 32>;
             layers = <0 1>;
         };
@@ -578,10 +578,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &kp Q  &kp W  &kp E     &kp R      &kp T                                     &kp Y  &kp U          &kp I      &kp O    &kp P
-  &kp A  &kp S  &lth 8 D  &lth 15 F  &kp G                                     &kp H  &st LSHFT J    &kp K      &kp L    &kp SEMI
-  &kp Z  &kp X  &kp C     &kp V      &kp B                                     &kp N  &kp M          &kp COMMA  &kp DOT  &kp FSLH
-                          &mo 14     &lt 2 SPACE  &lt_esc 18 0    &lt 8 ENTER  &sl 4  &m_warpd_hint
+  &kp Q  &kp W  &kp E      &kp R     &kp T                                     &kp Y  &kp U          &kp I      &kp O    &kp P
+  &kp A  &kp S  &hlt 16 D  &hlt 8 F  &kp G                                     &kp H  &st LSHFT J    &kp K      &kp L    &kp SEMI
+  &kp Z  &kp X  &kp C      &kp V     &kp B                                     &kp N  &kp M          &kp COMMA  &kp DOT  &kp FSLH
+                           &mo 15    &lt 2 SPACE  &lt_esc 19 0    &lt 8 ENTER  &sl 4  &m_warpd_hint
             >;
 
             display-name = "EN";
@@ -589,10 +589,10 @@
 
         ru {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                                        &trans  &trans      &trans  &tp LBKT O  &tp LBKT P
-  &trans  &trans  &trans  &trans  &trans                                        &trans  &trans      &trans  &trans      &tp SQT SEMI
-  &trans  &trans  &trans  &trans  &trans                                        &trans  &tp RBKT M  &trans  &trans      &trans
-                          &trans  &lt 3 SPACE  &lt_esc 19 0    &lt_sym 0 ENTER  &sl 5   &trans
+  &trans  &trans  &trans  &trans    &trans                                        &trans  &trans      &trans  &tp LBKT O  &tp LBKT P
+  &trans  &trans  &trans  &hlt 9 F  &trans                                        &trans  &trans      &trans  &trans      &tp SQT SEMI
+  &trans  &trans  &trans  &trans    &trans                                        &trans  &tp RBKT M  &trans  &trans      &trans
+                          &trans    &lt 3 SPACE  &lt_esc 20 0    &lt_sym 0 ENTER  &sl 5   &trans
             >;
 
             display-name = "RU";
@@ -600,10 +600,10 @@
 
         nav {
             bindings = <
-  &m_to_ru      &kp BACKSPACE  &kp ESCAPE    &key_repeat  &tog 6                       &kp INS     &kp HOME       &kp PG_UP  &kp PG_DN  &kp END
-  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT    &swap_win                    &kp TAB     &kp LEFT       &kp UP     &kp DOWN   &kp RIGHT
-  &kp LC(Z)     &kp LC(X)      &lt 18 LC(C)  &tt 9 LC(V)  &swap_tab                    &kp RET     &kp BACKSPACE  &m_comma   &m_dot     &kp DEL
-                                             &trans       &trans     &trans    &trans  &ssk LSHFT  &trans
+  &m_to_ru      &kp BACKSPACE  &kp ESCAPE    &key_repeat   &tog 6                       &kp INS     &kp HOME       &kp PG_UP  &kp PG_DN  &kp END
+  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT     &swap_win                    &kp TAB     &kp LEFT       &kp UP     &kp DOWN   &kp RIGHT
+  &kp LC(Z)     &kp LC(X)      &lt 19 LC(C)  &tt 10 LC(V)  &swap_tab                    &kp RET     &kp BACKSPACE  &m_comma   &m_dot     &kp DEL
+                                             &trans        &trans     &trans    &trans  &ssk LSHFT  &trans
             >;
 
             display-name = "NAV";
@@ -611,10 +611,10 @@
 
         nav_ru {
             bindings = <
-  &m_to_en      &kp BACKSPACE  &kp ESCAPE    &key_repeat  &tog 7                       &kp INS     &kp HOME       &kp PG_UP    &kp PG_DN  &kp END
-  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT    &swap_win                    &kp TAB     &kp LEFT       &kp UP       &kp DOWN   &kp RIGHT
-  &kp LC(Z)     &kp LC(X)      &lt 19 LC(C)  &tt 9 LC(V)  &swap_tab                    &kp RET     &kp BACKSPACE  &m_comma_ru  &m_dot_ru  &kp DEL
-                                             &trans       &trans     &trans    &trans  &ssk LSHFT  &trans
+  &m_to_en      &kp BACKSPACE  &kp ESCAPE    &key_repeat   &tog 7                       &kp INS     &kp HOME       &kp PG_UP    &kp PG_DN  &kp END
+  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT     &swap_win                    &kp TAB     &kp LEFT       &kp UP       &kp DOWN   &kp RIGHT
+  &kp LC(Z)     &kp LC(X)      &lt 20 LC(C)  &tt 10 LC(V)  &swap_tab                    &kp RET     &kp BACKSPACE  &m_comma_ru  &m_dot_ru  &kp DEL
+                                             &trans        &trans     &trans    &trans  &ssk LSHFT  &trans
             >;
 
             display-name = "NAV RU";
@@ -622,9 +622,9 @@
 
         cmd {
             bindings = <
-  &none  &tog 11  &m_warpd_hint  &none      &none                       &none   &none      &m_to_ru       &none     &none
+  &none  &tog 12  &m_warpd_hint  &none      &none                       &none   &none      &m_to_ru       &none     &none
   &none  &none    &m_caps_word   &sk LSHFT  &none                       &none   &sk RSHFT  &sk RCTRL      &sk LALT  &sk LGUI
-  &none  &none    &none          &none      &none                       &none   &tog 11    &m_warpd_hint  &none     &none
+  &none  &none    &none          &none      &none                       &none   &tog 12    &m_warpd_hint  &none     &none
                                  &trans     &m_to_ru  &trans    &trans  &trans  &trans
             >;
 
@@ -633,9 +633,9 @@
 
         cmd_ru {
             bindings = <
-  &none  &tog 11  &m_warpd_hint  &none      &kp GRAVE                    &none   &none      &m_to_en       &none     &none
+  &none  &tog 12  &m_warpd_hint  &none      &kp GRAVE                    &none   &none      &m_to_en       &none     &none
   &none  &none    &m_caps_word   &sk LSHFT  &none                        &none   &sk LSHFT  &sk LCTRL      &sk LALT  &sk LGUI
-  &none  &none    &none          &none      &none                        &none   &tog 11    &m_warpd_hint  &none     &none
+  &none  &none    &none          &none      &none                        &none   &tog 12    &m_warpd_hint  &none     &none
                                  &trans     &m_to_en   &trans    &trans  &trans  &trans
             >;
 
@@ -675,12 +675,21 @@
             display-name = "SYM";
         };
 
+        sym_ru {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+                          &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
         fn {
             bindings = <
-  &none     &none     &none      &none      &none                           &none   &m_fn F9  &m_fn F10  &m_fn F11  &m_fn F12
-  &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &none                           &none   &m_fn F5  &m_fn F6   &m_fn F7   &m_fn F8
-  &none     &none     &none      &none      &none                           &none   &m_fn F1  &m_fn F2   &m_fn F3   &m_fn F4
-                                 &trans     &tog 9  &m_fn ESC    &m_fn RET  &tog 9  &trans
+  &none     &none     &none      &none      &none                            &none    &m_fn F9  &m_fn F10  &m_fn F11  &m_fn F12
+  &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &none                            &none    &m_fn F5  &m_fn F6   &m_fn F7   &m_fn F8
+  &none     &none     &none      &none      &none                            &none    &m_fn F1  &m_fn F2   &m_fn F3   &m_fn F4
+                                 &trans     &tog 10  &m_fn ESC    &m_fn RET  &tog 10  &trans
             >;
 
             display-name = "FN";
@@ -702,7 +711,7 @@
   &msc SCRL_LEFT     &msc SCRL_DOWN     &msc SCRL_UP  &msc SCRL_RIGHT    &trans                                       &trans            &msc SCRL_LEFT    &msc SCRL_UP  &msc SCRL_DOWN    &msc SCRL_RIGHT
   &mmv MOVE_X(-100)  &mmv MOVE_X(-600)  &mkp RCLK     &mkp LCLK          &trans                                       &trans            &mkp LCLK         &mkp RCLK     &mmv MOVE_X(600)  &mmv MOVE_X(100)
   &trans             &kp LALT           &kp LCTRL     &kp LSHFT          &trans                                       &trans            &kp RSHFT         &kp RCTRL     &kp RALT          &trans
-                                                      &mmv MOVE_Y(-100)  &mmv MOVE_Y(-600)  &tog 11    &m_warpd_hint  &mmv MOVE_Y(600)  &mmv MOVE_Y(100)
+                                                      &mmv MOVE_Y(-100)  &mmv MOVE_Y(-600)  &tog 12    &m_warpd_hint  &mmv MOVE_Y(600)  &mmv MOVE_Y(100)
             >;
 
             display-name = "MOUSE";
@@ -724,7 +733,7 @@
   &msc SCRL_LEFT     &msc SCRL_DOWN    &msc SCRL_UP       &msc SCRL_RIGHT   &none                            &none  &none      &none      &none      &none
   &mmv MOVE_LEFT     &mmv MOVE_DOWN    &mmv MOVE_UP       &mmv MOVE_RIGHT   &none                            &none  &mkp LCLK  &mkp RCLK  &mkp MB3   &m_warpd_hint
   &mmv MOVE_X(-200)  &mmv MOVE_Y(200)  &mmv MOVE_Y(-200)  &mmv MOVE_X(200)  &none                            &none  &mkp LCLK  &kp LSHFT  &kp LCTRL  &kp LALT
-                                                          &none             &none  &tog 13    &m_warpd_hint  &none  &none
+                                                          &none             &none  &tog 14    &m_warpd_hint  &none  &none
             >;
 
             display-name = "MOUSE L";
@@ -735,7 +744,7 @@
   &none          &none      &none      &none      &trans                            &trans  &msc SCRL_LEFT     &msc SCRL_UP       &msc SCRL_DOWN    &msc SCRL_RIGHT
   &m_warpd_hint  &mkp MB3   &mkp RCLK  &mkp LCLK  &trans                            &trans  &mmv MOVE_LEFT     &mmv MOVE_UP       &mmv MOVE_DOWN    &mmv MOVE_RIGHT
   &kp LALT       &kp LCTRL  &kp LSHFT  &mkp LCLK  &trans                            &trans  &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_Y(200)  &mmv MOVE_X(200)
-                                       &none      &none   &tog 14    &m_warpd_hint  &none   &none
+                                       &none      &none   &tog 15    &m_warpd_hint  &none   &none
             >;
 
             display-name = "MOUSE R";
@@ -743,8 +752,8 @@
 
         sup {
             bindings = <
-  &trans     &trans  &trans  &trans     &trans                    &trans  &trans         &kp ESC        &kp SPACE  &trans
-  &kp LCTRL  &none   &none   &kp LSHFT  &trans                    &trans  &kp BACKSPACE  &m_warpd_hint  &kp RET    &kp DEL
+  &trans     &trans  &trans  &trans     &trans                    &trans  &kp DEL        &ssk LSHFT     &kp SPACE  &trans
+  &kp LCTRL  &none   &none   &kp LSHFT  &trans                    &trans  &kp BACKSPACE  &m_warpd_hint  &kp ESC    &kp RET
   &trans     &trans  &trans  &trans     &trans                    &trans  &trans         &trans         &trans     &trans
                              &trans     &trans  &trans    &trans  &trans  &trans
             >;

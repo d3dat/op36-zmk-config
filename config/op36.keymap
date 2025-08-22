@@ -488,7 +488,22 @@
 
         c_l_click {
             bindings = <&mkp LCLK>;
-            key-positions = <22 21>;
+            key-positions = <1 2>;
+        };
+
+        c_sym {
+            bindings = <&mo 8>;
+            key-positions = <13 12>;
+        };
+
+        c_scroll_up {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <12 2>;
+        };
+
+        m_scroll_down {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <1 11>;
         };
     };
 
@@ -503,10 +518,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &kp Q  &kp W  &kp E  &kp R         &kp T                                     &kp Y  &kp U           &kp I      &kp O    &kp P
-  &kp A  &kp S  &kp D  &hml LSHFT F  &kp G                                     &kp H  &hrm_r LSHFT J  &kp K      &kp L    &kp SEMI
-  &kp Z  &kp X  &kp C  &kp V         &kp B                                     &kp N  &kp M           &kp COMMA  &kp DOT  &kp FSLH
-                       &mo 9         &lt 2 SPACE  &lt_esc 18 0    &lt 8 ENTER  &sl 4  &m_warpd_hint
+  &kp Q  &kp W  &kp E  &kp R         &kp T                                     &kp Y  &kp U          &kp I      &kp O    &kp P
+  &kp A  &kp S  &kp D  &hml LSHFT F  &kp G                                     &kp H  &hmr LSHFT J   &kp K      &kp L    &kp SEMI
+  &kp Z  &kp X  &kp C  &kp V         &kp B                                     &kp N  &kp M          &kp COMMA  &kp DOT  &kp FSLH
+                       &mo 13        &lt 2 SPACE  &lt_esc 18 0    &lt 8 ENTER  &sl 4  &m_warpd_hint
             >;
         };
 

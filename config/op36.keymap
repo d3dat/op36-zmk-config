@@ -577,10 +577,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &kp Q  &kp W  &kp E      &kp R     &kp T                                     &kp Y  &kp U          &kp I      &kp O    &kp P
-  &kp A  &kp S  &hlt 16 D  &hlt 8 F  &kp G                                     &kp H  &st LSHFT J    &hlt 16 K  &kp L    &kp SEMI
-  &kp Z  &kp X  &kp C      &kp V     &kp B                                     &kp N  &kp M          &kp COMMA  &kp DOT  &kp FSLH
-                           &mo 15    &lt 2 SPACE  &lt_esc 20 0    &lt 8 ENTER  &sl 4  &m_warpd_hint
+  &kp Q  &kp W      &kp E      &kp R     &kp T                                     &kp Y  &kp U          &kp I      &kp O    &kp P
+  &kp A  &hlt 20 S  &hlt 16 D  &hlt 8 F  &kp G                                     &kp H  &st LSHFT J    &hlt 16 K  &kp L    &kp SEMI
+  &kp Z  &kp X      &kp C      &kp V     &kp B                                     &kp N  &kp M          &kp COMMA  &kp DOT  &kp FSLH
+                               &mo 15    &lt 2 SPACE  &lt_esc 20 0    &lt 8 ENTER  &sl 4  &m_warpd_hint
             >;
 
             display-name = "EN";
@@ -588,10 +588,10 @@
 
         ru {
             bindings = <
-  &trans  &trans  &trans     &trans    &trans                                        &trans  &trans      &trans     &tp LBKT O  &tp LBKT P
-  &trans  &trans  &hlt 17 D  &hlt 9 F  &trans                                        &trans  &trans      &hlt 17 K  &trans      &tp SQT SEMI
-  &trans  &trans  &trans     &trans    &trans                                        &trans  &tp RBKT M  &trans     &trans      &trans
-                             &trans    &lt 3 SPACE  &lt_esc 21 0    &lt_sym 0 ENTER  &sl 5   &trans
+  &trans  &trans     &trans     &trans    &trans                                        &trans  &trans      &trans     &tp LBKT O  &tp LBKT P
+  &trans  &hlt 21 S  &hlt 17 D  &hlt 9 F  &trans                                        &trans  &trans      &hlt 17 K  &trans      &tp SQT SEMI
+  &trans  &trans     &trans     &trans    &trans                                        &trans  &tp RBKT M  &trans     &trans      &trans
+                                &trans    &lt 3 SPACE  &lt_esc 21 0    &lt_sym 0 ENTER  &sl 5   &trans
             >;
 
             display-name = "RU";

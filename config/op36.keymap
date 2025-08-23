@@ -751,10 +751,10 @@
 
         sup {
             bindings = <
-  &trans    &trans     &trans  &trans     &trans                       &trans    &kp DEL        &ssk LSHFT     &m_caps_word  &trans
-  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                       &m_to_ru  &kp BACKSPACE  &m_warpd_hint  &kp RET       &kp SPACE
-  &trans    &trans     &trans  &trans     &trans                       &trans    &none          &m_comma       &m_dot        &trans
-                               &trans     &kp SPACE  &trans    &trans  &trans    &trans
+  &trans    &trans     &trans  &trans     &trans                    &kp SPACE  &kp DEL        &ssk LSHFT     &m_caps_word  &trans
+  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                    &m_to_ru   &kp BACKSPACE  &m_warpd_hint  &kp RET       &kp ESC
+  &trans    &trans     &trans  &trans     &trans                    &kp TAB    &none          &m_comma       &m_dot        &trans
+                               &trans     &none   &trans    &trans  &trans     &trans
             >;
 
             display-name = "SUP";
@@ -762,10 +762,10 @@
 
         sup_ru {
             bindings = <
-  &trans    &trans     &trans  &trans     &trans                       &trans    &kp DEL        &ssk LSHFT     &m_caps_word  &trans
-  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                       &m_to_en  &kp BACKSPACE  &m_warpd_hint  &kp RET       &kp SPACE
-  &trans    &trans     &trans  &trans     &trans                       &trans    &none          &m_comma_ru    &m_dot_ru     &trans
-                               &trans     &kp SPACE  &trans    &trans  &trans    &trans
+  &trans    &trans     &trans  &trans     &trans                    &kp SPACE  &kp DEL        &ssk LSHFT     &m_caps_word  &trans
+  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                    &m_to_en   &kp BACKSPACE  &m_warpd_hint  &kp RET       &kp ESC
+  &trans    &trans     &trans  &trans     &trans                    &kp TAB    &none          &m_comma_ru    &m_dot_ru     &trans
+                               &trans     &none   &trans    &trans  &trans     &trans
             >;
         };
 

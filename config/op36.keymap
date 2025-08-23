@@ -751,9 +751,9 @@
 
         sup {
             bindings = <
-  &trans    &trans     &trans  &trans     &trans                    &kp SPACE  &kp DEL        &ssk LSHFT     &m_caps_word  &trans
+  &trans    &trans     &trans  &trans     &trans                    &kp ESC    &m_to_ru       &ssk LSHFT     &m_caps_word  &trans
   &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                    &m_to_ru   &kp BACKSPACE  &m_warpd_hint  &kp RET       &kp ESC
-  &trans    &trans     &trans  &trans     &trans                    &kp TAB    &none          &m_comma       &m_dot        &trans
+  &trans    &trans     &trans  &trans     &trans                    &kp SPACE  &kp DEL        &m_comma       &m_dot        &kp DEL
                                &trans     &none   &trans    &trans  &trans     &trans
             >;
 
@@ -762,9 +762,9 @@
 
         sup_ru {
             bindings = <
-  &trans    &trans     &trans  &trans     &trans                    &kp SPACE  &kp DEL        &ssk LSHFT     &m_caps_word  &trans
+  &trans    &trans     &trans  &trans     &trans                    &kp ESC    &m_to_en       &ssk LSHFT     &m_caps_word  &trans
   &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                    &m_to_en   &kp BACKSPACE  &m_warpd_hint  &kp RET       &kp ESC
-  &trans    &trans     &trans  &trans     &trans                    &kp TAB    &none          &m_comma_ru    &m_dot_ru     &trans
+  &trans    &trans     &trans  &trans     &trans                    &kp SPACE  &kp DEL        &m_comma_ru    &m_dot_ru     &kp DEL
                                &trans     &none   &trans    &trans  &trans     &trans
             >;
         };
@@ -793,10 +793,10 @@
 
         num_ {
             bindings = <
-  &none     &kp BACKSPACE  &kp ESC    &kp DEL     &none                        &kp SLASH      &kp N9  &kp N0  &kp MINUS  &kp EQUAL
-  &kp LGUI  &kp LALT       &kp LCTRL  &kp LSHIFT  &kp EQUAL                    &kp PERIOD     &kp N5  &kp N6  &kp N7     &kp N8
-  &kp LALT  &kp LCTRL      &none      &kp LSHIFT  &kp SPACE                    &kp COMMA      &kp N1  &kp N2  &kp N3     &kp N4
-                                      &trans      &trans     &trans    &trans  &kp BACKSPACE  &trans
+  &none     &kp BACKSPACE  &kp ESC    &kp DEL     &none                        &kp SLASH   &kp N9  &kp N0  &kp MINUS  &kp EQUAL
+  &kp LGUI  &kp LALT       &kp LCTRL  &kp LSHIFT  &kp EQUAL                    &kp PERIOD  &kp N5  &kp N6  &kp N7     &kp N8
+  &kp LALT  &kp LCTRL      &none      &kp LSHIFT  &kp SPACE                    &kp COMMA   &kp N1  &kp N2  &kp N3     &kp N4
+                                      &trans      &trans     &trans    &trans  &trans      &trans
             >;
 
             display-name = "NUM_";
@@ -807,7 +807,7 @@
   &none     &kp BACKSPACE  &kp ESC    &kp DEL    &none                        &kp LS(BACKSLASH)  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
   &kp LGUI  &kp LALT       &kp LCTRL  &kp LSHFT  &kp EQUAL                    &kp SLASH          &kp N5  &kp N6  &kp N7     &kp N8
   &kp LALT  &kp LCTRL      &none      &kp LSHFT  &kp SPACE                    &kp LS(SLASH)      &kp N1  &kp N2  &kp N3     &kp N4
-                                      &trans     &trans     &trans    &trans  &kp BACKSPACE      &trans
+                                      &trans     &trans     &trans    &trans  &trans             &trans
             >;
 
             display-name = "NUM RU_";

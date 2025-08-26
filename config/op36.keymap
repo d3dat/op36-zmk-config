@@ -762,7 +762,7 @@
 
         sup {
             bindings = <
-  &trans    &trans     &trans  &trans     &trans                    &kp TAB    &m_caps_word  &kp ESC        &none          &none
+  &trans    &trans     &trans  &trans     &trans                    &kp TAB    &m_caps_word  &kp ESC        &tog 12        &none
   &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                    &m_to_ru   &ssk LSHFT    &kp BACKSPACE  &m_warpd_hint  &none
   &trans    &trans     &trans  &trans     &trans                    &kp SPACE  &kp RET       &m_comma       &m_dot         &kp DEL
                                &trans     &none   &trans    &trans  &trans     &trans
@@ -773,7 +773,7 @@
 
         sup_ru {
             bindings = <
-  &trans    &trans     &trans  &trans     &trans                    &kp TAB    &m_caps_word  &kp ESC        &none          &none
+  &trans    &trans     &trans  &trans     &trans                    &kp TAB    &m_caps_word  &kp ESC        &tog 12        &none
   &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                    &m_to_en   &ssk LSHFT    &kp BACKSPACE  &m_warpd_hint  &none
   &trans    &trans     &trans  &trans     &trans                    &kp SPACE  &kp RET       &m_comma_ru    &m_dot_ru      &kp DEL
                                &trans     &none   &trans    &trans  &trans     &trans

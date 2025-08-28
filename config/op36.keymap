@@ -727,10 +727,10 @@
 
         hint {
             bindings = <
-  &kp Q  &kp W  &kp E  &kp R   &kp T                                   &kp Y           &kp U   &kp I      &kp O       &kp P
-  &kp A  &kp S  &kp D  &kp F   &kp G                                   &kp H           &kp J   &kp K      &kp L       &kp SEMICOLON
-  &kp Z  &kp X  &kp C  &kp V   &kp B                                   &kp N           &kp M   &kp COMMA  &kp PERIOD  &kp SLASH
-                       &trans  &trans  &m_warpd_esc    &m_warpd_click  &m_warpd_click  &trans
+  &kp Q  &kp W  &kp E  &kp R   &kp T                           &kp Y           &kp U   &kp I      &kp O       &kp P
+  &kp A  &kp S  &kp D  &kp F   &kp G                           &kp H           &kp J   &kp K      &kp L       &kp SEMICOLON
+  &kp Z  &kp X  &kp C  &kp V   &kp B                           &kp N           &kp M   &kp COMMA  &kp PERIOD  &kp SLASH
+                       &trans  &trans  &m_warpd_esc    &trans  &m_warpd_click  &trans
             >;
 
             display-name = "HINT";
@@ -782,9 +782,9 @@
 
         sup {
             bindings = <
-  &trans    &trans     &trans  &trans     &trans                     &kp TAB        &m_caps_word  &m_to_ru       &kp ESC   &none
-  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                     &m_to_ru       &ssk LSHFT    &kp BACKSPACE  &m_to_ru  &none
-  &trans    &trans     &trans  &trans     &trans                     &kp SPACE      &kp RET       &m_comma       &m_dot    &kp DEL
+  &trans    &trans     &trans  &trans     &trans                     &kp TAB        &m_caps_word  &m_ru          &kp ESC  &none
+  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                     &m_ru          &ssk LSHFT    &kp BACKSPACE  &m_ru    &none
+  &trans    &trans     &trans  &trans     &trans                     &kp SPACE      &kp RET       &m_comma       &m_dot   &kp DEL
                                &trans     &none   &kp ESC    &trans  &m_warpd_hint  &trans
             >;
 
@@ -793,8 +793,8 @@
 
         sup_ru {
             bindings = <
-  &trans    &trans     &trans  &trans     &trans                    &kp TAB    &m_caps_word  &m_to_en       &kp ESC    &none
-  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                    &m_to_en   &ssk LSHFT    &kp BACKSPACE  &m_to_en   &none
+  &trans    &trans     &trans  &trans     &trans                    &kp TAB    &m_caps_word  &m_en          &kp ESC    &none
+  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                    &m_en      &ssk LSHFT    &kp BACKSPACE  &m_en      &none
   &trans    &trans     &trans  &trans     &trans                    &kp SPACE  &kp RET       &m_comma_ru    &m_dot_ru  &kp DEL
                                &trans     &none   &trans    &trans  &trans     &trans
             >;

@@ -630,10 +630,10 @@
 
         nav {
             bindings = <
-  &m_to_ru      &kp BACKSPACE  &kp ESCAPE    &key_repeat   &tog 6                       &kp INS        &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
-  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT     &swap_win                    &kp TAB        &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
-  &kp LC(Z)     &kp LC(X)      &lt 20 LC(C)  &tt 10 LC(V)  &swap_tab                    &kp BACKSPACE  &kp RET   &m_comma   &m_dot     &kp DEL
-                                             &trans        &trans     &trans    &trans  &m_warpd_hint  &trans
+  &m_to_ru      &kp BACKSPACE  &kp ESCAPE    &key_repeat   &tog 6                              &kp INS        &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
+  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT     &swap_win                           &kp TAB        &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
+  &kp LC(Z)     &kp LC(X)      &lt 20 LC(C)  &tt 10 LC(V)  &swap_tab                           &kp BACKSPACE  &kp RET   &m_comma   &m_dot     &kp DEL
+                                             &trans        &trans     &trans    &m_warpd_hint  &trans         &trans
             >;
 
             display-name = "NAV";
@@ -641,10 +641,10 @@
 
         nav_ru {
             bindings = <
-  &m_to_en      &kp BACKSPACE  &kp ESCAPE    &key_repeat   &tog 7                       &kp INS        &kp HOME  &kp PG_UP    &kp PG_DN  &kp END
-  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT     &swap_win                    &kp TAB        &kp LEFT  &kp UP       &kp DOWN   &kp RIGHT
-  &kp LC(Z)     &kp LC(X)      &lt 21 LC(C)  &tt 10 LC(V)  &swap_tab                    &kp BACKSPACE  &kp RET   &m_comma_ru  &m_dot_ru  &kp DEL
-                                             &trans        &trans     &trans    &trans  &m_warpd_hint  &trans
+  &m_to_en      &kp BACKSPACE  &kp ESCAPE    &key_repeat   &tog 7                              &kp INS        &kp HOME  &kp PG_UP    &kp PG_DN  &kp END
+  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT     &swap_win                           &kp TAB        &kp LEFT  &kp UP       &kp DOWN   &kp RIGHT
+  &kp LC(Z)     &kp LC(X)      &lt 21 LC(C)  &tt 10 LC(V)  &swap_tab                           &kp BACKSPACE  &kp RET   &m_comma_ru  &m_dot_ru  &kp DEL
+                                             &trans        &trans     &trans    &m_warpd_hint  &trans         &trans
             >;
 
             display-name = "NAV RU";
@@ -727,10 +727,10 @@
 
         hint {
             bindings = <
-  &kp Q  &kp W  &kp E  &kp R   &kp T                                   &kp Y   &kp U   &kp I      &kp O       &kp P
-  &kp A  &kp S  &kp D  &kp F   &kp G                                   &kp H   &kp J   &kp K      &kp L       &kp SEMICOLON
-  &kp Z  &kp X  &kp C  &kp V   &kp B                                   &kp N   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH
-                       &trans  &trans  &m_warpd_esc    &m_warpd_click  &trans  &trans
+  &kp Q  &kp W  &kp E  &kp R   &kp T                           &kp Y           &kp U   &kp I      &kp O       &kp P
+  &kp A  &kp S  &kp D  &kp F   &kp G                           &kp H           &kp J   &kp K      &kp L       &kp SEMICOLON
+  &kp Z  &kp X  &kp C  &kp V   &kp B                           &kp N           &kp M   &kp COMMA  &kp PERIOD  &kp SLASH
+                       &trans  &trans  &m_warpd_esc    &trans  &m_warpd_click  &trans
             >;
 
             display-name = "HINT";

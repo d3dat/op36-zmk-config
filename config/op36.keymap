@@ -778,6 +778,8 @@
   &trans    &trans     &trans  &trans     &trans                    &kp SPACE  &kp RET       &m_comma_ru    &m_dot_ru      &kp DEL
                                &trans     &none   &trans    &trans  &trans     &trans
             >;
+
+            display-name = "SUP RU";
         };
 
         alt {

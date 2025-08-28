@@ -800,9 +800,9 @@
 
         sup {
             bindings = <
-  &trans    &trans     &trans  &trans     &trans                     &kp TAB        &m_caps_word  &m_to_ru_sup   &kp ESC       &none
-  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                     &m_to_ru_sup   &ssk LSHFT    &kp BACKSPACE  &m_to_ru_sup  &none
-  &trans    &trans     &trans  &trans     &trans                     &kp SPACE      &kp RET       &m_comma       &m_dot        &kp DEL
+  &trans    &trans     &trans  &trans     &trans                     &none          &m_caps_word  &kp ESC        &none     &none
+  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                     &kp TAB        &ssk LSHFT    &kp BACKSPACE  &m_to_ru  &none
+  &trans    &trans     &trans  &trans     &trans                     &kp SPACE      &kp RET       &m_comma       &m_dot    &kp DEL
                                &trans     &none   &kp ESC    &trans  &m_warpd_hint  &trans
             >;
 
@@ -811,10 +811,10 @@
 
         sup_ru {
             bindings = <
-  &trans    &trans     &trans  &trans     &trans                    &kp TAB       &m_caps_word  &m_to_en_sup   &kp ESC       &none
-  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                    &m_to_en_sup  &ssk LSHFT    &kp BACKSPACE  &m_to_en_sup  &none
-  &trans    &trans     &trans  &trans     &trans                    &kp SPACE     &kp RET       &m_comma_ru    &m_dot_ru     &kp DEL
-                               &trans     &none   &trans    &trans  &trans        &trans
+  &trans    &trans     &trans  &trans     &trans                    &none      &m_caps_word  &kp ESC        &none      &none
+  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                    &kp TAB    &ssk LSHFT    &kp BACKSPACE  &m_to_en   &none
+  &trans    &trans     &trans  &trans     &trans                    &kp SPACE  &kp RET       &m_comma_ru    &m_dot_ru  &kp DEL
+                               &trans     &none   &trans    &trans  &trans     &trans
             >;
 
             display-name = "SUP RU";

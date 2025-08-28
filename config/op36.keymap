@@ -782,9 +782,9 @@
 
         sup {
             bindings = <
-  &trans    &trans     &trans  &trans     &trans                     &kp TAB        &m_caps_word  &m_to_ru       &kp ESC        &none
-  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                     &m_to_ru       &ssk LSHFT    &kp BACKSPACE  &m_warpd_hint  &m_to_ru
-  &trans    &trans     &trans  &trans     &trans                     &kp SPACE      &kp RET       &m_comma       &m_dot         &kp DEL
+  &trans    &trans     &trans  &trans     &trans                     &kp TAB        &m_caps_word  &m_to_ru       &kp ESC   &none
+  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                     &m_to_ru       &ssk LSHFT    &kp BACKSPACE  &m_to_ru  &none
+  &trans    &trans     &trans  &trans     &trans                     &kp SPACE      &kp RET       &m_comma       &m_dot    &kp DEL
                                &trans     &none   &kp ESC    &trans  &m_warpd_hint  &trans
             >;
 
@@ -793,9 +793,9 @@
 
         sup_ru {
             bindings = <
-  &trans    &trans     &trans  &trans     &trans                    &kp TAB    &m_caps_word  &m_to_en       &kp ESC        &none
-  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                    &m_to_en   &ssk LSHFT    &kp BACKSPACE  &m_warpd_hint  &m_to_en
-  &trans    &trans     &trans  &trans     &trans                    &kp SPACE  &kp RET       &m_comma_ru    &m_dot_ru      &kp DEL
+  &trans    &trans     &trans  &trans     &trans                    &kp TAB    &m_caps_word  &m_to_en       &kp ESC    &none
+  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                    &m_to_en   &ssk LSHFT    &kp BACKSPACE  &m_to_en   &none
+  &trans    &trans     &trans  &trans     &trans                    &kp SPACE  &kp RET       &m_comma_ru    &m_dot_ru  &kp DEL
                                &trans     &none   &trans    &trans  &trans     &trans
             >;
 

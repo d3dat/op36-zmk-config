@@ -591,7 +591,7 @@
   &kp Q  &kp W      &kp E      &kp R     &kp T                                     &kp Y          &kp U          &kp I         &kp O        &kp P
   &kp A  &hlt 20 S  &hlt 16 D  &hlt 8 F  &kp G                                     &kp H          &st LSHFT J    &hmr LCTRL K  &hmr LALT L  &kp SEMI
   &kp Z  &kp X      &kp C      &kp V     &kp B                                     &kp N          &kp M          &kp COMMA     &kp DOT      &kp FSLH
-                               &mo 15    &lt 2 SPACE  &lt_esc 20 0    &lt 8 ENTER  &slt 15 LSHFT  &m_warpd_hint
+                               &mo 15    &lt 2 SPACE  &lt_esc 20 0    &lt 8 ENTER  &slt 14 LSHFT  &m_warpd_hint
             >;
 
             display-name = "EN";
@@ -740,10 +740,10 @@
 
         mouse_l {
             bindings = <
-  &msc SCRL_LEFT     &msc SCRL_DOWN    &msc SCRL_UP       &msc SCRL_RIGHT   &none                            &none  &none      &none      &none      &none
-  &mmv MOVE_LEFT     &mmv MOVE_DOWN    &mmv MOVE_UP       &mmv MOVE_RIGHT   &none                            &none  &mkp LCLK  &mkp RCLK  &mkp MB3   &m_warpd_hint
-  &mmv MOVE_X(-200)  &mmv MOVE_Y(200)  &mmv MOVE_Y(-200)  &mmv MOVE_X(200)  &none                            &none  &mkp LCLK  &kp LSHFT  &kp LCTRL  &kp LALT
-                                                          &none             &none  &tog 14    &m_warpd_hint  &none  &none
+  &msc SCRL_LEFT     &msc SCRL_DOWN    &msc SCRL_UP       &msc SCRL_RIGHT   &none                          &none  &none      &none      &none      &none
+  &mmv MOVE_LEFT     &mmv MOVE_DOWN    &mmv MOVE_UP       &mmv MOVE_RIGHT   &none                          &none  &mkp LCLK  &mkp RCLK  &mkp MB3   &m_warpd_hint
+  &mmv MOVE_X(-200)  &mmv MOVE_Y(200)  &mmv MOVE_Y(-200)  &mmv MOVE_X(200)  &none                          &none  &mkp LCLK  &kp LSHFT  &kp LCTRL  &kp LALT
+                                                          &none             &m_warpd_hint  &none    &none  &none  &none
             >;
 
             display-name = "MOUSE L";
@@ -751,10 +751,10 @@
 
         mouse_r {
             bindings = <
-  &none          &none      &none      &none      &trans                            &trans  &msc SCRL_LEFT     &msc SCRL_UP       &msc SCRL_DOWN    &msc SCRL_RIGHT
-  &m_warpd_hint  &mkp MB3   &mkp RCLK  &mkp LCLK  &trans                            &trans  &mmv MOVE_LEFT     &mmv MOVE_UP       &mmv MOVE_DOWN    &mmv MOVE_RIGHT
-  &kp LALT       &kp LCTRL  &kp LSHFT  &mkp LCLK  &trans                            &trans  &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_Y(200)  &mmv MOVE_X(200)
-                                       &none      &none   &tog 15    &m_warpd_hint  &none   &none
+  &none          &none      &none      &none      &trans                         &trans  &msc SCRL_LEFT     &msc SCRL_UP       &msc SCRL_DOWN    &msc SCRL_RIGHT
+  &m_warpd_hint  &mkp MB3   &mkp RCLK  &mkp LCLK  &trans                         &trans  &mmv MOVE_LEFT     &mmv MOVE_UP       &mmv MOVE_DOWN    &mmv MOVE_RIGHT
+  &kp LALT       &kp LCTRL  &kp LSHFT  &mkp LCLK  &trans                         &trans  &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_Y(200)  &mmv MOVE_X(200)
+                                       &none      &m_warpd_hint  &none    &none  &none   &none
             >;
 
             display-name = "MOUSE R";
@@ -762,8 +762,8 @@
 
         sup {
             bindings = <
-  &trans    &trans     &trans  &trans     &trans                    &kp TAB    &m_caps_word  &kp ESC        &tog 12        &none
-  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                    &m_to_ru   &ssk LSHFT    &kp BACKSPACE  &m_warpd_hint  &none
+  &trans    &trans     &trans  &trans     &trans                    &kp TAB    &m_caps_word  &m_to_en       &kp ESC        &none
+  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                    &m_to_ru   &ssk LSHFT    &kp BACKSPACE  &m_warpd_hint  &m_to_ru
   &trans    &trans     &trans  &trans     &trans                    &kp SPACE  &kp RET       &m_comma       &m_dot         &kp DEL
                                &trans     &none   &trans    &trans  &trans     &trans
             >;
@@ -773,8 +773,8 @@
 
         sup_ru {
             bindings = <
-  &trans    &trans     &trans  &trans     &trans                    &kp TAB    &m_caps_word  &kp ESC        &tog 12        &none
-  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                    &m_to_en   &ssk LSHFT    &kp BACKSPACE  &m_warpd_hint  &none
+  &trans    &trans     &trans  &trans     &trans                    &kp TAB    &m_caps_word  &m_to_ru       &kp ESC        &none
+  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                    &m_to_en   &ssk LSHFT    &kp BACKSPACE  &m_warpd_hint  &m_to_en
   &trans    &trans     &trans  &trans     &trans                    &kp SPACE  &kp RET       &m_comma_ru    &m_dot_ru      &kp DEL
                                &trans     &none   &trans    &trans  &trans     &trans
             >;

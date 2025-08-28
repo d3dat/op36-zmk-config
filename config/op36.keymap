@@ -80,13 +80,13 @@
             ignored-key-positions = <13 15 16 17 18 19>;
         };
 
-        lt_sym: lt_sym {
+        lt_sym_ru: lt_sym_ru {
             compatible = "zmk,behavior-hold-tap";
-            label = "LT_SYM";
+            label = "LT_SYM_RU";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            bindings = <&m_layer_sym>, <&kp>;
+            bindings = <&m_layer_sym>, <&m_to_en>;
         };
 
         lt_num: lt_num {
@@ -231,6 +231,15 @@
             tapping-term-ms = <200>;
             require-prior-idle-ms = <50>;
             flavor = "tap-preferred";
+        };
+
+        lt_sym: lt_sym {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_SYM";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&m_to_ru>;
         };
     };
 
@@ -599,10 +608,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &kp Q  &kp W      &kp E      &kp R     &kp T                                     &kp Y                &kp U          &kp I      &kp O    &kp P
-  &kp A  &hlt 20 S  &hlt 16 D  &hlt 8 F  &kp G                                     &kp H                &kp J          &kp K      &kp L    &kp SEMI
-  &kp Z  &kp X      &kp C      &kp V     &kp B                                     &kp N                &kp M          &kp COMMA  &kp DOT  &kp FSLH
-                               &mo 15    &lt 2 SPACE  &lt_esc 20 0    &lt 8 ENTER  &lt_warpd_hint 15 0  &m_warpd_hint
+  &kp Q  &kp W      &kp E      &kp R     &kp T                                     &kp Y       &kp U          &kp I      &kp O    &kp P
+  &kp A  &hlt 22 S  &hlt 16 D  &hlt 8 F  &kp G                                     &kp H       &kp J          &kp K      &kp L    &kp SEMI
+  &kp Z  &kp X      &kp C      &kp V     &kp B                                     &kp N       &kp M          &kp COMMA  &kp DOT  &kp FSLH
+                               &mo 15    &lt 2 SPACE  &lt_esc 20 0    &lt_sym 8 0  &lt 15 RET  &m_warpd_hint
             >;
 
             display-name = "EN";
@@ -610,10 +619,10 @@
 
         ru {
             bindings = <
-  &trans  &trans     &trans     &trans    &trans                                        &trans  &trans      &trans  &tp LBKT O  &tp LBKT P
-  &trans  &hlt 21 S  &hlt 17 D  &hlt 9 F  &trans                                        &trans  &trans      &trans  &trans      &tp SQT SEMI
-  &trans  &trans     &trans     &trans    &trans                                        &trans  &tp RBKT M  &trans  &trans      &trans
-                                &trans    &lt 3 SPACE  &lt_esc 21 0    &lt_sym 0 ENTER  &trans  &trans
+  &trans  &trans     &trans     &trans    &trans                                           &trans  &trans      &trans  &tp LBKT O  &tp LBKT P
+  &trans  &hlt 22 S  &hlt 17 D  &hlt 9 F  &trans                                           &trans  &trans      &trans  &trans      &tp SQT SEMI
+  &trans  &trans     &trans     &trans    &trans                                           &trans  &tp RBKT M  &trans  &trans      &trans
+                                &trans    &lt 3 SPACE  &lt_esc 21 0    &lt_sym_ru 0 ENTER  &trans  &trans
             >;
 
             display-name = "RU";
@@ -835,6 +844,15 @@
             >;
 
             display-name = "NUM RU_";
+        };
+
+        mouse_ {
+            bindings = <
+  &none     &none  &none      &none      &none                     &none   &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT
+  &kp LALT  &none  &kp LCTRL  &kp LSHFT  &none                     &none   &mkp LCLK       &mkp RCLK     &m_warpd_hint   &mkp MB3
+  &none     &none  &none      &none      &none                     &none   &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
+                              &trans     &trans  &trans    &trans  &trans  &trans
+            >;
         };
     };
 };

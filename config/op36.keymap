@@ -221,6 +221,17 @@
             require-prior-idle-ms = <50>;
             flavor = "tap-preferred";
         };
+
+        lt_warpd_hint: lt_warpd_hint {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_WARPD_HINT";
+            bindings = <&mo>, <&m_warpd_hint>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <50>;
+            flavor = "tap-preferred";
+        };
     };
 
     macros {
@@ -588,10 +599,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &kp Q  &kp W      &kp E      &kp R     &kp T                                     &kp Y          &kp U          &kp I         &kp O        &kp P
-  &kp A  &hlt 20 S  &hlt 16 D  &hlt 8 F  &kp G                                     &kp H          &st LSHFT J    &hmr LCTRL K  &hmr LALT L  &kp SEMI
-  &kp Z  &kp X      &kp C      &kp V     &kp B                                     &kp N          &kp M          &kp COMMA     &kp DOT      &kp FSLH
-                               &mo 15    &lt 2 SPACE  &lt_esc 20 0    &lt 8 ENTER  &slt 14 LSHFT  &m_warpd_hint
+  &kp Q  &kp W      &kp E      &kp R     &kp T                                     &kp Y                &kp U          &kp I      &kp O    &kp P
+  &kp A  &hlt 20 S  &hlt 16 D  &hlt 8 F  &kp G                                     &kp H                &kp J          &kp K      &kp L    &kp SEMI
+  &kp Z  &kp X      &kp C      &kp V     &kp B                                     &kp N                &kp M          &kp COMMA  &kp DOT  &kp FSLH
+                               &mo 15    &lt 2 SPACE  &lt_esc 20 0    &lt 8 ENTER  &lt_warpd_hint 15 0  &m_warpd_hint
             >;
 
             display-name = "EN";
@@ -599,9 +610,9 @@
 
         ru {
             bindings = <
-  &trans  &trans     &trans     &trans    &trans                                        &trans  &trans      &trans     &tp LBKT O  &tp LBKT P
-  &trans  &hlt 21 S  &hlt 17 D  &hlt 9 F  &trans                                        &trans  &trans      &hlt 17 K  &trans      &tp SQT SEMI
-  &trans  &trans     &trans     &trans    &trans                                        &trans  &tp RBKT M  &trans     &trans      &trans
+  &trans  &trans     &trans     &trans    &trans                                        &trans  &trans      &trans  &tp LBKT O  &tp LBKT P
+  &trans  &hlt 21 S  &hlt 17 D  &hlt 9 F  &trans                                        &trans  &trans      &trans  &trans      &tp SQT SEMI
+  &trans  &trans     &trans     &trans    &trans                                        &trans  &tp RBKT M  &trans  &trans      &trans
                                 &trans    &lt 3 SPACE  &lt_esc 21 0    &lt_sym 0 ENTER  &trans  &trans
             >;
 
@@ -613,7 +624,7 @@
   &m_to_ru      &kp BACKSPACE  &kp ESCAPE    &key_repeat   &tog 6                       &kp INS        &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
   &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT     &swap_win                    &kp TAB        &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
   &kp LC(Z)     &kp LC(X)      &lt 20 LC(C)  &tt 10 LC(V)  &swap_tab                    &kp BACKSPACE  &kp RET   &m_comma   &m_dot     &kp DEL
-                                             &trans        &trans     &trans    &trans  &ssk LSHFT     &trans
+                                             &trans        &trans     &trans    &trans  &m_warpd_hint  &trans
             >;
 
             display-name = "NAV";
@@ -624,7 +635,7 @@
   &m_to_en      &kp BACKSPACE  &kp ESCAPE    &key_repeat   &tog 7                       &kp INS        &kp HOME  &kp PG_UP    &kp PG_DN  &kp END
   &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT     &swap_win                    &kp TAB        &kp LEFT  &kp UP       &kp DOWN   &kp RIGHT
   &kp LC(Z)     &kp LC(X)      &lt 21 LC(C)  &tt 10 LC(V)  &swap_tab                    &kp BACKSPACE  &kp RET   &m_comma_ru  &m_dot_ru  &kp DEL
-                                             &trans        &trans     &trans    &trans  &ssk LSHFT     &trans
+                                             &trans        &trans     &trans    &trans  &m_warpd_hint  &trans
             >;
 
             display-name = "NAV RU";
@@ -762,10 +773,10 @@
 
         sup {
             bindings = <
-  &trans    &trans     &trans  &trans     &trans                     &kp TAB    &m_caps_word  &m_to_ru       &kp ESC        &none
-  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                     &m_to_ru   &ssk LSHFT    &kp BACKSPACE  &m_warpd_hint  &m_to_ru
-  &trans    &trans     &trans  &trans     &trans                     &kp SPACE  &kp RET       &m_comma       &m_dot         &kp DEL
-                               &trans     &none   &kp ESC    &trans  &trans     &trans
+  &trans    &trans     &trans  &trans     &trans                     &kp TAB        &m_caps_word  &m_to_ru       &kp ESC        &none
+  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                     &m_to_ru       &ssk LSHFT    &kp BACKSPACE  &m_warpd_hint  &m_to_ru
+  &trans    &trans     &trans  &trans     &trans                     &kp SPACE      &kp RET       &m_comma       &m_dot         &kp DEL
+                               &trans     &none   &kp ESC    &trans  &m_warpd_hint  &trans
             >;
 
             display-name = "SUP";

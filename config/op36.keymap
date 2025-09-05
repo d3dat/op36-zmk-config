@@ -628,10 +628,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &kp Q  &kp W      &kp E      &kp R     &kp T                                     &kp Y       &kp U          &kp I      &kp O    &kp P
-  &kp A  &hlt 22 S  &hlt 16 D  &hlt 8 F  &kp G                                     &kp H       &kp J          &kp K      &kp L    &kp SEMI
-  &kp Z  &kp X      &kp C      &kp V     &kp B                                     &kp N       &kp M          &kp COMMA  &kp DOT  &kp FSLH
-                               &mo 15    &lt 2 SPACE  &lt_esc 20 0    &lt_sym 8 0  &lt 15 RET  &m_warpd_hint
+  &kp Q  &kp W      &kp E      &kp R      &kp T                                     &kp Y       &kp U  &kp I      &kp O    &kp P
+  &kp A  &hlt 22 S  &hlt 16 D  &hlt 23 F  &kp G                                     &kp H       &kp J  &kp K      &kp L    &kp SEMI
+  &kp Z  &kp X      &kp C      &kp V      &kp B                                     &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH
+                               &none      &lt 2 SPACE  &lt_esc 20 0    &lt_sym 8 0  &lt 15 RET  &none
             >;
 
             display-name = "EN";
@@ -639,10 +639,10 @@
 
         ru {
             bindings = <
-  &trans  &trans     &trans     &trans    &trans                                           &trans  &trans      &trans  &tp LBKT O  &tp LBKT P
-  &trans  &hlt 22 S  &hlt 17 D  &hlt 9 F  &trans                                           &trans  &trans      &trans  &trans      &tp SQT SEMI
-  &trans  &trans     &trans     &trans    &trans                                           &trans  &tp RBKT M  &trans  &trans      &trans
-                                &trans    &lt 3 SPACE  &lt_esc 21 0    &lt_sym_ru 0 ENTER  &trans  &trans
+  &trans  &trans     &trans     &trans     &trans                                           &trans  &trans      &trans  &tp LBKT O  &tp LBKT P
+  &trans  &hlt 22 S  &hlt 17 D  &hlt 23 F  &trans                                           &trans  &trans      &trans  &trans      &tp SQT SEMI
+  &trans  &trans     &trans     &trans     &trans                                           &trans  &tp RBKT M  &trans  &trans      &trans
+                                &trans     &lt 3 SPACE  &lt_esc 21 0    &lt_sym_ru 0 ENTER  &trans  &trans
             >;
 
             display-name = "RU";
@@ -802,9 +802,9 @@
 
         sup {
             bindings = <
-  &trans    &trans     &trans  &trans     &trans                     &none          &m_caps_word  &kp ESC        &m_to_ru_sup  &none
-  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                     &kp TAB        &ssk LSHFT    &kp BACKSPACE  &m_to_ru      &kp RET
-  &trans    &trans     &trans  &trans     &trans                     &kp SPACE      &kp RET       &m_comma       &m_dot        &kp DEL
+  &trans    &trans     &trans  &trans     &trans                     &none          &none          &kp ESC   &none    &none
+  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                     &kp TAB        &kp BACKSPACE  &m_to_ru  &kp RET  &kp DEL
+  &trans    &trans     &trans  &trans     &trans                     &none          &kp SPACE      &m_comma  &m_dot   &none
                                &trans     &none   &kp ESC    &trans  &m_warpd_hint  &trans
             >;
 
@@ -813,10 +813,10 @@
 
         sup_ru {
             bindings = <
-  &trans    &trans     &trans  &trans     &trans                    &none      &m_caps_word  &kp ESC        &m_to_en_sup  &none
-  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                    &kp TAB    &ssk LSHFT    &kp BACKSPACE  &m_to_en      &kp RET
-  &trans    &trans     &trans  &trans     &trans                    &kp SPACE  &kp RET       &m_comma_ru    &m_dot_ru     &kp DEL
-                               &trans     &none   &trans    &trans  &trans     &trans
+  &trans    &trans     &trans  &trans     &trans                    &none    &none          &kp ESC      &none      &none
+  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                    &kp TAB  &kp BACKSPACE  &m_to_en     &kp RET    &kp DEL
+  &trans    &trans     &trans  &trans     &trans                    &none    &kp SPACE      &m_comma_ru  &m_dot_ru  &none
+                               &trans     &none   &trans    &trans  &trans   &trans
             >;
 
             display-name = "SUP RU";
@@ -872,6 +872,15 @@
   &kp LALT  &none  &kp LCTRL  &kp LSHFT  &none                     &none   &mkp LCLK       &mkp RCLK     &m_warpd_hint   &mkp MB3
   &none     &none  &none      &none      &none                     &none   &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
                               &trans     &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        shift {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans                    &trans  &m_caps_word  &trans      &trans     &trans
+  &trans  &trans  &trans  &trans  &trans                    &trans  &ssk LSHFT    &ssk LCTRL  &ssk LALT  &ssk LGUI
+  &trans  &trans  &trans  &trans  &trans                    &trans  &trans        &trans      &trans     &trans
+                          &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };

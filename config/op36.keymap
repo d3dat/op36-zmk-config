@@ -659,10 +659,10 @@
 
         ru {
             bindings = <
-  &kp SEMI  &kp L      &kp V      &kp R        &kp X           &kp W               &kp Q       &kp S  &kp LBKT     &kp A
-  &kp H     &hlt 22 C  &hlt 17 N  &hlt 23 Y    &kp U           &kp G               &kp F       &kp J  &tp TILDE T  &tp SQT B
-  &kp P     &kp COMMA  &kp K      &kp D        &kp I           &kp O               &tp RBKT M  &kp E  &kp Z        &kp DOT
-                       &none      &lt 3 SPACE  &lt_esc 21 0    &lt_sym_ru 0 ENTER  &trans      &none
+  &trans  &trans     &trans     &trans     &trans                                           &trans  &trans      &trans  &tp LBKT O  &tp LBKT P
+  &trans  &hlt 22 S  &hlt 17 D  &hlt 23 F  &trans                                           &trans  &trans      &trans  &trans      &tp SQT SEMI
+  &trans  &trans     &trans     &trans     &trans                                           &trans  &tp RBKT M  &trans  &trans      &trans
+                                &trans     &lt 3 SPACE  &lt_esc 21 0    &lt_sym_ru 0 ENTER  &trans  &trans
             >;
 
             display-name = "RU";
@@ -752,6 +752,8 @@
   &kp PERCENT     &kp CARET        &kp DOLLAR   &kp UNDERSCORE  &kp BACKSLASH    &kp LS(N7)  &kp EXCLAMATION  &kp LS(SLASH)          &kp SLASH         &kp LS(BACKSLASH)
                                    &none        &trans          &trans           &trans      &trans           &none
             >;
+
+            display-name = "SYM RU";
         };
 
         fn {
@@ -893,6 +895,8 @@
   &none     &none  &none      &none      &none     &none   &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
                    &none      &trans     &trans    &trans  &trans          &none
             >;
+
+            display-name = "MOUSE_";
         };
 
         shift {
@@ -902,6 +906,20 @@
   &trans  &trans  &trans  &trans  &trans          &trans  &trans        &trans      &trans     &trans
                   &none   &trans  &kp 0           &trans  &trans        &none
             >;
+
+            display-name = "SHIFT";
         };
+
+        ru_alt {
+            bindings = <
+  &kp SEMI  &kp L      &kp V      &kp R        &kp X           &kp W               &kp Q       &kp S  &kp LBKT     &kp A
+  &kp H     &hlt 22 C  &hlt 17 Y  &hlt 23 N    &kp U           &kp G               &kp F       &kp J  &tp TILDE T  &tp SQT B
+  &kp P     &kp COMMA  &kp K      &kp D        &kp I           &kp O               &tp RBKT M  &kp E  &kp Z        &kp DOT
+                       &none      &lt 3 SPACE  &lt_esc 21 0    &lt_sym_ru 0 ENTER  &trans      &none
+            >;
+
+            display-name = "RU ALT";
+        };
+
     };
 };

@@ -526,6 +526,13 @@
             wait-ms = <0>;
             tap-ms = <0>;
         };
+
+        m_none: m_none {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "M_NONE";
+        };
     };
 
     combos {
@@ -653,10 +660,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &kp Q  &kp W      &kp E      &kp R      &kp T                                     &kp Y       &kp U  &kp I      &kp O    &kp P
-  &kp A  &hlt 22 S  &hlt 16 D  &hlt 23 F  &kp G                                     &kp H       &kp J  &kp K      &kp L    &kp SEMI
-  &kp Z  &kp X      &kp C      &kp V      &kp B                                     &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH
-                               &none      &lt 2 SPACE  &lt_esc 20 0    &lt_sym 8 0  &lt 15 RET  &none
+  &kp Q  &kp W      &kp E      &kp R      &kp T                                     &kp Y       &kp U    &kp I      &kp O    &kp P
+  &kp A  &hlt 22 S  &hlt 16 D  &hlt 23 F  &kp G                                     &kp H       &kp J    &kp K      &kp L    &kp SEMI
+  &kp Z  &kp X      &kp C      &kp V      &kp B                                     &kp N       &kp M    &kp COMMA  &kp DOT  &kp FSLH
+                               &m_none    &lt 2 SPACE  &lt_esc 20 0    &lt_sym 8 0  &lt 15 RET  &m_none
             >;
 
             display-name = "EN";

@@ -674,7 +674,7 @@
   &trans  &trans     &trans     &trans     &trans                                           &trans  &trans      &trans  &tp LBKT O  &tp LBKT P
   &trans  &hlt 22 S  &hlt 17 D  &hlt 23 F  &trans                                           &trans  &trans      &trans  &trans      &tp SQT SEMI
   &trans  &trans     &trans     &trans     &trans                                           &trans  &tp RBKT M  &trans  &trans      &trans
-                                &trans     &lt 3 SPACE  &lt_esc 21 0    &lt_sym_ru 0 ENTER  &trans  &trans
+                                &nop       &lt 3 SPACE  &lt_esc 21 0    &lt_sym_ru 0 ENTER  &trans  &nop
             >;
 
             display-name = "RU";
@@ -685,7 +685,7 @@
   &m_to_ru      &kp BACKSPACE  &kp ESCAPE    &key_repeat   &kp RET                             &kp INS        &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
   &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT     &swap_win                           &kp TAB        &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
   &kp LC(Z)     &kp LC(X)      &lt 20 LC(C)  &tt 10 LC(V)  &swap_tab                           &kp BACKSPACE  &kp RET   &m_comma   &m_dot     &kp DEL
-                                             &none         &trans     &trans    &m_warpd_hint  &trans         &none
+                                             &nop          &trans     &trans    &m_warpd_hint  &trans         &nop
             >;
 
             display-name = "NAV";
@@ -696,7 +696,7 @@
   &m_to_en      &kp BACKSPACE  &kp ESCAPE    &key_repeat   &kp RET                             &kp INS        &kp HOME  &kp PG_UP    &kp PG_DN  &kp END
   &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT     &swap_win                           &kp TAB        &kp LEFT  &kp UP       &kp DOWN   &kp RIGHT
   &kp LC(Z)     &kp LC(X)      &lt 21 LC(C)  &tt 10 LC(V)  &swap_tab                           &kp BACKSPACE  &kp RET   &m_comma_ru  &m_dot_ru  &kp DEL
-                                             &none         &trans     &trans    &m_warpd_hint  &trans         &none
+                                             &nop          &trans     &trans    &m_warpd_hint  &trans         &nop
             >;
 
             display-name = "NAV RU";
@@ -707,7 +707,7 @@
   &none  &tog 12  &m_warpd_hint  &none      &none                       &none   &none      &m_to_ru       &none     &none
   &none  &none    &m_caps_word   &sk LSHFT  &none                       &none   &sk RSHFT  &sk RCTRL      &sk LALT  &sk LGUI
   &none  &none    &none          &none      &none                       &none   &tog 12    &m_warpd_hint  &none     &none
-                                 &none      &m_to_ru  &trans    &trans  &trans  &none
+                                 &nop       &m_to_ru  &trans    &trans  &trans  &nop
             >;
 
             display-name = "CMD";
@@ -718,7 +718,7 @@
   &none  &tog 12  &m_warpd_hint  &none      &kp GRAVE                    &none   &none      &m_to_en       &none     &none
   &none  &none    &m_caps_word   &sk LSHFT  &none                        &none   &sk LSHFT  &sk LCTRL      &sk LALT  &sk LGUI
   &none  &none    &none          &none      &none                        &none   &tog 12    &m_warpd_hint  &none     &none
-                                 &none      &m_to_en   &trans    &trans  &trans  &none
+                                 &nop       &m_to_en   &trans    &trans  &trans  &nop
             >;
 
             display-name = "CMD RU";
@@ -729,7 +729,7 @@
   &kp LS(N1)   &kp LS(N2)    &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                                         &kp LS(N6)     &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)
   &kp N7       &kp N5        &kp N3      &kp N1      &kp N9                                             &kp N8         &kp N0      &kp N2      &kp N4      &kp N6
   &kp PERCENT  &kp ASTERISK  &kp MINUS   &kp PLUS    &kp LT                                             &kp GT         &kp EQUAL   &kp COMMA   &kp DOT     &kp SLASH
-                                         &none       &lt_num 0 SPACE  &m_tog_num ESC    &m_tog_num RET  &kp BACKSPACE  &none
+                                         &nop        &lt_num 0 SPACE  &m_tog_num ESC    &m_tog_num RET  &kp BACKSPACE  &nop
             >;
 
             display-name = "NUM";
@@ -740,7 +740,7 @@
   &kp LS(N1)   &kp LS(N2)    &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                                                  &kp LS(N6)     &kp LS(N7)  &kp LS(N8)     &kp LS(N9)  &kp LS(N0)
   &kp N7       &kp N5        &kp N3      &kp N1      &kp N9                                                      &kp N8         &kp N0      &kp N2         &kp N4      &kp N6
   &kp PERCENT  &kp ASTERISK  &kp MINUS   &kp PLUS    &m_kp_en LT                                                 &m_kp_en GT    &kp EQUAL   &kp LS(SLASH)  &kp SLASH   &kp LS(BACKSLASH)
-                                         &none       &lt_num_ru 0 SPACE  &m_tog_num_ru ESC    &m_tog_num_ru RET  &kp BACKSPACE  &none
+                                         &nop        &lt_num_ru 0 SPACE  &m_tog_num_ru ESC    &m_tog_num_ru RET  &kp BACKSPACE  &nop
             >;
 
             display-name = "NUM RU";
@@ -751,7 +751,7 @@
   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LT       &kp GT          &kp GRAVE                        &kp SQT       &kp LPAR         &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
   &kp AMPERSAND   &kp HASH         &kp AT_SIGN  &kp PIPE        &kp TILDE                        &kp PLUS      &kp MINUS        &kp DQT                &kp COLON         &kp SEMI
   &kp PERCENT     &kp CARET        &kp DOLLAR   &kp UNDERSCORE  &kp BACKSLASH                    &kp QUESTION  &kp EXCLAMATION  &kp COMMA              &kp DOT           &kp SLASH
-                                                &none           &trans         &trans    &trans  &trans        &none
+                                                &nop            &trans         &trans    &trans  &trans        &nop
             >;
 
             display-name = "SYM";
@@ -762,7 +762,7 @@
   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LT       &kp GT          &kp GRAVE                        &kp SQT     &kp LPAR         &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
   &kp AMPERSAND   &kp HASH         &kp AT_SIGN  &kp PIPE        &kp TILDE                        &kp PLUS    &kp MINUS        &kp LS(N2)             &kp LS(N6)        &kp LS(N4)
   &kp PERCENT     &kp CARET        &kp DOLLAR   &kp UNDERSCORE  &kp BACKSLASH                    &kp LS(N7)  &kp EXCLAMATION  &kp LS(SLASH)          &kp SLASH         &kp LS(BACKSLASH)
-                                                &none           &trans         &trans    &trans  &trans      &none
+                                                &nop            &trans         &trans    &trans  &trans      &nop
             >;
 
             display-name = "SYM RU";
@@ -773,7 +773,7 @@
   &none     &none     &none      &none      &none                            &none    &m_fn F9  &m_fn F10  &m_fn F11  &m_fn F12
   &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &none                            &none    &m_fn F5  &m_fn F6   &m_fn F7   &m_fn F8
   &none     &none     &none      &none      &none                            &none    &m_fn F1  &m_fn F2   &m_fn F3   &m_fn F4
-                                 &none      &tog 10  &m_fn ESC    &m_fn RET  &tog 10  &none
+                                 &nop       &tog 10  &m_fn ESC    &m_fn RET  &tog 10  &nop
             >;
 
             display-name = "FN";
@@ -784,7 +784,7 @@
   &kp Q  &kp W  &kp E  &kp R  &kp T                           &kp Y           &kp U  &kp I      &kp O       &kp P
   &kp A  &kp S  &kp D  &kp F  &kp G                           &kp H           &kp J  &kp K      &kp L       &kp SEMICOLON
   &kp Z  &kp X  &kp C  &kp V  &kp B                           &kp N           &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-                       &none  &trans  &m_warpd_esc    &trans  &m_warpd_click  &none
+                       &nop   &trans  &m_warpd_esc    &trans  &m_warpd_click  &nop
             >;
 
             display-name = "HINT";
@@ -795,7 +795,7 @@
   &msc SCRL_LEFT     &msc SCRL_DOWN     &msc SCRL_UP  &msc SCRL_RIGHT  &trans                               &trans            &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN    &msc SCRL_RIGHT
   &mmv MOVE_X(-100)  &mmv MOVE_X(-600)  &mkp RCLK     &mkp LCLK        &trans                               &trans            &mkp LCLK       &mkp RCLK     &mmv MOVE_X(600)  &mmv MOVE_X(100)
   &trans             &kp LALT           &kp LCTRL     &kp LSHFT        &trans                               &trans            &kp RSHFT       &kp RCTRL     &kp RALT          &trans
-                                                      &none            &mmv MOVE_Y(-600)  &tog 12    &none  &mmv MOVE_Y(600)  &none
+                                                      &nop             &mmv MOVE_Y(-600)  &tog 12    &none  &mmv MOVE_Y(600)  &nop
             >;
 
             display-name = "MOUSE";
@@ -806,7 +806,7 @@
   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-                          &none   &trans  &trans    &trans  &trans  &none
+                          &nop    &trans  &trans    &trans  &trans  &nop
             >;
 
             display-name = "SYS";
@@ -817,7 +817,7 @@
   &msc SCRL_LEFT     &msc SCRL_DOWN    &msc SCRL_UP       &msc SCRL_RIGHT   &none                            &none  &none      &none      &none      &none
   &mmv MOVE_LEFT     &mmv MOVE_DOWN    &mmv MOVE_UP       &mmv MOVE_RIGHT   &none                            &none  &mkp LCLK  &mkp RCLK  &mkp MB3   &m_warpd_hint
   &mmv MOVE_X(-200)  &mmv MOVE_Y(200)  &mmv MOVE_Y(-200)  &mmv MOVE_X(200)  &none                            &none  &mkp LCLK  &kp LSHFT  &kp LCTRL  &kp LALT
-                                                          &none             &m_warpd_hint  &kp ESC    &none  &none  &none
+                                                          &nop              &m_warpd_hint  &kp ESC    &none  &none  &nop
             >;
 
             display-name = "MOUSE L";
@@ -828,7 +828,7 @@
   &none          &none      &none      &none      &trans                           &trans  &msc SCRL_LEFT     &msc SCRL_UP       &msc SCRL_DOWN    &msc SCRL_RIGHT
   &m_warpd_hint  &mkp MB3   &mkp RCLK  &mkp LCLK  &trans                           &trans  &mmv MOVE_LEFT     &mmv MOVE_UP       &mmv MOVE_DOWN    &mmv MOVE_RIGHT
   &kp LALT       &kp LCTRL  &kp LSHFT  &mkp LCLK  &trans                           &trans  &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_Y(200)  &mmv MOVE_X(200)
-                                       &none      &m_warpd_hint  &kp ESC    &none  &none   &none
+                                       &nop       &m_warpd_hint  &kp ESC    &none  &none   &nop
             >;
 
             display-name = "MOUSE R";
@@ -839,7 +839,7 @@
   &trans    &trans     &trans  &trans     &trans                     &none          &none          &kp ESC   &none    &none
   &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                     &kp TAB        &kp BACKSPACE  &m_to_ru  &kp RET  &kp DEL
   &trans    &trans     &trans  &trans     &trans                     &none          &kp SPACE      &m_comma  &m_dot   &none
-                               &none      &none   &kp ESC    &trans  &m_warpd_hint  &none
+                               &nop       &none   &kp ESC    &trans  &m_warpd_hint  &nop
             >;
 
             display-name = "SUP";
@@ -850,7 +850,7 @@
   &trans    &trans     &trans  &trans     &trans                    &none    &none          &kp ESC      &none      &none
   &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                    &kp TAB  &kp BACKSPACE  &m_to_en     &kp RET    &kp DEL
   &trans    &trans     &trans  &trans     &trans                    &none    &kp SPACE      &m_comma_ru  &m_dot_ru  &none
-                               &none      &none   &trans    &trans  &trans   &none
+                               &nop       &none   &trans    &trans  &trans   &nop
             >;
 
             display-name = "SUP RU";
@@ -861,7 +861,7 @@
   &none  &none  &none  &none  &none                     &kp TILDE     &kp EQUAL        &kp DQT    &kp HASH       &kp GRAVE
   &none  &none  &none  &none  &none                     &kp PLUS      &kp MINUS        &kp COLON  &kp SEMICOLON  &kp SQT
   &none  &none  &none  &none  &none                     &kp QUESTION  &kp EXCLAMATION  &trans     &trans         &trans
-                       &none  &trans  &trans    &trans  &trans        &none
+                       &nop   &trans  &trans    &trans  &trans        &nop
             >;
 
             display-name = "ALT";
@@ -872,7 +872,7 @@
   &none  &none  &none  &none  &none                     &kp GRAVE   &kp EQUAL        &kp LS(N2)     &kp LS(N3)  &kp LBKT
   &none  &none  &none  &none  &none                     &kp PLUS    &kp MINUS        &kp LS(N6)     &kp LS(N4)  &kp SQT
   &none  &none  &none  &none  &none                     &kp LS(N7)  &kp EXCLAMATION  &kp LS(SLASH)  &kp SLASH   &kp RBKT
-                       &none  &trans  &trans    &trans  &trans      &none
+                       &nop   &trans  &trans    &trans  &trans      &nop
             >;
 
             display-name = "ALT RU";
@@ -883,7 +883,7 @@
   &none     &kp BACKSPACE  &kp ESC    &kp DEL     &none                        &kp SLASH   &kp N9  &kp N0  &kp MINUS  &kp EQUAL
   &kp LGUI  &kp LALT       &kp LCTRL  &kp LSHIFT  &kp EQUAL                    &kp PERIOD  &kp N5  &kp N6  &kp N7     &kp N8
   &kp LALT  &kp LCTRL      &none      &kp LSHIFT  &kp SPACE                    &kp COMMA   &kp N1  &kp N2  &kp N3     &kp N4
-                                      &none       &trans     &trans    &trans  &trans      &none
+                                      &nop        &trans     &trans    &trans  &trans      &nop
             >;
 
             display-name = "NUM_";
@@ -894,7 +894,7 @@
   &none     &kp BACKSPACE  &kp ESC    &kp DEL    &none                        &kp LS(BACKSLASH)  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
   &kp LGUI  &kp LALT       &kp LCTRL  &kp LSHFT  &kp EQUAL                    &kp SLASH          &kp N5  &kp N6  &kp N7     &kp N8
   &kp LALT  &kp LCTRL      &none      &kp LSHFT  &kp SPACE                    &kp LS(SLASH)      &kp N1  &kp N2  &kp N3     &kp N4
-                                      &none      &trans     &trans    &trans  &trans             &none
+                                      &nop       &trans     &trans    &trans  &trans             &nop
             >;
 
             display-name = "NUM RU_";
@@ -905,7 +905,7 @@
   &none     &none  &none      &none      &none                     &none   &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT
   &kp LALT  &none  &kp LCTRL  &kp LSHFT  &none                     &none   &mkp LCLK       &mkp RCLK     &m_warpd_hint   &mkp MB3
   &none     &none  &none      &none      &none                     &none   &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
-                              &none      &trans  &trans    &trans  &trans  &none
+                              &nop       &trans  &trans    &trans  &trans  &nop
             >;
 
             display-name = "MOUSE_";
@@ -916,7 +916,7 @@
   &trans  &trans  &trans  &trans  &trans                   &kp MINUS      &m_caps_word  &kp LS(N2)     &kp LS(N6)  &kp LS(N4)
   &trans  &trans  &trans  &trans  &trans                   &kp LS(EQUAL)  &ssk LSHFT    &ssk LCTRL     &ssk LALT   &ssk LGUI
   &trans  &trans  &trans  &trans  &trans                   &kp LS(N7)     &kp LS(N1)    &kp LS(SLASH)  &kp SLASH   &kp LS(BACKSLASH)
-                          &none   &trans  &kp 0    &trans  &trans         &none
+                          &nop    &trans  &kp 0    &trans  &trans         &nop
             >;
 
             display-name = "SHIFT";
@@ -927,7 +927,7 @@
   &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_DE      &kp RU_CYRILLIC_EM      &kp RU_CYRILLIC_KA      &kp RU_CYRILLIC_CHE                                      &kp RU_CYRILLIC_TSE    &kp RU_CYRILLIC_SHORT_I                          &ht RU_CYRILLIC_E RU_CYRILLIC_YERU  &ht RU_CYRILLIC_IO RU_CYRILLIC_YA  &kp RU_CYRILLIC_HA
   &kp RU_CYRILLIC_ER   &hlt 22 RU_CYRILLIC_ES  &hlt 17 RU_CYRILLIC_EN  &hlt 23 RU_CYRILLIC_TE  &kp RU_CYRILLIC_GHE                                      &kp RU_CYRILLIC_PE     &kp RU_CYRILLIC_A                                &kp RU_CYRILLIC_O                   &kp RU_CYRILLIC_IE                 &kp RU_CYRILLIC_I
   &kp RU_CYRILLIC_ZE   &kp RU_CYRILLIC_BE      &kp RU_CYRILLIC_EL      &kp RU_CYRILLIC_VE      &kp RU_CYRILLIC_SHA                                      &kp RU_CYRILLIC_SHCHA  &ht RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_U                   &kp RU_CYRILLIC_YU                 &kp RU_CYRILLIC_EF
-                                                                       &none                   &lt 3 SPACE          &lt_esc 21 0    &lt_sym_ru 0 ENTER  &trans                 &none
+                                                                       &nop                    &lt 3 SPACE          &lt_esc 21 0    &lt_sym_ru 0 ENTER  &trans                 &nop
             >;
 
             display-name = "RU ALT";

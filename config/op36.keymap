@@ -527,7 +527,7 @@
             tap-ms = <0>;
         };
 
-        m_none: m_none {
+        nop: m_none {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&none>;
@@ -660,10 +660,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &kp Q  &kp W      &kp E      &kp R      &kp T                                     &kp Y       &kp U    &kp I      &kp O    &kp P
-  &kp A  &hlt 22 S  &hlt 16 D  &hlt 23 F  &kp G                                     &kp H       &kp J    &kp K      &kp L    &kp SEMI
-  &kp Z  &kp X      &kp C      &kp V      &kp B                                     &kp N       &kp M    &kp COMMA  &kp DOT  &kp FSLH
-                               &m_none    &lt 2 SPACE  &lt_esc 20 0    &lt_sym 8 0  &lt 15 RET  &m_none
+  &kp Q  &kp W      &kp E      &kp R      &kp T                                     &kp Y       &kp U  &kp I      &kp O    &kp P
+  &kp A  &hlt 22 S  &hlt 16 D  &hlt 23 F  &kp G                                     &kp H       &kp J  &kp K      &kp L    &kp SEMI
+  &kp Z  &kp X      &kp C      &kp V      &kp B                                     &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH
+                               &nop       &lt 2 SPACE  &lt_esc 20 0    &lt_sym 8 0  &lt 15 RET  &nop
             >;
 
             display-name = "EN";
@@ -913,10 +913,10 @@
 
         shift {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                   &trans  &m_caps_word  &trans      &trans     &trans
-  &trans  &trans  &trans  &trans  &trans                   &trans  &ssk LSHFT    &ssk LCTRL  &ssk LALT  &ssk LGUI
-  &trans  &trans  &trans  &trans  &trans                   &trans  &trans        &trans      &trans     &trans
-                          &none   &trans  &kp 0    &trans  &trans  &none
+  &trans  &trans  &trans  &trans  &trans                   &kp MINUS      &m_caps_word  &kp LS(N2)     &kp LS(N6)  &kp LS(N4)
+  &trans  &trans  &trans  &trans  &trans                   &kp LS(EQUAL)  &ssk LSHFT    &ssk LCTRL     &ssk LALT   &ssk LGUI
+  &trans  &trans  &trans  &trans  &trans                   &kp LS(N7)     &kp LS(N1)    &kp LS(SLASH)  &kp SLASH   &kp LS(BACKSLASH)
+                          &none   &trans  &kp 0    &trans  &trans         &none
             >;
 
             display-name = "SHIFT";

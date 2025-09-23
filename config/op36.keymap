@@ -660,10 +660,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &kp Q  &kp W      &kp E      &kp R      &kp T                                     &kp Y       &kp U  &kp I      &kp O    &kp P
-  &kp A  &hlt 22 S  &hlt 16 D  &hlt 23 F  &kp G                                     &kp H       &kp J  &kp K      &kp L    &kp SEMI
-  &kp Z  &kp X      &kp C      &kp V      &kp B                                     &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH
-                               &nop       &lt 2 SPACE  &lt_esc 20 0    &lt_sym 8 0  &lt 15 RET  &nop
+  &kp Q  &kp W      &kp E      &kp R      &kp T                                     &kp Y           &kp U  &kp I      &kp O    &kp P
+  &kp A  &hlt 22 S  &hlt 23 D  &hlt 16 F  &kp G                                     &kp H           &kp J  &kp K      &kp L    &kp SEMI
+  &kp Z  &kp X      &kp C      &kp V      &kp B                                     &kp N           &kp M  &kp COMMA  &kp DOT  &kp FSLH
+                               &nop       &lt 2 SPACE  &lt_esc 20 0    &lt_sym 8 0  &slt 15 LSHIFT  &nop
             >;
 
             display-name = "EN";
@@ -672,7 +672,7 @@
         ru {
             bindings = <
   &trans  &trans     &trans     &trans     &trans                                           &trans  &trans      &trans  &tp LBKT O  &tp LBKT P
-  &trans  &hlt 22 S  &hlt 17 D  &hlt 23 F  &trans                                           &trans  &trans      &trans  &trans      &tp SQT SEMI
+  &trans  &hlt 22 S  &hlt 23 D  &hlt 17 F  &trans                                           &trans  &trans      &trans  &trans      &tp SQT SEMI
   &trans  &trans     &trans     &trans     &trans                                           &trans  &tp RBKT M  &trans  &trans      &trans
                                 &nop       &lt 3 SPACE  &lt_esc 21 0    &lt_sym_ru 0 ENTER  &trans  &nop
             >;
@@ -685,7 +685,7 @@
   &m_to_ru      &kp BACKSPACE  &kp ESCAPE    &key_repeat   &kp RET                             &kp INS        &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
   &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT     &swap_win                           &kp TAB        &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
   &kp LC(Z)     &kp LC(X)      &lt 20 LC(C)  &tt 10 LC(V)  &swap_tab                           &kp BACKSPACE  &kp RET   &m_comma   &m_dot     &kp DEL
-                                             &nop          &trans     &trans    &m_warpd_hint  &trans         &nop
+                                             &nop          &trans     &trans    &kp BACKSPACE  &kp RET        &nop
             >;
 
             display-name = "NAV";
@@ -696,7 +696,7 @@
   &m_to_en      &kp BACKSPACE  &kp ESCAPE    &key_repeat   &kp RET                             &kp INS        &kp HOME  &kp PG_UP    &kp PG_DN  &kp END
   &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT     &swap_win                           &kp TAB        &kp LEFT  &kp UP       &kp DOWN   &kp RIGHT
   &kp LC(Z)     &kp LC(X)      &lt 21 LC(C)  &tt 10 LC(V)  &swap_tab                           &kp BACKSPACE  &kp RET   &m_comma_ru  &m_dot_ru  &kp DEL
-                                             &nop          &trans     &trans    &m_warpd_hint  &trans         &nop
+                                             &nop          &trans     &trans    &kp BACKSPACE  &kp RET        &nop
             >;
 
             display-name = "NAV RU";
@@ -748,10 +748,10 @@
 
         sym {
             bindings = <
-  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LT       &kp GT          &kp GRAVE                        &kp SQT       &kp LPAR         &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-  &kp AMPERSAND   &kp HASH         &kp AT_SIGN  &kp PIPE        &kp TILDE                        &kp PLUS      &kp MINUS        &kp DQT                &kp COLON         &kp SEMI
-  &kp PERCENT     &kp CARET        &kp DOLLAR   &kp UNDERSCORE  &kp BACKSLASH                    &kp QUESTION  &kp EXCLAMATION  &kp COMMA              &kp DOT           &kp SLASH
-                                                &nop            &trans         &trans    &trans  &trans        &nop
+  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LT       &kp GT          &kp GRAVE                       &kp SQT       &kp LPAR         &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+  &kp AMPERSAND   &kp HASH         &kp AT_SIGN  &kp PIPE        &kp TILDE                       &kp PLUS      &kp MINUS        &kp DQT                &kp COLON         &kp SEMI
+  &kp PERCENT     &kp CARET        &kp DOLLAR   &kp UNDERSCORE  &kp BACKSLASH                   &kp QUESTION  &kp EXCLAMATION  &kp COMMA              &kp DOT           &kp SLASH
+                                                &nop            &trans         &trans    &none  &kp RET       &nop
             >;
 
             display-name = "SYM";
@@ -759,10 +759,10 @@
 
         sym_ru {
             bindings = <
-  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LT       &kp GT          &kp GRAVE                        &kp SQT     &kp LPAR         &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-  &kp AMPERSAND   &kp HASH         &kp AT_SIGN  &kp PIPE        &kp TILDE                        &kp PLUS    &kp MINUS        &kp LS(N2)             &kp LS(N6)        &kp LS(N4)
-  &kp PERCENT     &kp CARET        &kp DOLLAR   &kp UNDERSCORE  &kp BACKSLASH                    &kp LS(N7)  &kp EXCLAMATION  &kp LS(SLASH)          &kp SLASH         &kp LS(BACKSLASH)
-                                                &nop            &trans         &trans    &trans  &trans      &nop
+  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LT       &kp GT          &kp GRAVE                       &kp SQT     &kp LPAR         &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+  &kp AMPERSAND   &kp HASH         &kp AT_SIGN  &kp PIPE        &kp TILDE                       &kp PLUS    &kp MINUS        &kp LS(N2)             &kp LS(N6)        &kp LS(N4)
+  &kp PERCENT     &kp CARET        &kp DOLLAR   &kp UNDERSCORE  &kp BACKSLASH                   &kp LS(N7)  &kp EXCLAMATION  &kp LS(SLASH)          &kp SLASH         &kp LS(BACKSLASH)
+                                                &nop            &trans         &trans    &none  &kp RET     &nop
             >;
 
             display-name = "SYM RU";
@@ -770,10 +770,10 @@
 
         fn {
             bindings = <
-  &none     &none     &none      &none      &none                            &none    &m_fn F9  &m_fn F10  &m_fn F11  &m_fn F12
-  &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &none                            &none    &m_fn F5  &m_fn F6   &m_fn F7   &m_fn F8
-  &none     &none     &none      &none      &none                            &none    &m_fn F1  &m_fn F2   &m_fn F3   &m_fn F4
-                                 &nop       &tog 10  &m_fn ESC    &m_fn RET  &tog 10  &nop
+  &none     &none     &none      &none      &none                        &none      &m_fn F9  &m_fn F10  &m_fn F11  &m_fn F12
+  &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &none                        &none      &m_fn F5  &m_fn F6   &m_fn F7   &m_fn F8
+  &none     &none     &none      &none      &none                        &none      &m_fn F1  &m_fn F2   &m_fn F3   &m_fn F4
+                                 &none      &none  &m_fn ESC    &tog 10  &m_fn RET  &nop
             >;
 
             display-name = "FN";
@@ -781,10 +781,10 @@
 
         hint {
             bindings = <
-  &kp Q  &kp W  &kp E  &kp R  &kp T                           &kp Y           &kp U  &kp I      &kp O       &kp P
-  &kp A  &kp S  &kp D  &kp F  &kp G                           &kp H           &kp J  &kp K      &kp L       &kp SEMICOLON
-  &kp Z  &kp X  &kp C  &kp V  &kp B                           &kp N           &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-                       &nop   &trans  &m_warpd_esc    &trans  &m_warpd_click  &nop
+  &kp Q  &kp W  &kp E  &kp R  &kp T                         &kp Y           &kp U  &kp I      &kp O       &kp P
+  &kp A  &kp S  &kp D  &kp F  &kp G                         &kp H           &kp J  &kp K      &kp L       &kp SEMICOLON
+  &kp Z  &kp X  &kp C  &kp V  &kp B                         &kp N           &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+                       &nop   &none  &m_warpd_esc    &none  &m_warpd_click  &nop
             >;
 
             display-name = "HINT";
@@ -836,10 +836,10 @@
 
         sup {
             bindings = <
-  &trans    &trans     &trans  &trans     &trans                     &none          &none          &kp ESC   &none    &none
-  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                     &kp TAB        &kp BACKSPACE  &m_to_ru  &kp RET  &kp DEL
-  &trans    &trans     &trans  &trans     &trans                     &none          &kp SPACE      &m_comma  &m_dot   &none
-                               &nop       &none   &kp ESC    &trans  &m_warpd_hint  &nop
+  &trans    &trans     &trans  &trans     &trans                     &none    &none          &kp ESC        &none    &none
+  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                     &kp TAB  &kp BACKSPACE  &m_warpd_hint  &kp RET  &kp DEL
+  &trans    &trans     &trans  &trans     &trans                     &none    &kp SPACE      &m_comma       &m_dot   &none
+                               &nop       &none   &kp ESC    &trans  &kp RET  &nop
             >;
 
             display-name = "SUP";
@@ -847,10 +847,10 @@
 
         sup_ru {
             bindings = <
-  &trans    &trans     &trans  &trans     &trans                    &none    &none          &kp ESC      &none      &none
-  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                    &kp TAB  &kp BACKSPACE  &m_to_en     &kp RET    &kp DEL
-  &trans    &trans     &trans  &trans     &trans                    &none    &kp SPACE      &m_comma_ru  &m_dot_ru  &none
-                               &nop       &none   &trans    &trans  &trans   &nop
+  &trans    &trans     &trans  &trans     &trans                    &none    &none          &kp ESC        &none      &none
+  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                    &kp TAB  &kp BACKSPACE  &m_warpd_hint  &kp RET    &kp DEL
+  &trans    &trans     &trans  &trans     &trans                    &none    &kp SPACE      &m_comma_ru    &m_dot_ru  &none
+                               &nop       &none   &trans    &trans  &kp RET  &nop
             >;
 
             display-name = "SUP RU";
@@ -880,10 +880,10 @@
 
         num_ {
             bindings = <
-  &none     &kp BACKSPACE  &kp ESC    &kp DEL     &none                        &kp SLASH   &kp N9  &kp N0  &kp MINUS  &kp EQUAL
-  &kp LGUI  &kp LALT       &kp LCTRL  &kp LSHIFT  &kp EQUAL                    &kp PERIOD  &kp N5  &kp N6  &kp N7     &kp N8
-  &kp LALT  &kp LCTRL      &none      &kp LSHIFT  &kp SPACE                    &kp COMMA   &kp N1  &kp N2  &kp N3     &kp N4
-                                      &nop        &trans     &trans    &trans  &trans      &nop
+  &none     &kp BACKSPACE  &kp ESC    &kp DEL     &kp ASTERISK                    &kp SLASH   &kp N9  &kp N0  &kp MINUS  &kp EQUAL
+  &kp LGUI  &kp LALT       &kp LCTRL  &kp LSHIFT  &kp PLUS                        &kp PERIOD  &kp N5  &kp N6  &kp N7     &kp N8
+  &kp LALT  &kp LCTRL      &none      &kp LSHIFT  &kp SPACE                       &kp COMMA   &kp N1  &kp N2  &kp N3     &kp N4
+                                      &nop        &trans        &trans    &trans  &trans      &nop
             >;
 
             display-name = "NUM_";
@@ -891,10 +891,10 @@
 
         num_ru_ {
             bindings = <
-  &none     &kp BACKSPACE  &kp ESC    &kp DEL    &none                        &kp LS(BACKSLASH)  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
-  &kp LGUI  &kp LALT       &kp LCTRL  &kp LSHFT  &kp EQUAL                    &kp SLASH          &kp N5  &kp N6  &kp N7     &kp N8
-  &kp LALT  &kp LCTRL      &none      &kp LSHFT  &kp SPACE                    &kp LS(SLASH)      &kp N1  &kp N2  &kp N3     &kp N4
-                                      &nop       &trans     &trans    &trans  &trans             &nop
+  &none     &kp BACKSPACE  &kp ESC    &kp DEL    &kp ASTERISK                    &kp LS(BACKSLASH)  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
+  &kp LGUI  &kp LALT       &kp LCTRL  &kp LSHFT  &kp PLUS                        &kp SLASH          &kp N5  &kp N6  &kp N7     &kp N8
+  &kp LALT  &kp LCTRL      &none      &kp LSHFT  &kp SPACE                       &kp LS(SLASH)      &kp N1  &kp N2  &kp N3     &kp N4
+                                      &nop       &trans        &trans    &trans  &trans             &nop
             >;
 
             display-name = "NUM RU_";

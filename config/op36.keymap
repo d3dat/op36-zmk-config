@@ -695,7 +695,7 @@
             bindings = <
   &kp Q  &kp W     &kp E      &kp R      &kp T                                         &kp Y           &kp U  &kp I      &kp O    &kp P
   &kp A  &hlt 8 S  &hlt 20 D  &hlt 16 F  &hlt 23 G                                     &kp H           &kp J  &kp K      &kp L    &kp SEMI
-  &kp Z  &kp X     &kp C      &kp V      &kp B                                         &kp N           &kp M  &kp COMMA  &kp DOT  &kp FSLH
+  &kp Z  &kp X     &kp C      &hlt 10 V  &kp B                                         &kp N           &kp M  &kp COMMA  &kp DOT  &kp FSLH
                               &nop       &lt 2 SPACE  &lt_esc 20 0    &mo_ssk 8 LSHFT  &mo_to_ru 15 0  &nop
             >;
 
@@ -706,7 +706,7 @@
             bindings = <
   &trans  &trans    &trans     &trans     &trans                                            &trans          &trans      &trans  &tp LBKT O  &tp LBKT P
   &trans  &hlt 9 S  &hlt 21 D  &hlt 17 F  &hlt 23 G                                         &trans          &trans      &trans  &trans      &tp SQT SEMI
-  &trans  &trans    &trans     &trans     &trans                                            &trans          &tp RBKT M  &trans  &trans      &trans
+  &trans  &trans    &trans     &hlt 10 V  &trans                                            &trans          &tp RBKT M  &trans  &trans      &trans
                                &nop       &lt 3 SPACE  &lt_esc 21 0    &mo_sym_ssk 0 LSHFT  &mo_to_en 15 0  &nop
             >;
 

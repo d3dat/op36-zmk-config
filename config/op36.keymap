@@ -869,10 +869,10 @@
 
         sup {
             bindings = <
-  &trans    &trans     &trans  &trans     &trans                     &none    &m_caps_word   &kp ESC        &none    &none
-  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                     &kp TAB  &kp BACKSPACE  &m_warpd_hint  &kp RET  &kp DEL
-  &trans    &trans     &trans  &trans     &trans                     &none    &kp SPACE      &m_comma       &m_dot   &none
-                               &nop       &none   &kp ESC    &trans  &kp RET  &nop
+  &none     &none     &none      &kp LSHFT  &none                             &none     &m_caps_word   &none     &none          &none
+  &kp LGUI  &kp LALT  &kp LCTRL  &none      &none                             &kp TAB   &kp BACKSPACE  &kp RET   &m_warpd_hint  &kp ESC
+  &none     &none     &none      &none      &none                             &none     &kp SPACE      &m_comma  &m_dot         &kp DEL
+                                 &nop       &kp SPACE  &kp ESC    &ssk LSHFT  &m_to_ru  &nop
             >;
 
             display-name = "SUP";
@@ -880,10 +880,10 @@
 
         sup_ru {
             bindings = <
-  &trans    &trans     &trans  &trans     &trans                    &none    &m_caps_word   &kp ESC        &none      &none
-  &kp LALT  &kp LCTRL  &none   &kp LSHFT  &trans                    &kp TAB  &kp BACKSPACE  &m_warpd_hint  &kp RET    &kp DEL
-  &trans    &trans     &trans  &trans     &trans                    &none    &kp SPACE      &m_comma_ru    &m_dot_ru  &none
-                               &nop       &none   &trans    &trans  &kp RET  &nop
+  &none     &none     &none      &kp LSHFT  &none                             &none     &m_caps_word   &none          &none          &none
+  &kp LGUI  &kp LALT  &kp LCTRL  &none      &none                             &kp TAB   &kp BACKSPACE  &kp RET        &m_warpd_hint  &kp ESC
+  &none     &none     &none      &none      &none                             &none     &kp SPACE      &kp LS(SLASH)  &kp SLASH      &kp DEL
+                                 &nop       &kp SPACE  &kp ESC    &ssk LSHFT  &m_to_en  &nop
             >;
 
             display-name = "SUP RU";

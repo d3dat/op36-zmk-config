@@ -298,7 +298,7 @@
         mm_lshift: mm_lshift {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_LSHIFT";
-            bindings = <&ssk LSHFT>, <&kp LSHFT>;
+            bindings = <&ssk LSHFT>, <&m_release LSHFT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -574,6 +574,16 @@
             #binding-cells = <0>;
             bindings = <&none>;
             label = "M_NONE";
+        };
+
+        m_release: m_release {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings =
+                <&macro_release>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+
+            label = "M_RELEASE";
         };
     };
 

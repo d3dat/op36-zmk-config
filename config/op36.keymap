@@ -589,7 +589,7 @@
         m_clear_mod: m_clear_mod {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CLEAR>;
+            bindings = <&kp 0>;
             label = "M_CLEAR_MOD";
         };
     };

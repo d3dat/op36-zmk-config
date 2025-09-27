@@ -298,7 +298,7 @@
         mm_lshift: mm_lshift {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_LSHIFT";
-            bindings = <&ssk LSHFT>, <&m_release LSHFT>;
+            bindings = <&ssk LSHFT>, <&m_clear_mod>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -584,6 +584,13 @@
                 <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
 
             label = "M_RELEASE";
+        };
+
+        m_clear_mod: m_clear_mod {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CLEAR>;
+            label = "M_CLEAR_MOD";
         };
     };
 

@@ -303,6 +303,17 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        hlt_sym: hlt_sym {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HLT_SYM";
+            bindings = <&m_layer_sym>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <50>;
+            flavor = "tap-preferred";
+        };
     };
 
     macros {
@@ -600,6 +611,8 @@
         combo_esc {
             bindings = <&kp ESC>;
             key-positions = <1 2>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
         };
 
         combo_ret {
@@ -694,12 +707,16 @@
             bindings = <&m_to_ru>;
             key-positions = <11 12>;
             layers = <0>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
         };
 
         c_to_en {
             bindings = <&m_to_en>;
             key-positions = <11 12>;
             layers = <1>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
         };
 
         c_ru_alt {
@@ -710,6 +727,8 @@
         ret {
             bindings = <&kp RET>;
             key-positions = <17 18>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
         };
     };
 
@@ -724,8 +743,8 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &kp Q  &kp W     &kp E      &kp R      &kp T                                         &kp Y           &kp U  &kp I      &kp O     &kp P
-  &kp A  &hlt 8 S  &hlt 20 D  &hlt 16 F  &hlt 23 G                                     &kp H           &kp J  &kp K      &hlt 8 L  &kp SEMI
+  &kp Q  &kp W     &hlt 8 E   &kp R      &kp T                                         &kp Y           &kp U  &kp I      &kp O     &kp P
+  &kp A  &hlt 2 S  &hlt 20 D  &hlt 16 F  &hlt 23 G                                     &kp H           &kp J  &kp K      &hlt 8 L  &kp SEMI
   &kp Z  &kp X     &kp C      &hlt 23 V  &kp B                                         &kp N           &kp M  &kp COMMA  &kp DOT   &kp FSLH
                               &nop       &lt 2 SPACE  &lt_esc 20 0    &mo_ssk 8 LSHFT  &mo_to_ru 15 0  &none
             >;
@@ -735,10 +754,10 @@
 
         ru {
             bindings = <
-  &trans  &trans    &trans     &trans     &trans                                            &trans          &trans      &trans  &tp LBKT O  &tp LBKT P
-  &trans  &hlt 9 S  &hlt 21 D  &hlt 17 F  &hlt 23 G                                         &trans          &trans      &trans  &hlt 9 L    &tp SQT SEMI
-  &trans  &trans    &trans     &hlt 23 V  &trans                                            &trans          &tp RBKT M  &trans  &trans      &trans
-                               &nop       &lt 3 SPACE  &lt_esc 21 0    &mo_sym_ssk 0 LSHFT  &mo_to_en 15 0  &none
+  &trans  &trans    &hlt_sym 0 E  &trans     &trans                                            &trans          &trans      &trans  &tp LBKT O  &tp LBKT P
+  &trans  &hlt 3 S  &hlt 21 D     &hlt 17 F  &hlt 23 G                                         &trans          &trans      &trans  &hlt 9 L    &tp SQT SEMI
+  &trans  &trans    &trans        &hlt 23 V  &trans                                            &trans          &tp RBKT M  &trans  &trans      &trans
+                                  &nop       &lt 3 SPACE  &lt_esc 21 0    &mo_sym_ssk 0 LSHFT  &mo_to_en 15 0  &none
             >;
 
             display-name = "RU";

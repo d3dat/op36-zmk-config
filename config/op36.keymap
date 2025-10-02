@@ -730,6 +730,22 @@
             timeout-ms = <50>;
             require-prior-idle-ms = <50>;
         };
+
+        ssk_shift_l {
+            bindings = <&ssk LSHFT>;
+            key-positions = <13 12>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
+            layers = <0 1>;
+        };
+
+        ssk_shift_r {
+            bindings = <&ssk LSHFT>;
+            key-positions = <16 17>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
+            layers = <0 1>;
+        };
     };
 
     keymap {
@@ -743,8 +759,8 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &kp Q  &kp W      &hlt 8 E  &kp R      &kp T                                         &kp Y           &kp U  &hlt 8 I   &kp O    &kp P
-  &kp A  &hlt 20 S  &hlt 2 D  &hlt 16 F  &hlt 23 G                                     &kp H           &kp J  &hlt 2 K   &kp L    &kp SEMI
+  &kp Q  &kp W      &hlt 8 E  &hlt 20 R  &kp T                                         &kp Y           &kp U  &hlt 8 I   &kp O    &kp P
+  &kp A  &hlt 10 S  &hlt 2 D  &hlt 16 F  &hlt 23 G                                     &kp H           &kp J  &hlt 2 K   &kp L    &kp SEMI
   &kp Z  &kp X      &kp C     &hlt 23 V  &kp B                                         &kp N           &kp M  &kp COMMA  &kp DOT  &kp FSLH
                               &nop       &lt 2 SPACE  &lt_esc 20 0    &mo_ssk 8 LSHFT  &mo_to_ru 15 0  &none
             >;
@@ -754,8 +770,8 @@
 
         ru {
             bindings = <
-  &trans  &trans     &hlt_sym 0 E  &trans     &trans                                            &trans          &trans      &hlt_sym 0 I  &tp LBKT O  &tp LBKT P
-  &trans  &hlt 21 S  &hlt 3 D      &hlt 17 F  &hlt 23 G                                         &trans          &trans      &hlt 3 K      &trans      &tp SQT SEMI
+  &trans  &trans     &hlt_sym 0 E  &hlt 21 R  &trans                                            &trans          &trans      &hlt_sym 0 I  &tp LBKT O  &tp LBKT P
+  &trans  &hlt 10 S  &hlt 3 D      &hlt 17 F  &hlt 23 G                                         &trans          &trans      &hlt 3 K      &trans      &tp SQT SEMI
   &trans  &trans     &trans        &hlt 23 V  &trans                                            &trans          &tp RBKT M  &trans        &trans      &trans
                                    &nop       &lt 3 SPACE  &lt_esc 21 0    &mo_sym_ssk 0 LSHFT  &mo_to_en 15 0  &none
             >;
@@ -853,10 +869,10 @@
 
         fn {
             bindings = <
-  &none     &none     &none      &none      &none                         &none    &m_fn F9  &m_fn F10  &m_fn F11  &m_fn F12
-  &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &none                         &none    &m_fn F5  &m_fn F6   &m_fn F7   &m_fn F8
-  &none     &none     &none      &none      &none                         &none    &m_fn F1  &m_fn F2   &m_fn F3   &m_fn F4
-                                 &none      &none  &kp ESC    &ssk LSHFT  &kp RET  &nop
+  &none     &none     &none      &none      &none                            &none    &m_fn F9  &m_fn F10  &m_fn F11  &m_fn F12
+  &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &none                            &none    &m_fn F5  &m_fn F6   &m_fn F7   &m_fn F8
+  &none     &none     &none      &none      &none                            &none    &m_fn F1  &m_fn F2   &m_fn F3   &m_fn F4
+                                 &none      &sk LALT  &kp ESC    &ssk LSHFT  &kp RET  &nop
             >;
 
             display-name = "FN";
@@ -963,10 +979,10 @@
 
         num_ {
             bindings = <
-  &none     &kp BACKSPACE  &kp ESC    &kp DEL     &kp ASTERISK                            &kp SLASH   &kp N9  &kp N0  &kp MINUS  &kp EQUAL
-  &kp LGUI  &kp LALT       &kp LCTRL  &kp LSHIFT  &kp PLUS                                &kp PERIOD  &kp N5  &kp N6  &kp N7     &kp N8
-  &kp LALT  &kp LCTRL      &none      &kp LSHIFT  &kp SPACE                               &kp COMMA   &kp N1  &kp N2  &kp N3     &kp N4
-                                      &nop        &kp SPACE     &kp ESC    &kp BACKSPACE  &kp RET     &nop
+  &none     &kp LALT   &kp LCTRL  &none       &kp ASTERISK                            &kp SLASH   &kp N9  &kp N0  &kp MINUS  &kp EQUAL
+  &kp LGUI  &kp LALT   &kp LCTRL  &kp LSHIFT  &kp PLUS                                &kp PERIOD  &kp N5  &kp N6  &kp N7     &kp N8
+  &kp LALT  &kp LCTRL  &none      &kp LSHIFT  &kp SPACE                               &kp COMMA   &kp N1  &kp N2  &kp N3     &kp N4
+                                  &nop        &kp SPACE     &kp ESC    &kp BACKSPACE  &kp RET     &nop
             >;
 
             display-name = "NUM_";
@@ -974,10 +990,10 @@
 
         num_ru_ {
             bindings = <
-  &none     &kp BACKSPACE  &kp ESC    &kp DEL    &kp ASTERISK                            &kp LS(BACKSLASH)  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
-  &kp LGUI  &kp LALT       &kp LCTRL  &kp LSHFT  &kp PLUS                                &kp SLASH          &kp N5  &kp N6  &kp N7     &kp N8
-  &kp LALT  &kp LCTRL      &none      &kp LSHFT  &kp SPACE                               &kp LS(SLASH)      &kp N1  &kp N2  &kp N3     &kp N4
-                                      &nop       &kp SPACE     &kp ESC    &kp BACKSPACE  &kp RET            &nop
+  &none     &kp LALT   &kp LCTRL  &none      &kp ASTERISK                            &kp LS(BACKSLASH)  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
+  &kp LGUI  &kp LALT   &kp LCTRL  &kp LSHFT  &kp PLUS                                &kp SLASH          &kp N5  &kp N6  &kp N7     &kp N8
+  &kp LALT  &kp LCTRL  &none      &kp LSHFT  &kp SPACE                               &kp LS(SLASH)      &kp N1  &kp N2  &kp N3     &kp N4
+                                  &nop       &kp SPACE     &kp ESC    &kp BACKSPACE  &kp RET            &nop
             >;
 
             display-name = "NUM RU_";

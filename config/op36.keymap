@@ -979,10 +979,10 @@
 
         num_ {
             bindings = <
-  &none     &kp LALT   &kp LCTRL  &none       &kp ASTERISK                            &kp SLASH   &kp N9  &kp N0  &kp MINUS  &kp EQUAL
-  &kp LGUI  &kp LALT   &kp LCTRL  &kp LSHIFT  &kp PLUS                                &kp PERIOD  &kp N5  &kp N6  &kp N7     &kp N8
-  &kp LALT  &kp LCTRL  &none      &kp LSHIFT  &kp SPACE                               &kp COMMA   &kp N1  &kp N2  &kp N3     &kp N4
-                                  &nop        &kp SPACE     &kp ESC    &kp BACKSPACE  &kp RET     &nop
+  &none     &kp LALT   &kp LCTRL  &none       &kp ASTERISK                               &kp SLASH   &kp N9  &kp N0  &kp MINUS  &kp EQUAL
+  &kp LGUI  &kp LALT   &kp LCTRL  &kp LSHIFT  &kp PLUS                                   &kp PERIOD  &kp N5  &kp N6  &kp N7     &kp N8
+  &kp LALT  &kp LCTRL  &none      &kp LSHIFT  &kp SPACE                                  &kp COMMA   &kp N1  &kp N2  &kp N3     &kp N4
+                                  &nop        &tp LSHFT SPACE  &kp ESC    &kp BACKSPACE  &kp RET     &nop
             >;
 
             display-name = "NUM_";
@@ -990,10 +990,10 @@
 
         num_ru_ {
             bindings = <
-  &none     &kp LALT   &kp LCTRL  &none      &kp ASTERISK                            &kp LS(BACKSLASH)  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
-  &kp LGUI  &kp LALT   &kp LCTRL  &kp LSHFT  &kp PLUS                                &kp SLASH          &kp N5  &kp N6  &kp N7     &kp N8
-  &kp LALT  &kp LCTRL  &none      &kp LSHFT  &kp SPACE                               &kp LS(SLASH)      &kp N1  &kp N2  &kp N3     &kp N4
-                                  &nop       &kp SPACE     &kp ESC    &kp BACKSPACE  &kp RET            &nop
+  &none     &kp LALT   &kp LCTRL  &none      &kp ASTERISK                               &kp LS(BACKSLASH)  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
+  &kp LGUI  &kp LALT   &kp LCTRL  &kp LSHFT  &kp PLUS                                   &kp SLASH          &kp N5  &kp N6  &kp N7     &kp N8
+  &kp LALT  &kp LCTRL  &none      &kp LSHFT  &kp SPACE                                  &kp LS(SLASH)      &kp N1  &kp N2  &kp N3     &kp N4
+                                  &nop       &tp LSHFT SPACE  &kp ESC    &kp BACKSPACE  &kp RET            &nop
             >;
 
             display-name = "NUM RU_";

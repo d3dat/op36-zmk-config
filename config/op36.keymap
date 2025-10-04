@@ -788,10 +788,10 @@
 
         nav {
             bindings = <
-  &m_to_ru      &kp BACKSPACE  &kp ESCAPE    &key_repeat   &kp RET                                   &kp INS        &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
-  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT     &swap_win                                 &kp TAB        &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
-  &kp LC(Z)     &kp LC(X)      &lt 20 LC(C)  &tt 10 LC(V)  &swap_tab                                 &kp BACKSPACE  &kp RET   &kp COMMA  &kp DOT    &kp DEL
-                                             &nop          &tp LCTRL SPACE  &trans    &kp BACKSPACE  &kp RET        &nop
+  &none         &kp BACKSPACE  &kp ESCAPE  &key_repeat   &none                                      &kp INS        &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
+  &sk LEFT_GUI  &sk LALT       &sk LCTRL   &sk LSHFT     &swap_win                                  &kp TAB        &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
+  &kp LC(Z)     &kp LC(X)      &kp LC(C)   &tt 10 LC(V)  &swap_tab                                  &kp BACKSPACE  &kp RET   &kp COMMA  &kp DOT    &kp DEL
+                                           &nop          &tp LCTRL SPACE  &kp ESC    &kp BACKSPACE  &kp RET        &nop
             >;
 
             display-name = "NAV";
@@ -799,10 +799,10 @@
 
         nav_ru {
             bindings = <
-  &m_to_en      &kp BACKSPACE  &kp ESCAPE    &key_repeat   &kp RET                                   &kp INS        &kp HOME  &kp PG_UP     &kp PG_DN   &kp END
-  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT     &swap_win                                 &kp TAB        &kp LEFT  &kp UP        &kp DOWN    &kp RIGHT
-  &kp LC(Z)     &kp LC(X)      &lt 21 LC(C)  &tt 10 LC(V)  &swap_tab                                 &kp BACKSPACE  &kp RET   &kp RU_COMMA  &kp RU_DOT  &kp DEL
-                                             &nop          &tp LCTRL SPACE  &trans    &kp BACKSPACE  &kp RET        &nop
+  &none         &kp BACKSPACE  &kp ESCAPE  &key_repeat   &none                                      &kp INS        &kp HOME  &kp PG_UP     &kp PG_DN   &kp END
+  &sk LEFT_GUI  &sk LALT       &sk LCTRL   &sk LSHFT     &swap_win                                  &kp TAB        &kp LEFT  &kp UP        &kp DOWN    &kp RIGHT
+  &kp LC(Z)     &kp LC(X)      &kp LC(C)   &tt 10 LC(V)  &swap_tab                                  &kp BACKSPACE  &kp RET   &kp RU_COMMA  &kp RU_DOT  &kp DEL
+                                           &nop          &tp LCTRL SPACE  &kp ESC    &kp BACKSPACE  &kp RET        &nop
             >;
 
             display-name = "NAV RU";
@@ -854,10 +854,10 @@
 
         sym {
             bindings = <
-  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LT       &kp GT          &kp GRAVE                       &kp SQT       &kp LPAR         &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-  &kp AMPERSAND   &kp HASH         &kp AT_SIGN  &kp PIPE        &kp TILDE                       &kp PLUS      &kp MINUS        &kp DQT                &kp COLON         &kp SEMI
-  &kp PERCENT     &kp CARET        &kp DOLLAR   &kp UNDERSCORE  &kp BACKSLASH                   &kp QUESTION  &kp EXCLAMATION  &kp COMMA              &kp DOT           &kp SLASH
-                                                &nop            &trans         &trans    &none  &kp RET       &nop
+  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LT       &kp GT          &kp GRAVE                                     &kp SQT       &kp LPAR         &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+  &kp AMPERSAND   &kp HASH         &kp AT_SIGN  &kp PIPE        &kp TILDE                                     &kp PLUS      &kp MINUS        &kp DQT                &kp COLON         &kp SEMI
+  &kp PERCENT     &kp CARET        &kp DOLLAR   &kp UNDERSCORE  &kp BACKSLASH                                 &kp QUESTION  &kp EXCLAMATION  &kp COMMA              &kp DOT           &kp SLASH
+                                                &nop            &kp SPACE      &kp ASTERISK    &kp BACKSPACE  &kp RET       &nop
             >;
 
             display-name = "SYM";
@@ -865,10 +865,10 @@
 
         sym_ru {
             bindings = <
-  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LT       &kp GT          &kp GRAVE                       &kp SQT     &kp LPAR         &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-  &kp AMPERSAND   &kp HASH         &kp AT_SIGN  &kp PIPE        &kp TILDE                       &kp PLUS    &kp MINUS        &kp LS(N2)             &kp LS(N6)        &kp LS(N4)
-  &kp PERCENT     &kp CARET        &kp DOLLAR   &kp UNDERSCORE  &kp BACKSLASH                   &kp LS(N7)  &kp EXCLAMATION  &kp LS(SLASH)          &kp SLASH         &kp LS(BACKSLASH)
-                                                &nop            &trans         &trans    &none  &kp RET     &nop
+  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LT       &kp GT          &kp GRAVE                                     &kp SQT     &kp LPAR         &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+  &kp AMPERSAND   &kp HASH         &kp AT_SIGN  &kp PIPE        &kp TILDE                                     &kp PLUS    &kp MINUS        &kp LS(N2)             &kp LS(N6)        &kp LS(N4)
+  &kp PERCENT     &kp CARET        &kp DOLLAR   &kp UNDERSCORE  &kp BACKSLASH                                 &kp LS(N7)  &kp EXCLAMATION  &kp LS(SLASH)          &kp SLASH         &kp LS(BACKSLASH)
+                                                &nop            &kp SPACE      &kp ASTERISK    &kp BACKSPACE  &kp RET     &nop
             >;
 
             display-name = "SYM RU";
@@ -942,10 +942,10 @@
 
         sup {
             bindings = <
-  &none     &none     &none      &kp LSHFT  &none                             &kp PLUS      &kp MINUS      &kp DQT   &kp COLON      &kp SEMI
-  &kp LGUI  &kp LALT  &kp LCTRL  &none      &none                             &m_caps_word  &kp BACKSPACE  &kp RET   &m_warpd_hint  &kp ESC
-  &none     &none     &none      &none      &none                             &kp QMARK     &kp EXCL       &m_comma  &m_dot         &kp DEL
-                                 &nop       &kp SPACE  &kp ESC    &ssk LSHFT  &m_to_ru      &nop
+  &none     &none     &kp ASTERISK  &kp LSHFT  &none                             &kp PLUS      &kp MINUS      &kp DQT   &kp COLON      &kp SEMI
+  &kp LGUI  &kp LALT  &kp LCTRL     &none      &none                             &m_caps_word  &kp BACKSPACE  &kp RET   &m_warpd_hint  &kp ESC
+  &none     &none     &none         &none      &none                             &kp QMARK     &kp EXCL       &m_comma  &m_dot         &kp DEL
+                                    &nop       &kp SPACE  &kp ESC    &ssk LSHFT  &m_to_ru      &nop
             >;
 
             display-name = "SUP";
@@ -953,10 +953,10 @@
 
         sup_ru {
             bindings = <
-  &none     &none     &none      &kp LSHFT  &none                             &kp RU_PLUS      &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON   &kp RU_SEMICOLON
-  &kp LGUI  &kp LALT  &kp LCTRL  &none      &none                             &m_caps_word     &kp BACKSPACE  &kp RET      &m_warpd_hint  &kp ESC
-  &none     &none     &none      &none      &none                             &kp RU_QUESTION  &kp EXCL       &m_comma_ru  &m_dot_ru      &kp DEL
-                                 &nop       &kp SPACE  &kp ESC    &ssk LSHFT  &m_to_en         &nop
+  &none     &none     &kp ASTERISK  &kp LSHFT  &none                             &kp RU_PLUS      &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON   &kp RU_SEMICOLON
+  &kp LGUI  &kp LALT  &kp LCTRL     &none      &none                             &m_caps_word     &kp BACKSPACE  &kp RET      &m_warpd_hint  &kp ESC
+  &none     &none     &none         &none      &none                             &kp RU_QUESTION  &kp EXCL       &m_comma_ru  &m_dot_ru      &kp DEL
+                                    &nop       &kp SPACE  &kp ESC    &ssk LSHFT  &m_to_en         &nop
             >;
 
             display-name = "SUP RU";
@@ -1019,10 +1019,10 @@
 
         shift {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                      &kp MINUS      &m_caps_word  &kp LS(N2)     &kp LS(N6)  &kp LS(N4)
-  &trans  &trans  &trans  &trans  &trans                      &kp LS(EQUAL)  &ssk LSHFT    &ssk LCTRL     &ssk LALT   &ssk LGUI
-  &trans  &trans  &trans  &trans  &trans                      &kp LS(N7)     &kp LS(N1)    &kp LS(SLASH)  &kp SLASH   &kp LS(BACKSLASH)
-                          &nop    &kp SPACE  &kp 0    &trans  &trans         &nop
+  &trans  &trans  &trans  &trans  &trans                             &none         &none       &none       &none      &none
+  &trans  &trans  &trans  &trans  &trans                             &kp ASTERISK  &ssk LSHFT  &ssk LCTRL  &ssk LALT  &ssk LGUI
+  &trans  &trans  &trans  &trans  &trans                             &none         &kp RET     &none       &none      &none
+                          &nop    &kp SPACE  &kp 0    &kp BACKSPACE  &kp RET       &nop
             >;
 
             display-name = "SHIFT";

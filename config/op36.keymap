@@ -781,7 +781,7 @@
             bindings = <
   &none         &kp BACKSPACE  &kp ESCAPE  &key_repeat   &none                                      &kp INS        &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
   &sk LEFT_GUI  &sk LALT       &sk LCTRL   &sk LSHFT     &swap_win                                  &kp TAB        &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
-  &kp LC(Z)     &kp LC(X)      &kp LC(C)   &tt 11 LC(V)  &swap_tab                                  &kp BACKSPACE  &kp RET   &kp COMMA  &kp DOT    &kp DEL
+  &kp LC(Z)     &kp LC(X)      &kp LC(C)   &lt 11 LC(V)  &swap_tab                                  &kp BACKSPACE  &kp RET   &kp COMMA  &kp DOT    &kp DEL
                                            &nop          &tp LCTRL SPACE  &kp ESC    &kp BACKSPACE  &kp RET        &nop
             >;
 
@@ -792,7 +792,7 @@
             bindings = <
   &none         &kp BACKSPACE  &kp ESCAPE  &key_repeat   &none                                      &kp INS        &kp HOME  &kp PG_UP     &kp PG_DN   &kp END
   &sk LEFT_GUI  &sk LALT       &sk LCTRL   &sk LSHFT     &swap_win                                  &kp TAB        &kp LEFT  &kp UP        &kp DOWN    &kp RIGHT
-  &kp LC(Z)     &kp LC(X)      &kp LC(C)   &tt 11 LC(V)  &swap_tab                                  &kp BACKSPACE  &kp RET   &kp RU_COMMA  &kp RU_DOT  &kp DEL
+  &kp LC(Z)     &kp LC(X)      &kp LC(C)   &lt 11 LC(V)  &swap_tab                                  &kp BACKSPACE  &kp RET   &kp RU_COMMA  &kp RU_DOT  &kp DEL
                                            &nop          &tp LCTRL SPACE  &kp ESC    &kp BACKSPACE  &kp RET        &nop
             >;
 
@@ -878,10 +878,10 @@
 
         fn {
             bindings = <
-  &none     &none     &none      &none      &none                            &none    &m_fn F9  &m_fn F10  &m_fn F11  &m_fn F12
-  &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &none                            &none    &m_fn F5  &m_fn F6   &m_fn F7   &m_fn F8
-  &none     &none     &none      &none      &none                            &none    &m_fn F1  &m_fn F2   &m_fn F3   &m_fn F4
-                                 &none      &sk LALT  &kp ESC    &ssk LSHFT  &kp RET  &nop
+  &none     &none     &none      &none      &none                               &none      &m_fn F9  &m_fn F10  &m_fn F11  &m_fn F12
+  &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &none                               &none      &m_fn F5  &m_fn F6   &m_fn F7   &m_fn F8
+  &none     &none     &none      &none      &none                               &none      &m_fn F1  &m_fn F2   &m_fn F3   &m_fn F4
+                                 &none      &kp LSHFT  &m_fn ESC    &ssk LSHFT  &m_fn RET  &nop
             >;
 
             display-name = "FN";
@@ -901,8 +901,8 @@
         hint {
             bindings = <
   &kp Q  &kp W  &kp E  &kp R  &kp T                         &kp Y           &kp U  &kp I           &kp O         &kp P
-  &kp A  &kp S  &kp D  &kp F  &kp G                         &kp H           &kp J  &kp K           &kp L         &m_warpd_click
-  &kp Z  &kp X  &kp C  &kp V  &kp B                         &kp N           &kp M  &m_warpd_click  &m_warpd_esc  &m_warpd_esc
+  &kp A  &kp S  &kp D  &kp F  &kp G                         &kp H           &kp J  &kp K           &kp L         &kp SEMI
+  &kp Z  &kp X  &kp C  &kp V  &kp B                         &kp N           &kp M  &m_warpd_click  &m_warpd_esc  &kp SLASH
                        &nop   &none  &m_warpd_esc    &none  &m_warpd_click  &nop
             >;
 

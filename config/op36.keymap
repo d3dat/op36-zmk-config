@@ -766,10 +766,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &kp Q  &kp W      &hlt 8 E  &hlt 20 R  &kp T                                         &kp Y           &kp U  &hlt 8 I   &kp O    &kp P
-  &kp A  &hlt 10 S  &hlt 2 D  &hlt 16 F  &hlt 23 G                                     &kp H           &kp J  &hlt 2 K   &kp L    &kp SEMI
-  &kp Z  &kp X      &kp C     &hlt 23 V  &kp B                                         &kp N           &kp M  &kp COMMA  &kp DOT  &kp FSLH
-                              &nop       &lt 2 SPACE  &lt_esc 20 0    &mo_ssk 8 LSHFT  &mo_to_ru 15 0  &none
+  &kp Q      &hlt 20 S  &hlt 8 E  &kp R      &kp T                                         &kp Y           &kp U  &hlt 8 I   &kp O    &kp P
+  &hlt 23 A  &hlt 10 S  &hlt 2 D  &hlt 16 F  &hlt 23 G                                     &kp H           &kp J  &hlt 2 K   &kp L    &kp SEMI
+  &kp Z      &kp X      &kp C     &kp V      &kp B                                         &kp N           &kp M  &kp COMMA  &kp DOT  &kp FSLH
+                                  &nop       &lt 2 SPACE  &lt_esc 20 0    &mo_ssk 8 LSHFT  &mo_to_ru 15 0  &none
             >;
 
             display-name = "EN";
@@ -777,10 +777,10 @@
 
         ru {
             bindings = <
-  &trans  &trans     &hlt_sym 0 E  &hlt 21 R  &trans                                            &trans          &trans      &hlt_sym 0 I  &tp LBKT O  &tp LBKT P
-  &trans  &hlt 10 S  &hlt 3 D      &hlt 17 F  &hlt 23 G                                         &trans          &trans      &hlt 3 K      &trans      &tp SQT SEMI
-  &trans  &trans     &trans        &hlt 23 V  &trans                                            &trans          &tp RBKT M  &trans        &trans      &trans
-                                   &nop       &lt 3 SPACE  &lt_esc 21 0    &mo_sym_ssk 0 LSHFT  &mo_to_en 15 0  &none
+  &trans     &hlt 21 W  &hlt_sym 0 E  &trans     &trans                                            &trans          &trans      &hlt_sym 0 I  &tp LBKT O  &tp LBKT P
+  &hlt 23 A  &hlt 10 S  &hlt 3 D      &hlt 17 F  &hlt 23 G                                         &trans          &trans      &hlt 3 K      &trans      &tp SQT SEMI
+  &trans     &trans     &trans        &trans     &trans                                            &trans          &tp RBKT M  &trans        &trans      &trans
+                                      &nop       &lt 3 SPACE  &lt_esc 21 0    &mo_sym_ssk 0 LSHFT  &mo_to_en 15 0  &none
             >;
 
             display-name = "RU";
@@ -986,10 +986,10 @@
 
         num_ {
             bindings = <
-  &none     &kp LALT   &kp LCTRL  &none       &kp ASTERISK                               &kp SLASH   &kp N9  &kp N0  &kp MINUS  &kp EQUAL
-  &kp LGUI  &kp LALT   &kp LCTRL  &kp LSHIFT  &kp PLUS                                   &kp PERIOD  &kp N5  &kp N6  &kp N7     &kp N8
-  &kp LALT  &kp LCTRL  &none      &kp LSHIFT  &kp SPACE                                  &kp COMMA   &kp N1  &kp N2  &kp N3     &kp N4
-                                  &nop        &tp LSHFT SPACE  &kp ESC    &kp BACKSPACE  &kp RET     &nop
+  &kp LGUI  &none     &kp LCTRL  &kp LSHFT   &kp ASTERISK                              &kp SLASH   &kp N9  &kp N0  &kp MINUS  &kp EQUAL
+  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &kp PLUS                                  &kp PERIOD  &kp N5  &kp N6  &kp N7     &kp N8
+  &kp LGUI  &none     &kp LCTRL  &kp LSHIFT  &none                                     &kp COMMA   &kp N1  &kp N2  &kp N3     &kp N4
+                                 &nop        &tp LALT SPACE  &kp ESC    &kp BACKSPACE  &kp RET     &nop
             >;
 
             display-name = "NUM_";
@@ -997,10 +997,10 @@
 
         num_ru_ {
             bindings = <
-  &none     &kp LALT   &kp LCTRL  &none      &kp ASTERISK                               &kp LS(BACKSLASH)  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
-  &kp LGUI  &kp LALT   &kp LCTRL  &kp LSHFT  &kp PLUS                                   &kp SLASH          &kp N5  &kp N6  &kp N7     &kp N8
-  &kp LALT  &kp LCTRL  &none      &kp LSHFT  &kp SPACE                                  &kp LS(SLASH)      &kp N1  &kp N2  &kp N3     &kp N4
-                                  &nop       &tp LSHFT SPACE  &kp ESC    &kp BACKSPACE  &kp RET            &nop
+  &kp LGUI      &none     &kp LCTRL  &kp LSHFT  &kp ASTERISK                              &kp LS(BACKSLASH)  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
+  &kp LGUI      &kp LALT  &kp LCTRL  &kp LSHFT  &kp PLUS                                  &kp SLASH          &kp N5  &kp N6  &kp N7     &kp N8
+  &kp LEFT_WIN  &none     &kp LCTRL  &kp LSHFT  &none                                     &kp LS(SLASH)      &kp N1  &kp N2  &kp N3     &kp N4
+                                     &nop       &tp LALT SPACE  &kp ESC    &kp BACKSPACE  &kp RET            &nop
             >;
 
             display-name = "NUM RU_";

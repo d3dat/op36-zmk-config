@@ -791,10 +791,10 @@
 
         nav {
             bindings = <
-  &none         &kp BACKSPACE  &kp ESCAPE  &key_repeat     &none                                      &kp INS        &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
-  &sk LEFT_GUI  &mo_sk 6 LALT  &sk LCTRL   &mo_sk 4 LSHFT  &swap_win                                  &kp TAB        &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
-  &kp LC(Z)     &kp LC(X)      &kp LC(C)   &lt 11 LC(V)    &swap_tab                                  &kp BACKSPACE  &kp RET   &kp COMMA  &kp DOT    &kp DEL
-                                           &nop            &tp LCTRL SPACE  &kp ESC    &kp BACKSPACE  &kp RET        &nop
+  &mo 4         &kp BACKSPACE  &kp ESCAPE   &key_repeat   &none                                      &kp INS        &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
+  &sk LEFT_GUI  &sk LALT       &sk LCTRL    &sk LSHFT     &swap_win                                  &kp TAB        &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
+  &kp LC(Z)     &kp LC(X)      &lt 6 LC(C)  &lt 11 LC(V)  &swap_tab                                  &kp BACKSPACE  &kp RET   &kp COMMA  &kp DOT    &kp DEL
+                                            &nop          &tp LCTRL SPACE  &kp ESC    &kp BACKSPACE  &kp RET        &nop
             >;
 
             display-name = "NAV";
@@ -802,10 +802,10 @@
 
         nav_ru {
             bindings = <
-  &none         &kp BACKSPACE  &kp ESCAPE  &key_repeat     &none                                      &kp INS        &kp HOME  &kp PG_UP     &kp PG_DN   &kp END
-  &sk LEFT_GUI  &mo_sk 7 LALT  &sk LCTRL   &mo_sk 5 LSHFT  &swap_win                                  &kp TAB        &kp LEFT  &kp UP        &kp DOWN    &kp RIGHT
-  &kp LC(Z)     &kp LC(X)      &kp LC(C)   &lt 11 LC(V)    &swap_tab                                  &kp BACKSPACE  &kp RET   &kp RU_COMMA  &kp RU_DOT  &kp DEL
-                                           &nop            &tp LCTRL SPACE  &kp ESC    &kp BACKSPACE  &kp RET        &nop
+  &mo 5         &kp BACKSPACE  &kp ESCAPE   &key_repeat   &none                                      &kp INS        &kp HOME  &kp PG_UP     &kp PG_DN   &kp END
+  &sk LEFT_GUI  &mo_sk 7 LALT  &sk LCTRL    &sk LSHFT     &swap_win                                  &kp TAB        &kp LEFT  &kp UP        &kp DOWN    &kp RIGHT
+  &kp LC(Z)     &kp LC(X)      &lt 7 LC(C)  &lt 11 LC(V)  &swap_tab                                  &kp BACKSPACE  &kp RET   &kp RU_COMMA  &kp RU_DOT  &kp DEL
+                                            &nop          &tp LCTRL SPACE  &kp ESC    &kp BACKSPACE  &kp RET        &nop
             >;
 
             display-name = "NAV RU";

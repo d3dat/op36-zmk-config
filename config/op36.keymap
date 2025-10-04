@@ -231,9 +231,9 @@
             bindings = <&mo>, <&kp>;
         };
 
-        mo_ssk: mo_ssk {
+        mo_lshift: mo_lshift {
             compatible = "zmk,behavior-hold-tap";
-            label = "MO_SSK";
+            label = "MO_LSHIFT";
             bindings = <&mo>, <&mm_lshift>;
 
             #binding-cells = <2>;
@@ -313,6 +313,18 @@
             tapping-term-ms = <200>;
             require-prior-idle-ms = <50>;
             flavor = "tap-preferred";
+        };
+
+        mo_sk: mo_sk {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            hold-trigger-on-release;
+            label = "MO_SK";
+            bindings = <&mo>, <&sk>;
         };
     };
 
@@ -757,10 +769,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &kp Q      &hlt 6 W   &hlt 8 E  &kp R     &kp T                                        &kp Y           &kp U  &hlt 8 I   &kp O    &kp P
-  &hlt 10 A  &hlt 11 S  &hlt 2 D  &hlt 4 F  &hlt 10 G                                    &kp H           &kp J  &hlt 2 K   &kp L    &kp SEMI
-  &kp Z      &kp X      &kp C     &kp V     &kp B                                        &kp N           &kp M  &kp COMMA  &kp DOT  &kp FSLH
-                                  &nop      &lt 2 SPACE  &lt_esc 6 0    &mo_ssk 8 LSHFT  &mo_to_ru 12 0  &none
+  &kp Q      &kp W     &hlt 8 E  &kp R      &kp T                                           &kp Y           &kp U  &hlt 8 I   &kp O    &kp P
+  &hlt 10 A  &hlt 6 S  &hlt 2 D  &hlt 4 F   &hlt 10 G                                       &kp H           &kp J  &hlt 2 K   &kp L    &kp SEMI
+  &kp Z      &kp X     &kp C     &hlt 11 V  &kp B                                           &kp N           &kp M  &kp COMMA  &kp DOT  &kp FSLH
+                                 &nop       &lt 2 SPACE  &lt_esc 6 0    &mo_lshift 8 LSHFT  &mo_to_ru 12 0  &none
             >;
 
             display-name = "EN";
@@ -768,10 +780,10 @@
 
         ru {
             bindings = <
-  &trans     &hlt 7 W   &hlt_sym 0 E  &trans    &trans                                           &trans          &trans      &hlt_sym 0 I  &tp LBKT O  &tp LBKT P
-  &hlt 10 A  &hlt 11 S  &hlt 3 D      &hlt 5 F  &hlt 10 G                                        &trans          &trans      &hlt 3 K      &trans      &tp SQT SEMI
-  &trans     &trans     &trans        &trans    &trans                                           &trans          &tp RBKT M  &trans        &trans      &trans
-                                      &nop      &lt 3 SPACE  &lt_esc 7 0    &mo_sym_ssk 0 LSHFT  &mo_to_en 12 0  &none
+  &trans     &trans    &hlt_sym 0 E  &trans     &trans                                           &trans          &trans      &hlt_sym 0 I  &tp LBKT O  &tp LBKT P
+  &hlt 10 A  &hlt 7 S  &hlt 3 D      &hlt 5 F   &hlt 10 G                                        &trans          &trans      &hlt 3 K      &trans      &tp SQT SEMI
+  &trans     &trans    &trans        &hlt 11 V  &trans                                           &trans          &tp RBKT M  &trans        &trans      &trans
+                                     &nop       &lt 3 SPACE  &lt_esc 7 0    &mo_sym_ssk 0 LSHFT  &mo_to_en 12 0  &none
             >;
 
             display-name = "RU";
@@ -779,10 +791,10 @@
 
         nav {
             bindings = <
-  &none         &kp BACKSPACE  &kp ESCAPE  &key_repeat   &none                                      &kp INS        &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
-  &sk LEFT_GUI  &sk LALT       &sk LCTRL   &sk LSHFT     &swap_win                                  &kp TAB        &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
-  &kp LC(Z)     &kp LC(X)      &kp LC(C)   &lt 11 LC(V)  &swap_tab                                  &kp BACKSPACE  &kp RET   &kp COMMA  &kp DOT    &kp DEL
-                                           &nop          &tp LCTRL SPACE  &kp ESC    &kp BACKSPACE  &kp RET        &nop
+  &none         &kp BACKSPACE  &kp ESCAPE  &key_repeat     &none                                      &kp INS        &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
+  &sk LEFT_GUI  &mo_sk 6 LALT  &sk LCTRL   &mo_sk 4 LSHFT  &swap_win                                  &kp TAB        &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
+  &kp LC(Z)     &kp LC(X)      &kp LC(C)   &lt 11 LC(V)    &swap_tab                                  &kp BACKSPACE  &kp RET   &kp COMMA  &kp DOT    &kp DEL
+                                           &nop            &tp LCTRL SPACE  &kp ESC    &kp BACKSPACE  &kp RET        &nop
             >;
 
             display-name = "NAV";
@@ -790,10 +802,10 @@
 
         nav_ru {
             bindings = <
-  &none         &kp BACKSPACE  &kp ESCAPE  &key_repeat   &none                                      &kp INS        &kp HOME  &kp PG_UP     &kp PG_DN   &kp END
-  &sk LEFT_GUI  &sk LALT       &sk LCTRL   &sk LSHFT     &swap_win                                  &kp TAB        &kp LEFT  &kp UP        &kp DOWN    &kp RIGHT
-  &kp LC(Z)     &kp LC(X)      &kp LC(C)   &lt 11 LC(V)  &swap_tab                                  &kp BACKSPACE  &kp RET   &kp RU_COMMA  &kp RU_DOT  &kp DEL
-                                           &nop          &tp LCTRL SPACE  &kp ESC    &kp BACKSPACE  &kp RET        &nop
+  &none         &kp BACKSPACE  &kp ESCAPE  &key_repeat     &none                                      &kp INS        &kp HOME  &kp PG_UP     &kp PG_DN   &kp END
+  &sk LEFT_GUI  &mo_sk 7 LALT  &sk LCTRL   &mo_sk 5 LSHFT  &swap_win                                  &kp TAB        &kp LEFT  &kp UP        &kp DOWN    &kp RIGHT
+  &kp LC(Z)     &kp LC(X)      &kp LC(C)   &lt 11 LC(V)    &swap_tab                                  &kp BACKSPACE  &kp RET   &kp RU_COMMA  &kp RU_DOT  &kp DEL
+                                           &nop            &tp LCTRL SPACE  &kp ESC    &kp BACKSPACE  &kp RET        &nop
             >;
 
             display-name = "NAV RU";

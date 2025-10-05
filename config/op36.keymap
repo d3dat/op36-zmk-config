@@ -814,7 +814,7 @@
         alt {
             bindings = <
   &none     &mo 2     &kp ESC    &kp LSHFT  &none                             &kp PLUS      &kp MINUS      &kp DQT   &kp COLON      &kp SEMI
-  &kp LGUI  &kp LALT  &kp LCTRL  &none      &none                             &m_caps_word  &kp BACKSPACE  &kp RET   &m_warpd_hint  &kp ASTERISK
+  &kp LGUI  &kp LALT  &kp LCTRL  &none      &none                             &m_caps_word  &kp BACKSPACE  &kp RET   &m_warpd_hint  &kp ESC
   &none     &none     &none      &none      &none                             &kp QMARK     &kp EXCL       &m_comma  &m_dot         &kp DEL
                                  &nop       &kp SPACE  &kp ESC    &ssk LSHFT  &m_to_ru      &nop
             >;
@@ -825,7 +825,7 @@
         alt_ru {
             bindings = <
   &none     &mo 3     &kp ESC    &kp LSHFT  &none                             &kp RU_PLUS      &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON   &kp RU_SEMICOLON
-  &kp LGUI  &kp LALT  &kp LCTRL  &none      &none                             &m_caps_word     &kp BACKSPACE  &kp RET      &m_warpd_hint  &kp ASTERISK
+  &kp LGUI  &kp LALT  &kp LCTRL  &none      &none                             &m_caps_word     &kp BACKSPACE  &kp RET      &m_warpd_hint  &kp ESC
   &none     &none     &none      &none      &none                             &kp RU_QUESTION  &kp EXCL       &m_comma_ru  &m_dot_ru      &kp DEL
                                  &nop       &kp SPACE  &kp ESC    &ssk LSHFT  &m_to_en         &nop
             >;
@@ -835,10 +835,10 @@
 
         num {
             bindings = <
-  &none     &none     &none      &none       &kp ASTERISK                              &kp SLASH   &kp N9  &kp N0  &kp MINUS  &kp EQUAL
-  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &kp PLUS                                  &kp PERIOD  &kp N5  &kp N6  &kp N7     &kp N8
-  &none     &none     &none      &none       &none                                     &kp COMMA   &kp N1  &kp N2  &kp N3     &kp N4
-                                 &nop        &tp LALT SPACE  &kp ESC    &kp BACKSPACE  &kp RET     &nop
+  &none     &none     &kp ESC    &kp BACKSPACE  &kp ASTERISK                              &kp SLASH   &kp N9  &kp N0  &kp MINUS  &kp EQUAL
+  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT     &kp PLUS                                  &kp PERIOD  &kp N5  &kp N6  &kp N7     &kp N8
+  &none     &none     &none      &none          &none                                     &kp COMMA   &kp N1  &kp N2  &kp N3     &kp N4
+                                 &nop           &tp LALT SPACE  &kp ESC    &kp BACKSPACE  &kp RET     &nop
             >;
 
             display-name = "NUM";
@@ -846,10 +846,10 @@
 
         num_ru {
             bindings = <
-  &none     &none     &none      &none      &kp ASTERISK                              &kp LS(BACKSLASH)  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
-  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp PLUS                                  &kp SLASH          &kp N5  &kp N6  &kp N7     &kp N8
-  &none     &none     &none      &none      &none                                     &kp LS(SLASH)      &kp N1  &kp N2  &kp N3     &kp N4
-                                 &nop       &tp LALT SPACE  &kp ESC    &kp BACKSPACE  &kp RET            &nop
+  &none     &none     &kp ESC    &kp BACKSPACE  &kp ASTERISK                              &kp LS(BACKSLASH)  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
+  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT      &kp PLUS                                  &kp SLASH          &kp N5  &kp N6  &kp N7     &kp N8
+  &none     &none     &none      &none          &none                                     &kp LS(SLASH)      &kp N1  &kp N2  &kp N3     &kp N4
+                                 &nop           &tp LALT SPACE  &kp ESC    &kp BACKSPACE  &kp RET            &nop
             >;
 
             display-name = "NUM RU";

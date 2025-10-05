@@ -813,7 +813,7 @@
 
         alt {
             bindings = <
-  &none     &none     &kp ESC    &kp LSHFT  &none                             &kp PLUS      &kp MINUS      &kp DQT   &kp COLON      &kp SEMI
+  &none     &mo 2     &kp ESC    &kp LSHFT  &none                             &kp PLUS      &kp MINUS      &kp DQT   &kp COLON      &kp SEMI
   &kp LGUI  &kp LALT  &kp LCTRL  &none      &none                             &m_caps_word  &kp BACKSPACE  &kp RET   &m_warpd_hint  &kp ASTERISK
   &none     &none     &none      &none      &none                             &kp QMARK     &kp EXCL       &m_comma  &m_dot         &kp DEL
                                  &nop       &kp SPACE  &kp ESC    &ssk LSHFT  &m_to_ru      &nop
@@ -824,7 +824,7 @@
 
         alt_ru {
             bindings = <
-  &none     &none     &kp ESC    &kp LSHFT  &none                             &kp RU_PLUS      &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON   &kp RU_SEMICOLON
+  &none     &mo 3     &kp ESC    &kp LSHFT  &none                             &kp RU_PLUS      &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON   &kp RU_SEMICOLON
   &kp LGUI  &kp LALT  &kp LCTRL  &none      &none                             &m_caps_word     &kp BACKSPACE  &kp RET      &m_warpd_hint  &kp ASTERISK
   &none     &none     &none      &none      &none                             &kp RU_QUESTION  &kp EXCL       &m_comma_ru  &m_dot_ru      &kp DEL
                                  &nop       &kp SPACE  &kp ESC    &ssk LSHFT  &m_to_en         &nop

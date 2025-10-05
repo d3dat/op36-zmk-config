@@ -791,10 +791,10 @@
 
         nav {
             bindings = <
-  &none         &kp BACKSPACE  &kp ESCAPE    &key_repeat  &none                                      &kp INS        &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
-  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT    &swap_win                                  &kp TAB        &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
-  &kp LC(Z)     &lt 6 LC(X)    &lt 11 LC(C)  &lt 4 LC(V)  &swap_tab                                  &kp BACKSPACE  &kp RET   &kp COMMA  &kp DOT    &kp DEL
-                                             &nop         &tp LCTRL SPACE  &kp ESC    &kp BACKSPACE  &kp RET        &nop
+  &none         &kp BACKSPACE  &kp ESCAPE    &key_repeat  &none                                &kp INS        &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
+  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT    &swap_win                            &kp TAB        &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
+  &kp LC(Z)     &lt 6 LC(X)    &lt 11 LC(C)  &lt 4 LC(V)  &swap_tab                            &kp BACKSPACE  &kp RET   &kp COMMA  &kp DOT    &kp DEL
+                                             &nop         &kp SPACE  &kp ESC    &kp BACKSPACE  &kp RET        &nop
             >;
 
             display-name = "NAV";
@@ -802,10 +802,10 @@
 
         nav_ru {
             bindings = <
-  &none         &kp BACKSPACE  &kp ESCAPE    &key_repeat  &none                                      &kp INS        &kp HOME  &kp PG_UP     &kp PG_DN   &kp END
-  &sk LEFT_GUI  &mo_sk 7 LALT  &sk LCTRL     &sk LSHFT    &swap_win                                  &kp TAB        &kp LEFT  &kp UP        &kp DOWN    &kp RIGHT
-  &kp LC(Z)     &lt 7 LC(X)    &lt 11 LC(C)  &lt 5 LC(V)  &swap_tab                                  &kp BACKSPACE  &kp RET   &kp RU_COMMA  &kp RU_DOT  &kp DEL
-                                             &nop         &tp LCTRL SPACE  &kp ESC    &kp BACKSPACE  &kp RET        &nop
+  &none         &kp BACKSPACE  &kp ESCAPE    &key_repeat  &none                                &kp INS        &kp HOME  &kp PG_UP     &kp PG_DN   &kp END
+  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT    &swap_win                            &kp TAB        &kp LEFT  &kp UP        &kp DOWN    &kp RIGHT
+  &kp LC(Z)     &lt 7 LC(X)    &lt 11 LC(C)  &lt 5 LC(V)  &swap_tab                            &kp BACKSPACE  &kp RET   &kp RU_COMMA  &kp RU_DOT  &kp DEL
+                                             &nop         &kp SPACE  &kp ESC    &kp BACKSPACE  &kp RET        &nop
             >;
 
             display-name = "NAV RU";
@@ -813,10 +813,10 @@
 
         alt {
             bindings = <
-  &none     &mo 2     &kp ESC    &kp LSHFT  &none                             &kp PLUS      &kp MINUS      &kp DQT   &kp COLON      &kp SEMI
-  &kp LGUI  &kp LALT  &kp LCTRL  &none      &none                             &m_caps_word  &kp BACKSPACE  &kp RET   &m_warpd_hint  &kp ESC
-  &none     &none     &none      &none      &none                             &kp QMARK     &kp EXCL       &m_comma  &m_dot         &kp DEL
-                                 &nop       &kp SPACE  &kp ESC    &ssk LSHFT  &m_to_ru      &nop
+  &none     &none     &kp ESC    &kp LSHFT  &none                               &kp PLUS      &kp MINUS      &kp DQT   &kp COLON      &kp SEMI
+  &kp LGUI  &kp LALT  &kp LCTRL  &none      &none                               &m_caps_word  &kp BACKSPACE  &kp RET   &m_warpd_hint  &kp ESC
+  &none     &none     &none      &none      &none                               &kp QMARK     &kp EXCL       &m_comma  &m_dot         &kp DEL
+                                 &nop       &lt 2 SPACE  &kp ESC    &ssk LSHFT  &m_to_ru      &nop
             >;
 
             display-name = "ALT";
@@ -824,10 +824,10 @@
 
         alt_ru {
             bindings = <
-  &none     &mo 3     &kp ESC    &kp LSHFT  &none                             &kp RU_PLUS      &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON   &kp RU_SEMICOLON
-  &kp LGUI  &kp LALT  &kp LCTRL  &none      &none                             &m_caps_word     &kp BACKSPACE  &kp RET      &m_warpd_hint  &kp ESC
-  &none     &none     &none      &none      &none                             &kp RU_QUESTION  &kp EXCL       &m_comma_ru  &m_dot_ru      &kp DEL
-                                 &nop       &kp SPACE  &kp ESC    &ssk LSHFT  &m_to_en         &nop
+  &none     &none     &kp ESC    &kp LSHFT  &none                               &kp RU_PLUS      &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON   &kp RU_SEMICOLON
+  &kp LGUI  &kp LALT  &kp LCTRL  &none      &none                               &m_caps_word     &kp BACKSPACE  &kp RET      &m_warpd_hint  &kp ESC
+  &none     &none     &none      &none      &none                               &kp RU_QUESTION  &kp EXCL       &m_comma_ru  &m_dot_ru      &kp DEL
+                                 &nop       &lt 3 SPACE  &kp ESC    &ssk LSHFT  &m_to_en         &nop
             >;
 
             display-name = "ALT RU";

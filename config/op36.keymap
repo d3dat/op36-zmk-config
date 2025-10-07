@@ -930,10 +930,10 @@
 
         nav2 {
             bindings = <
-  &none     &none     &none      &none      &none                  &none    &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
-  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                  &kp TAB  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
-  &none     &none     &none      &none      &none                  &none    &none     &kp COMMA  &kp DOT    &none
-                                 &none      &none  &none    &none  &none    &none
+  &none     &none     &none      &none      &none                                &none          &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
+  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                                &kp TAB        &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
+  &none     &none     &none      &none      &none                                &kp BACKSPACE  &kp RET   &kp COMMA  &kp DOT    &none
+                                 &none      &kp SPACE  &kp ESC    &kp BACKSPACE  &kp RET        &none
             >;
 
             label = "NAV2";

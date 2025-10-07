@@ -930,10 +930,10 @@
 
         nav2 {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                    &trans   &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
-  &trans  &trans  &trans  &trans  &trans                    &kp TAB  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
-  &trans  &trans  &trans  &trans  &trans                    &trans   &trans    &trans     &trans     &trans
-                          &trans  &trans  &trans    &trans  &trans   &trans
+  &trans    &trans    &trans     &trans  &trans                    &trans   &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
+  &kp LGUI  &kp LALT  &kp LCTRL  &trans  &trans                    &kp TAB  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
+  &trans    &trans    &trans     &trans  &trans                    &trans   &trans    &trans     &trans     &trans
+                                 &trans  &trans  &trans    &trans  &trans   &trans
             >;
         };
 

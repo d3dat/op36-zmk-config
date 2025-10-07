@@ -953,10 +953,10 @@
         sym2 {
             display-name = "SYM2";
             bindings = <
-  &none     &none     &none      &none      &none                                      &kp SQT    &kp LBKT    &kp RBKT     &kp LEFT_BRACE  &kp RIGHT_BRACE
-  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                                      &kp CARET  &kp DOLLAR  &kp AT_SIGN  &kp HASH        &kp AMPERSAND
-  &none     &none     &none      &none      &none                                      &kp TILDE  &kp PIPE    &kp LT       &kp GT          &kp BACKSLASH
-                                 &nop       &tp LSHFT SPACE  &kp ESC    &kp BACKSPACE  &kp RET    &nop
+  &none     &none     &none      &none      &none                                      &kp GRAVE      &kp LBKT        &kp RBKT     &kp SQT   &kp PERCENT
+  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                                      &kp CARET      &kp DOLLAR      &kp AT_SIGN  &kp HASH  &kp AMPERSAND
+  &none     &none     &none      &none      &none                                      &kp BACKSLASH  &kp UNDERSCORE  &kp LT       &kp GT    &kp QUESTION
+                                 &nop       &tp LSHFT SPACE  &kp ESC    &kp BACKSPACE  &kp RET        &nop
             >;
         };
 

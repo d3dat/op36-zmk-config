@@ -834,7 +834,7 @@
   &none     &none     &kp ESC    &kp LSHFT  &none                                &kp RU_PLUS      &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON   &kp RU_SEMICOLON
   &kp LGUI  &kp LALT  &kp LCTRL  &none      &none                                &m_caps_word     &kp BACKSPACE  &kp RET      &m_warpd_hint  &kp ESC
   &none     &none     &none      &none      &none                                &kp RU_QUESTION  &kp EXCL       &m_comma_ru  &m_dot_ru      &kp DEL
-                                 &nop       &lt 15 SPACE  &kp ESC    &ssk LSHFT  &m_to_en         &nop
+                                 &nop       &lt 16 SPACE  &kp ESC    &ssk LSHFT  &m_to_en         &nop
             >;
 
             display-name = "ALT RU";
@@ -939,6 +939,16 @@
             label = "NAV2";
         };
 
+        sym2 {
+            display-name = "SYM2";
+            bindings = <
+  &none      &none      &none        &none       &kp GRAVE                                &kp SQT         &kp LBKT  &kp RBKT      &kp LEFT_BRACE  &kp RIGHT_BRACE
+  &kp PRCNT  &kp CARET  &kp AT_SIGN  &kp DOLLAR  &kp BACKSLASH                            &kp UNDERSCORE  &kp LPAR  &kp RPAR      &kp LT          &kp GT
+  &none      &none      &none        &none       &none                                    &kp TILDE       &kp PIPE  &kp ASTERISK  &kp HASH        &kp AMPERSAND
+                                     &nop        &kp SPACE      &kp ESC    &kp BACKSPACE  &kp RET         &nop
+            >;
+        };
+
         nav2_ru {
             bindings = <
   &none     &none     &none      &none      &none                  &none    &kp HOME  &kp PG_UP     &kp PG_DN   &kp END
@@ -988,7 +998,7 @@
   &msc SCRL_LEFT     &msc SCRL_DOWN     &msc SCRL_UP  &msc SCRL_RIGHT  &trans                               &trans            &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN    &msc SCRL_RIGHT
   &mmv MOVE_X(-100)  &mmv MOVE_X(-600)  &mkp RCLK     &mkp LCLK        &trans                               &trans            &mkp LCLK       &mkp RCLK     &mmv MOVE_X(600)  &mmv MOVE_X(100)
   &trans             &kp LALT           &kp LCTRL     &kp LSHFT        &trans                               &trans            &kp RSHFT       &kp RCTRL     &kp RALT          &trans
-                                                      &nop             &mmv MOVE_Y(-600)  &tog 24    &none  &mmv MOVE_Y(600)  &nop
+                                                      &nop             &mmv MOVE_Y(-600)  &tog 25    &none  &mmv MOVE_Y(600)  &nop
             >;
 
             display-name = "X MOUSE";
@@ -1029,9 +1039,9 @@
 
         x_cmd_alt {
             bindings = <
-  &none  &tog 24  &m_warpd_hint  &none      &none                       &none   &none      &m_to_ru       &none     &none
+  &none  &tog 25  &m_warpd_hint  &none      &none                       &none   &none      &m_to_ru       &none     &none
   &none  &none    &m_caps_word   &sk LSHFT  &none                       &none   &sk RSHFT  &sk RCTRL      &sk LALT  &sk LGUI
-  &none  &none    &none          &none      &none                       &none   &tog 24    &m_warpd_hint  &none     &none
+  &none  &none    &none          &none      &none                       &none   &tog 25    &m_warpd_hint  &none     &none
                                  &nop       &m_to_ru  &trans    &trans  &trans  &nop
             >;
 
@@ -1040,9 +1050,9 @@
 
         x_cmd_alt_ru {
             bindings = <
-  &none  &tog 24  &m_warpd_hint  &none      &kp GRAVE                    &none   &none      &m_to_en       &none     &none
+  &none  &tog 25  &m_warpd_hint  &none      &kp GRAVE                    &none   &none      &m_to_en       &none     &none
   &none  &none    &m_caps_word   &sk LSHFT  &none                        &none   &sk LSHFT  &sk LCTRL      &sk LALT  &sk LGUI
-  &none  &none    &none          &none      &none                        &none   &tog 24    &m_warpd_hint  &none     &none
+  &none  &none    &none          &none      &none                        &none   &tog 25    &m_warpd_hint  &none     &none
                                  &nop       &m_to_en   &trans    &trans  &trans  &nop
             >;
 

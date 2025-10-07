@@ -434,10 +434,10 @@
             bindings =
                 <&m_en>,
                 <&macro_press>,
-                <&mo 0 &mo 10>,
+                <&mo 0 &mo 11>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 10 &mo 0>,
+                <&mo 11 &mo 0>,
                 <&macro_tap>,
                 <&m_ru>;
 
@@ -494,7 +494,7 @@
         m_fn: macro_fn {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&tog 11 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&tog 10 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "MACRO_FN";
             wait-ms = <0>;
             tap-ms = <0>;
@@ -661,7 +661,7 @@
         };
 
         c_fn {
-            bindings = <&mo 11>;
+            bindings = <&mo 10>;
             key-positions = <>;
             layers = <0 1>;
         };
@@ -776,8 +776,8 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &kp Q      &hlt 10 W  &hlt 8 E  &kp R     &kp T                                           &kp Y           &kp U  &hlt 8 I   &kp O    &kp P
-  &hlt 11 A  &hlt 6 S   &hlt 2 D  &hlt 4 F  &hlt 10 G                                       &kp H           &kp J  &hlt 2 K   &kp L    &kp SEMI
+  &kp Q      &kp W      &hlt 8 E  &kp R     &kp T                                           &kp Y           &kp U  &hlt 8 I   &kp O    &kp P
+  &hlt 11 A  &hlt 10 S  &hlt 6 D  &hlt 4 F  &kp G                                           &kp H           &kp J  &kp K      &kp L    &kp SEMI
   &kp Z      &kp X      &kp C     &kp V     &kp B                                           &kp N           &kp M  &kp COMMA  &kp DOT  &kp FSLH
                                   &nop      &lt 2 SPACE  &lt_esc 6 0    &mo_lshift 8 LSHFT  &mo_to_ru 12 0  &none
             >;
@@ -787,8 +787,8 @@
 
         ru {
             bindings = <
-  &trans     &hlt 10 W  &hlt_sym 0 E  &trans    &trans                                           &trans          &trans      &hlt_sym 0 I  &tp LBKT O  &tp LBKT P
-  &hlt 11 A  &hlt 7 S   &hlt 3 D      &hlt 5 F  &hlt 10 G                                        &trans          &trans      &hlt 3 K      &trans      &tp SQT SEMI
+  &trans     &trans     &hlt_sym 0 E  &trans    &trans                                           &trans          &trans      &hlt_sym 0 I  &tp LBKT O  &tp LBKT P
+  &hlt 11 A  &hlt 10 S  &hlt 7 D      &hlt 5 F  &trans                                           &trans          &trans      &trans        &trans      &tp SQT SEMI
   &trans     &trans     &trans        &trans    &trans                                           &trans          &tp RBKT M  &trans        &trans      &trans
                                       &nop      &lt 3 SPACE  &lt_esc 7 0    &mo_sym_ssk 0 LSHFT  &mo_to_en 12 0  &none
             >;
@@ -800,7 +800,7 @@
             bindings = <
   &none         &kp BACKSPACE  &kp ESCAPE    &key_repeat  &none                                &kp INS        &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
   &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT    &swap_win                            &kp TAB        &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
-  &kp LC(Z)     &lt 6 LC(X)    &lt 11 LC(C)  &lt 4 LC(V)  &swap_tab                            &kp BACKSPACE  &kp RET   &kp COMMA  &kp DOT    &kp DEL
+  &kp LC(Z)     &lt 6 LC(X)    &lt 10 LC(C)  &lt 4 LC(V)  &swap_tab                            &kp BACKSPACE  &kp RET   &kp COMMA  &kp DOT    &kp DEL
                                              &nop         &kp SPACE  &kp ESC    &kp BACKSPACE  &kp RET        &nop
             >;
 
@@ -811,7 +811,7 @@
             bindings = <
   &none         &kp BACKSPACE  &kp ESCAPE    &key_repeat  &none                                &kp INS        &kp HOME  &kp PG_UP     &kp PG_DN   &kp END
   &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT    &swap_win                            &kp TAB        &kp LEFT  &kp UP        &kp DOWN    &kp RIGHT
-  &kp LC(Z)     &lt 7 LC(X)    &lt 11 LC(C)  &lt 5 LC(V)  &swap_tab                            &kp BACKSPACE  &kp RET   &kp RU_COMMA  &kp RU_DOT  &kp DEL
+  &kp LC(Z)     &lt 7 LC(X)    &lt 10 LC(C)  &lt 5 LC(V)  &swap_tab                            &kp BACKSPACE  &kp RET   &kp RU_COMMA  &kp RU_DOT  &kp DEL
                                              &nop         &kp SPACE  &kp ESC    &kp BACKSPACE  &kp RET        &nop
             >;
 
@@ -884,6 +884,17 @@
             display-name = "SYM RU";
         };
 
+        fn {
+            bindings = <
+  &none     &none     &none      &none      &none                         &none      &kp F9  &kp F10  &kp F11  &kp F12
+  &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &none                         &none      &kp F5  &kp F6   &kp F7   &kp F8
+  &none     &none     &none      &none      &none                         &none      &kp F1  &kp F2   &kp F3   &kp F4
+                                 &none      &kp LALT  &m_fn ESC    &none  &m_fn RET  &nop
+            >;
+
+            display-name = "FN";
+        };
+
         cmd {
             bindings = <
   &trans  &trans  &trans  &trans  &trans                             &none         &none       &none       &none      &none
@@ -893,17 +904,6 @@
             >;
 
             display-name = "CMD";
-        };
-
-        fn {
-            bindings = <
-  &none  &none     &none      &none      &none                         &none      &kp F9  &kp F10  &kp F11  &kp F12
-  &none  &sk LALT  &sk LCTRL  &sk LSHFT  &none                         &none      &kp F5  &kp F6   &kp F7   &kp F8
-  &none  &none     &none      &none      &none                         &none      &kp F1  &kp F2   &kp F3   &kp F4
-                              &none      &kp LGUI  &m_fn ESC    &none  &m_fn RET  &nop
-            >;
-
-            display-name = "FN";
         };
 
         mouse {
@@ -964,7 +964,7 @@
         ru_alt {
             bindings = <
   &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_DE      &kp RU_CYRILLIC_EM     &kp RU_CYRILLIC_KA      &kp RU_CYRILLIC_CHE                                     &kp RU_CYRILLIC_TSE    &kp RU_CYRILLIC_SHORT_I                          &ht RU_CYRILLIC_E RU_CYRILLIC_YERU  &ht RU_CYRILLIC_IO RU_CYRILLIC_YA  &kp RU_CYRILLIC_HA
-  &kp RU_CYRILLIC_ER   &hlt 10 RU_CYRILLIC_ES  &hlt 5 RU_CYRILLIC_EN  &hlt 10 RU_CYRILLIC_TE  &kp RU_CYRILLIC_GHE                                     &kp RU_CYRILLIC_PE     &kp RU_CYRILLIC_A                                &kp RU_CYRILLIC_O                   &kp RU_CYRILLIC_IE                 &kp RU_CYRILLIC_I
+  &kp RU_CYRILLIC_ER   &hlt 11 RU_CYRILLIC_ES  &hlt 5 RU_CYRILLIC_EN  &hlt 11 RU_CYRILLIC_TE  &kp RU_CYRILLIC_GHE                                     &kp RU_CYRILLIC_PE     &kp RU_CYRILLIC_A                                &kp RU_CYRILLIC_O                   &kp RU_CYRILLIC_IE                 &kp RU_CYRILLIC_I
   &kp RU_CYRILLIC_ZE   &kp RU_CYRILLIC_BE      &kp RU_CYRILLIC_EL     &kp RU_CYRILLIC_VE      &kp RU_CYRILLIC_SHA                                     &kp RU_CYRILLIC_SHCHA  &ht RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_U                   &kp RU_CYRILLIC_YU                 &kp RU_CYRILLIC_EF
                                                                       &nop                    &lt 3 SPACE          &lt_esc 7 0    &lt_sym_ru 0 ENTER  &trans                 &nop
             >;

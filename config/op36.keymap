@@ -4,6 +4,7 @@
 #include "keys_ru.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 &mt {
@@ -798,10 +799,10 @@
 
         nav {
             bindings = <
-  &kp GRAVE     &kp BACKSPACE  &kp ESCAPE    &key_repeat  &none                                &kp INS        &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
-  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT    &swap_win                            &kp TAB        &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
-  &kp LC(Z)     &lt 6 LC(X)    &lt 10 LC(C)  &lt 4 LC(V)  &swap_tab                            &kp BACKSPACE  &kp RET   &kp COMMA  &kp DOT    &kp DEL
-                                             &nop         &kp SPACE  &kp ESC    &kp BACKSPACE  &kp RET        &nop
+  &kp GRAVE     &kp BACKSPACE  &kp ESCAPE    &key_repeat  &out OUT_USB                            &kp INS        &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
+  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT    &swap_win                               &kp TAB        &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
+  &kp LC(Z)     &lt 6 LC(X)    &lt 10 LC(C)  &lt 4 LC(V)  &swap_tab                               &kp BACKSPACE  &kp RET   &kp COMMA  &kp DOT    &kp DEL
+                                             &nop         &kp SPACE     &kp ESC    &kp BACKSPACE  &kp RET        &nop
             >;
 
             display-name = "NAV";
@@ -809,10 +810,10 @@
 
         nav_ru {
             bindings = <
-  &kp GRAVE     &kp BACKSPACE  &kp ESCAPE    &key_repeat  &none                                &kp INS        &kp HOME  &kp PG_UP     &kp PG_DN   &kp END
-  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT    &swap_win                            &kp TAB        &kp LEFT  &kp UP        &kp DOWN    &kp RIGHT
-  &kp LC(Z)     &lt 7 LC(X)    &lt 10 LC(C)  &lt 5 LC(V)  &swap_tab                            &kp BACKSPACE  &kp RET   &kp RU_COMMA  &kp RU_DOT  &kp DEL
-                                             &nop         &kp SPACE  &kp ESC    &kp BACKSPACE  &kp RET        &nop
+  &kp GRAVE     &kp BACKSPACE  &kp ESCAPE    &key_repeat  &out OUT_USB                            &kp INS        &kp HOME  &kp PG_UP     &kp PG_DN   &kp END
+  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT    &swap_win                               &kp TAB        &kp LEFT  &kp UP        &kp DOWN    &kp RIGHT
+  &kp LC(Z)     &lt 7 LC(X)    &lt 10 LC(C)  &lt 5 LC(V)  &swap_tab                               &kp BACKSPACE  &kp RET   &kp RU_COMMA  &kp RU_DOT  &kp DEL
+                                             &nop         &kp SPACE     &kp ESC    &kp BACKSPACE  &kp RET        &nop
             >;
 
             display-name = "NAV RU";

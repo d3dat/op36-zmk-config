@@ -736,7 +736,7 @@
 
         ssk_shift_l {
             bindings = <&ssk LSHFT>;
-            key-positions = <>;
+            key-positions = <3 2>;
             timeout-ms = <20>;
             require-prior-idle-ms = <200>;
             layers = <0 1>;

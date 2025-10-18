@@ -614,8 +614,8 @@
         combo_esc {
             bindings = <&kp ESC>;
             key-positions = <1 2>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <150>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
         };
 
         combo_ret {
@@ -708,17 +708,17 @@
 
         c_to_ru {
             bindings = <&m_to_ru>;
-            key-positions = <11 12>;
+            key-positions = <12 13>;
             layers = <0>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
             require-prior-idle-ms = <200>;
         };
 
         c_to_en {
             bindings = <&m_to_en>;
-            key-positions = <11 12>;
+            key-positions = <12 13>;
             layers = <1>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
             require-prior-idle-ms = <200>;
         };
 
@@ -730,22 +730,22 @@
         ret {
             bindings = <&kp RET>;
             key-positions = <17 18>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
             require-prior-idle-ms = <200>;
         };
 
         ssk_shift_l {
             bindings = <&ssk LSHFT>;
-            key-positions = <13 12>;
+            key-positions = <>;
             timeout-ms = <20>;
             require-prior-idle-ms = <200>;
             layers = <0 1>;
         };
 
-        ssk_shift_r {
+        ssk_shift {
             bindings = <&ssk LSHFT>;
             key-positions = <16 17>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
             require-prior-idle-ms = <200>;
             layers = <0 1>;
         };
@@ -753,14 +753,14 @@
         space {
             bindings = <&kp SPACE>;
             key-positions = <7 8>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
             require-prior-idle-ms = <200>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <16 15>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
             require-prior-idle-ms = <200>;
         };
     };

@@ -798,10 +798,10 @@
 
         nav {
             bindings = <
-  &kp GRAVE     &kp BACKSPACE  &kp ESCAPE    &key_repeat  &none                                &kp INS        &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
-  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT    &swap_win                            &kp TAB        &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
-  &kp LC(Z)     &lt 6 LC(X)    &lt 10 LC(C)  &lt 4 LC(V)  &swap_tab                            &kp BACKSPACE  &kp RET   &kp COMMA  &kp DOT    &kp DEL
-                                             &nop         &kp SPACE  &kp ESC    &kp BACKSPACE  &kp RET        &nop
+  &m_to_ru      &kp BACKSPACE  &kp ESCAPE    &key_repeat  &kp GRAVE                             &kp INS        &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
+  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT    &swap_win                             &kp TAB        &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
+  &kp LC(Z)     &lt 6 LC(X)    &lt 10 LC(C)  &lt 4 LC(V)  &swap_tab                             &kp BACKSPACE  &kp RET   &kp COMMA  &kp DOT    &kp DEL
+                                             &nop         &ssk LSHFT  &kp ESC    &kp BACKSPACE  &kp RET        &nop
             >;
 
             display-name = "NAV";
@@ -809,10 +809,10 @@
 
         nav_ru {
             bindings = <
-  &kp GRAVE     &kp BACKSPACE  &kp ESCAPE    &key_repeat  &none                                &kp INS        &kp HOME  &kp PG_UP     &kp PG_DN   &kp END
-  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT    &swap_win                            &kp TAB        &kp LEFT  &kp UP        &kp DOWN    &kp RIGHT
-  &kp LC(Z)     &lt 7 LC(X)    &lt 10 LC(C)  &lt 5 LC(V)  &swap_tab                            &kp BACKSPACE  &kp RET   &kp RU_COMMA  &kp RU_DOT  &kp DEL
-                                             &nop         &kp SPACE  &kp ESC    &kp BACKSPACE  &kp RET        &nop
+  &m_to_en      &kp BACKSPACE  &kp ESCAPE    &key_repeat  &kp GRAVE                             &kp INS        &kp HOME  &kp PG_UP     &kp PG_DN   &kp END
+  &sk LEFT_GUI  &sk LALT       &sk LCTRL     &sk LSHFT    &swap_win                             &kp TAB        &kp LEFT  &kp UP        &kp DOWN    &kp RIGHT
+  &kp LC(Z)     &lt 7 LC(X)    &lt 10 LC(C)  &lt 5 LC(V)  &swap_tab                             &kp BACKSPACE  &kp RET   &kp RU_COMMA  &kp RU_DOT  &kp DEL
+                                             &nop         &ssk LSHFT  &kp ESC    &kp BACKSPACE  &kp RET        &nop
             >;
 
             display-name = "NAV RU";
@@ -886,10 +886,10 @@
 
         fn {
             bindings = <
-  &none  &none     &none      &sk LGUI   &none                          &none      &kp F9  &kp F10  &kp F11  &kp F12
-  &none  &sk LALT  &sk LCTRL  &sk LSHFT  &none                          &none      &kp F5  &kp F6   &kp F7   &kp F8
-  &none  &none     &none      &none      &none                          &none      &kp F1  &kp F2   &kp F3   &kp F4
-                              &none      &m_fn RET  &m_fn ESC    &none  &m_fn RET  &nop
+  &none  &none     &none      &none      &none                         &none      &kp F9  &kp F10  &kp F11  &kp F12
+  &none  &sk LALT  &sk LCTRL  &sk LSHFT  &none                         &kp RET    &kp F5  &kp F6   &kp F7   &kp F8
+  &none  &none     &none      &none      &none                         &none      &kp F1  &kp F2   &kp F3   &kp F4
+                              &none      &kp LGUI  &m_fn ESC    &none  &m_fn RET  &nop
             >;
 
             display-name = "FN";

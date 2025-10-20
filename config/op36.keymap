@@ -606,6 +606,14 @@
             bindings = <&kp 0>;
             label = "M_CLEAR_MOD";
         };
+
+        m_test: m_test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>, <&macro_press>, <&kp>;
+
+            label = "M_TEST";
+        };
     };
 
     combos {
@@ -776,10 +784,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &kp Q      &kp W      &hlt 17 E  &kp R      &kp T                                           &kp Y           &kp U      &hlt 17 I  &kp O    &kp P
-  &hlt 11 A  &hlt 10 S  &hlt 6 D   &hlt 4 F   &kp G                                           &kp H           &hlt 11 J  &kp K      &kp L    &kp SEMI
-  &kp Z      &kp X      &kp C      &hlt 17 V  &kp B                                           &kp N           &kp M      &kp COMMA  &kp DOT  &kp FSLH
-                                   &nop       &lt 2 SPACE  &lt_esc 6 0    &mo_lshift 8 LSHFT  &mo_to_ru 13 0  &none
+  &kp Q      &kp W      &kp E     &kp R     &kp T                                           &kp Y           &kp U      &kp I      &kp O    &kp P
+  &hlt 10 A  &hlt 17 S  &hlt 6 D  &hlt 4 F  &kp G                                           &kp H           &hlt 11 J  &kp K      &kp L    &kp SEMI
+  &kp Z      &kp X      &kp C     &kp V     &kp B                                           &kp N           &kp M      &kp COMMA  &kp DOT  &kp FSLH
+                                  &nop      &lt 2 SPACE  &lt_esc 6 0    &mo_lshift 8 LSHFT  &mo_to_ru 13 0  &none
             >;
 
             display-name = "EN";
@@ -787,10 +795,10 @@
 
         ru {
             bindings = <
-  &trans     &trans     &hlt_sym 0 E  &trans     &trans                                           &trans          &trans      &hlt_sym 0 I  &tp LBKT O  &tp LBKT P
-  &hlt 11 A  &hlt 10 S  &hlt 7 D      &hlt 5 F   &trans                                           &trans          &hlt 12 J   &trans        &trans      &tp SQT SEMI
-  &trans     &trans     &trans        &hlt 17 V  &trans                                           &trans          &tp RBKT M  &trans        &trans      &trans
-                                      &nop       &lt 3 SPACE  &lt_esc 7 0    &mo_sym_ssk 0 LSHFT  &mo_to_en 13 0  &none
+  &trans        &trans     &trans    &trans    &trans                                           &trans          &trans      &trans  &tp LBKT O  &tp LBKT P
+  &hlt_sym 0 A  &hlt 10 S  &hlt 7 D  &hlt 5 F  &trans                                           &trans          &hlt 12 J   &trans  &trans      &tp SQT SEMI
+  &trans        &trans     &trans    &trans    &trans                                           &trans          &tp RBKT M  &trans  &trans      &trans
+                                     &nop      &lt 3 SPACE  &lt_esc 7 0    &mo_sym_ssk 0 LSHFT  &mo_to_en 13 0  &none
             >;
 
             display-name = "RU";

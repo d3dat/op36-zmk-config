@@ -606,14 +606,6 @@
             bindings = <&kp 0>;
             label = "M_CLEAR_MOD";
         };
-
-        m_test: m_test {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none>, <&macro_press>, <&kp>;
-
-            label = "M_TEST";
-        };
     };
 
     combos {

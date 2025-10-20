@@ -820,8 +820,8 @@
 
         alt {
             bindings = <
-  &none     &ssk LSHFT  &kp ESC    &kp LSHFT  &none                                &kp PLUS      &kp MINUS      &kp DQT   &kp COLON      &kp SEMI
-  &kp LGUI  &kp LALT    &kp LCTRL  &none      &none                                &m_caps_word  &kp BACKSPACE  &kp RET   &m_warpd_hint  &m_to_ru
+  &none     &ssk LSHFT  &kp ESC    &kp LSHFT  &none                                &m_caps_word  &kp MINUS      &kp DQT   &kp COLON      &kp SEMI
+  &kp LGUI  &kp LALT    &kp LCTRL  &none      &none                                &ssk LSHFT    &kp BACKSPACE  &kp RET   &m_warpd_hint  &m_to_ru
   &none     &none       &none      &none      &none                                &kp QMARK     &kp EXCL       &m_comma  &m_dot         &kp DEL
                                    &nop       &lt 15 SPACE  &kp ESC    &ssk LSHFT  &m_to_ru      &nop
             >;
@@ -831,8 +831,8 @@
 
         alt_ru {
             bindings = <
-  &none     &ssk LSHFT  &kp ESC    &kp LSHFT  &none                                &kp RU_PLUS      &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON   &kp RU_SEMICOLON
-  &kp LGUI  &kp LALT    &kp LCTRL  &none      &none                                &m_caps_word     &kp BACKSPACE  &kp RET      &m_warpd_hint  &m_to_en
+  &none     &ssk LSHFT  &kp ESC    &kp LSHFT  &none                                &m_caps_word     &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON   &kp RU_SEMICOLON
+  &kp LGUI  &kp LALT    &kp LCTRL  &none      &none                                &ssk LSHFT       &kp BACKSPACE  &kp RET      &m_warpd_hint  &m_to_en
   &none     &none       &none      &none      &none                                &kp RU_QUESTION  &kp EXCL       &m_comma_ru  &m_dot_ru      &kp DEL
                                    &nop       &lt 16 SPACE  &kp ESC    &ssk LSHFT  &m_to_en         &nop
             >;

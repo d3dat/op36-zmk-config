@@ -787,9 +787,9 @@
 
         ru {
             bindings = <
-  &trans        &trans    &trans    &trans    &trans                                           &trans          &trans      &trans  &tp LBKT O  &tp LBKT P
-  &hlt_sym 0 A  &hlt 8 S  &hlt 7 D  &hlt 5 F  &trans                                           &trans          &hlt 11 J   &trans  &trans      &tp SQT SEMI
-  &trans        &trans    &trans    &trans    &trans                                           &trans          &tp RBKT M  &trans  &trans      &trans
+  &trans    &trans        &trans    &trans    &trans                                           &trans          &trans      &trans  &tp LBKT O  &tp LBKT P
+  &hlt 9 A  &hlt_sym 0 S  &hlt 7 D  &hlt 5 F  &trans                                           &trans          &hlt 11 J   &trans  &trans      &tp SQT SEMI
+  &trans    &trans        &trans    &trans    &trans                                           &trans          &tp RBKT M  &trans  &trans      &trans
                                     &nop      &lt 3 SPACE  &lt_esc 7 0    &mo_sym_ssk 0 LSHFT  &mo_to_en 12 0  &none
             >;
 

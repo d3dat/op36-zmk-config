@@ -842,10 +842,10 @@
 
         num {
             bindings = <
-  &none     &none     &none  &kp BACKSPACE  &none                                &kp SLASH   &kp N9  &kp N0  &kp MINUS  &kp EQUAL
-  &kp LGUI  &kp LALT  &none  &kp LSHIFT     &none                                &kp PERIOD  &kp N5  &kp N6  &kp N7     &kp N8
-  &none     &none     &none  &none          &none                                &kp COMMA   &kp N1  &kp N2  &kp N3     &kp N4
-                             &nop           &tp LCTRL SPACE  &kp ESC    &kp RET  &kp SPACE   &nop
+  &none     &kp BACKSPACE  &none  &kp RET     &none                                &kp SLASH   &kp N9  &kp N0  &kp MINUS  &kp EQUAL
+  &kp LGUI  &kp LALT       &none  &kp LSHIFT  &none                                &kp PERIOD  &kp N5  &kp N6  &kp N7     &kp N8
+  &none     &none          &none  &none       &none                                &kp COMMA   &kp N1  &kp N2  &kp N3     &kp N4
+                                  &nop        &tp LCTRL SPACE  &kp ESC    &kp RET  &kp SPACE   &nop
             >;
 
             display-name = "NUM";
@@ -853,10 +853,10 @@
 
         num_ru {
             bindings = <
-  &none     &none     &none  &kp BACKSPACE  &none                                &kp LS(BACKSLASH)  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
-  &kp LGUI  &kp LALT  &none  &kp LSHFT      &none                                &kp SLASH          &kp N5  &kp N6  &kp N7     &kp N8
-  &none     &none     &none  &none          &none                                &kp LS(SLASH)      &kp N1  &kp N2  &kp N3     &kp N4
-                             &nop           &tp LCTRL SPACE  &kp ESC    &kp RET  &kp SPACE          &nop
+  &none     &kp BACKSPACE  &none  &kp RET    &none                                &kp LS(BACKSLASH)  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
+  &kp LGUI  &kp LALT       &none  &kp LSHFT  &none                                &kp SLASH          &kp N5  &kp N6  &kp N7     &kp N8
+  &none     &none          &none  &none      &none                                &kp LS(SLASH)      &kp N1  &kp N2  &kp N3     &kp N4
+                                  &nop       &tp LCTRL SPACE  &kp ESC    &kp RET  &kp SPACE          &nop
             >;
 
             display-name = "NUM RU";

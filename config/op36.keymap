@@ -820,9 +820,9 @@
 
         alt {
             bindings = <
-  &none     &m_warpd_hint  &kp ESC    &none  &none                             &m_caps_word  &kp MINUS      &kp DQT   &kp COLON  &kp SEMI
-  &kp LGUI  &kp LALT       &kp LCTRL  &none  &none                             &ssk LSHFT    &kp BACKSPACE  &kp RET   &m_to_ru   &kp ESC
-  &none     &none          &none      &none  &none                             &kp QMARK     &kp EXCL       &m_comma  &m_dot     &kp SLASH
+  &m_to_ru  &m_warpd_hint  &kp ESC    &none  &none                             &m_caps_word  &kp MINUS      &kp DQT   &kp COLON      &kp SEMI
+  &kp LGUI  &kp LALT       &kp LCTRL  &none  &none                             &ssk LSHFT    &kp BACKSPACE  &kp RET   &m_warpd_hint  &m_to_ru
+  &none     &none          &none      &none  &none                             &kp QMARK     &kp EXCL       &m_comma  &m_dot         &kp SLASH
                                       &nop   &lt 12 SPACE  &kp ESC    &kp RET  &kp SPACE     &nop
             >;
 
@@ -831,9 +831,9 @@
 
         alt_ru {
             bindings = <
-  &none     &m_warpd_hint  &kp ESC    &none  &none                             &m_caps_word     &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON  &kp RU_SEMICOLON
-  &kp LGUI  &kp LALT       &kp LCTRL  &none  &none                             &ssk LSHFT       &kp BACKSPACE  &kp RET      &m_to_en      &kp ESC
-  &none     &none          &none      &none  &none                             &kp RU_QUESTION  &kp EXCL       &m_comma_ru  &m_dot_ru     &kp RU_SLASH
+  &m_to_en  &m_warpd_hint  &kp ESC    &none  &none                             &m_caps_word     &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON   &kp RU_SEMICOLON
+  &kp LGUI  &kp LALT       &kp LCTRL  &none  &none                             &ssk LSHFT       &kp BACKSPACE  &kp RET      &m_warpd_hint  &m_to_en
+  &none     &none          &none      &none  &none                             &kp RU_QUESTION  &kp EXCL       &m_comma_ru  &m_dot_ru      &kp RU_SLASH
                                       &nop   &lt 13 SPACE  &kp ESC    &kp RET  &kp SPACE        &nop
             >;
 
@@ -929,10 +929,10 @@
 
         hint2 {
             bindings = <
-  &none  &m_warpd_click  &m_warpd_esc  &none  &none                                  &none  &none  &none           &none  &none
-  &none  &none           &none         &none  &none                                  &none  &none  &m_warpd_click  &none  &m_warpd_esc
-  &none  &none           &none         &none  &none                                  &none  &none  &none           &none  &none
-                                       &none  &none  &m_warpd_esc    &m_warpd_click  &none  &none
+  &none  &none  &m_warpd_esc    &none  &none                                  &none  &none  &none           &none         &none
+  &none  &none  &m_warpd_click  &none  &none                                  &none  &none  &m_warpd_click  &m_warpd_esc  &none
+  &none  &none  &none           &none  &none                                  &none  &none  &none           &none         &none
+                                &none  &none  &m_warpd_esc    &m_warpd_click  &none  &none
             >;
 
             label = "HINT 2";

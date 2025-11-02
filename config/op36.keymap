@@ -776,8 +776,8 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &kp Q     &kp W     &kp E     &kp R     &kp T                               &kp Y        &kp U      &kp I      &kp O    &kp P
-  &hlt 9 A  &hlt 8 S  &hlt 6 D  &hlt 4 F  &kp G                               &kp H        &hlt 21 J  &kp K      &kp L    &kp SEMI
+  &kp Q     &kp W     &hlt 2 E  &kp R     &kp T                               &kp Y        &kp U      &kp I      &kp O    &kp P
+  &hlt 9 A  &hlt 8 S  &hlt 6 D  &hlt 4 F  &hlt 2 G                            &kp H        &hlt 21 J  &kp K      &kp L    &kp SEMI
   &kp Z     &kp X     &kp C     &kp V     &kp B                               &kp N        &kp M      &kp COMMA  &kp DOT  &kp FSLH
                                 &nop      &lt 2 SPACE  &kp ESC    &lt 10 RET  &lt 2 SPACE  &none
             >;
@@ -787,8 +787,8 @@
 
         ru {
             bindings = <
-  &trans    &trans        &trans    &trans    &trans                              &trans       &trans      &trans  &tp LBKT O  &tp LBKT P
-  &hlt 9 A  &hlt_sym 0 S  &hlt 7 D  &hlt 5 F  &trans                              &trans       &hlt 22 J   &trans  &trans      &tp SQT SEMI
+  &trans    &trans        &hlt 3 E  &trans    &trans                              &trans       &trans      &trans  &tp LBKT O  &tp LBKT P
+  &hlt 9 A  &hlt_sym 0 S  &hlt 7 D  &hlt 5 F  &hlt 3 G                            &trans       &hlt 22 J   &trans  &trans      &tp SQT SEMI
   &trans    &trans        &trans    &trans    &trans                              &trans       &tp RBKT M  &trans  &trans      &trans
                                     &nop      &lt 3 SPACE  &kp ESC    &lt 10 RET  &lt 3 SPACE  &none
             >;
@@ -821,7 +821,7 @@
         alt {
             bindings = <
   &m_to_ru  &m_warpd_hint  &kp ESC    &none  &none                             &m_caps_word  &kp MINUS      &kp DQT   &kp COLON      &kp SEMI
-  &kp LGUI  &kp LALT       &kp LCTRL  &none  &none                             &ssk LSHFT    &kp BACKSPACE  &kp RET   &m_warpd_hint  &m_to_ru
+  &mo 12    &kp LALT       &kp LCTRL  &none  &none                             &ssk LSHFT    &kp BACKSPACE  &kp RET   &m_warpd_hint  &m_to_ru
   &none     &none          &none      &none  &none                             &kp QMARK     &kp EXCL       &m_comma  &m_dot         &kp SLASH
                                       &nop   &lt 12 SPACE  &kp ESC    &kp RET  &kp SPACE     &nop
             >;
@@ -832,7 +832,7 @@
         alt_ru {
             bindings = <
   &m_to_en  &m_warpd_hint  &kp ESC    &none  &none                             &m_caps_word     &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON   &kp RU_SEMICOLON
-  &kp LGUI  &kp LALT       &kp LCTRL  &none  &none                             &ssk LSHFT       &kp BACKSPACE  &kp RET      &m_warpd_hint  &m_to_en
+  &mo 13    &kp LALT       &kp LCTRL  &none  &none                             &ssk LSHFT       &kp BACKSPACE  &kp RET      &m_warpd_hint  &m_to_en
   &none     &none          &none      &none  &none                             &kp RU_QUESTION  &kp EXCL       &m_comma_ru  &m_dot_ru      &kp RU_SLASH
                                       &nop   &lt 13 SPACE  &kp ESC    &kp RET  &kp SPACE        &nop
             >;

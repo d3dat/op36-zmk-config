@@ -787,9 +787,9 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &kp Q     &hlt 4 W  &hlt 2 E  &hlt 4 R  &kp T                               &kp Y        &kp U      &kp I      &kp O    &kp P
-  &hlt 9 A  &hlt 8 S  &hlt 6 D  &hlt 4 F  &hlt 2 G                            &kp H        &hlt 20 J  &kp K      &kp L    &kp SEMI
-  &kp Z     &kp X     &kp C     &kp V     &kp B                               &kp N        &kp M      &kp COMMA  &kp DOT  &kp FSLH
+  &kp Q     &hlt 4 W  &hlt 2 E  &hlt 4 R  &kp T                               &kp Y        &kp U  &kp I      &kp O    &kp P
+  &hlt 9 A  &hlt 8 S  &hlt 6 D  &hlt 4 F  &hlt 2 G                            &kp H        &kp J  &kp K      &kp L    &kp SEMI
+  &kp Z     &kp X     &kp C     &kp V     &kp B                               &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH
                                 &nop      &lt 2 SPACE  &kp ESC    &lt 10 RET  &lt 2 SPACE  &none
             >;
 
@@ -799,7 +799,7 @@
         ru {
             bindings = <
   &trans    &hlt 5 W      &hlt 3 E  &hlt 5 R  &trans                              &trans       &trans      &trans  &tp LBKT O  &tp LBKT P
-  &hlt 9 A  &hlt_sym 0 S  &hlt 7 D  &hlt 5 F  &hlt 3 G                            &trans       &hlt 21 J   &trans  &trans      &tp SQT SEMI
+  &hlt 9 A  &hlt_sym 0 S  &hlt 7 D  &hlt 5 F  &hlt 3 G                            &trans       &trans      &trans  &trans      &tp SQT SEMI
   &trans    &trans        &trans    &trans    &trans                              &trans       &tp RBKT M  &trans  &trans      &trans
                                     &nop      &lt 3 SPACE  &kp ESC    &lt 10 RET  &lt 3 SPACE  &none
             >;
@@ -831,10 +831,10 @@
 
         alt {
             bindings = <
-  &m_to_ru  &m_warpd_hint  &kp ESC    &m_to_ru    &none                                &kp PLUS   &kp MINUS      &kp DQT   &kp COLON          &kp SEMI
-  &mo 12    &kp LALT       &kp LCTRL  &ssk LSHFT  &none                                &kp TAB    &kp BACKSPACE  &kp RET   &ssk_caps 0 LSHFT  &m_to_ru
-  &none     &none          &none      &none       &none                                &kp QMARK  &kp EXCL       &m_comma  &m_dot             &kp SLASH
-                                      &nop        &tp LSHFT SPACE  &kp ESC    &kp RET  &kp SPACE  &nop
+  &m_to_ru  &m_warpd_hint  &lt 12 ESC  &m_to_ru    &none                                &kp PLUS   &kp MINUS      &kp DQT   &kp COLON          &kp SEMI
+  &mo 12    &kp LALT       &kp LCTRL   &ssk LSHFT  &none                                &kp TAB    &kp BACKSPACE  &kp RET   &ssk_caps 0 LSHFT  &m_to_ru
+  &none     &none          &none       &none       &none                                &kp QMARK  &kp EXCL       &m_comma  &m_dot             &kp SLASH
+                                       &nop        &tp LSHFT SPACE  &kp ESC    &kp RET  &kp SPACE  &nop
             >;
 
             display-name = "ALT";
@@ -842,10 +842,10 @@
 
         alt_ru {
             bindings = <
-  &m_to_en  &m_warpd_hint  &kp ESC    &m_to_en    &none                                &kp PLUS         &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON       &kp RU_SEMICOLON
-  &mo 13    &kp LALT       &kp LCTRL  &ssk LSHFT  &none                                &kp TAB          &kp BACKSPACE  &kp RET      &ssk_caps 0 LSHFT  &m_to_en
-  &none     &none          &none      &none       &none                                &kp RU_QUESTION  &kp EXCL       &m_comma_ru  &m_dot_ru          &kp RU_SLASH
-                                      &nop        &tp LSHFT SPACE  &kp ESC    &kp RET  &kp SPACE        &nop
+  &m_to_en  &m_warpd_hint  &lt 13 ESC  &m_to_en    &none                                &kp PLUS         &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON       &kp RU_SEMICOLON
+  &mo 13    &kp LALT       &kp LCTRL   &ssk LSHFT  &none                                &kp TAB          &kp BACKSPACE  &kp RET      &ssk_caps 0 LSHFT  &m_to_en
+  &none     &none          &none       &none       &none                                &kp RU_QUESTION  &kp EXCL       &m_comma_ru  &m_dot_ru          &kp RU_SLASH
+                                       &nop        &tp LSHFT SPACE  &kp ESC    &kp RET  &kp SPACE        &nop
             >;
 
             display-name = "ALT RU";

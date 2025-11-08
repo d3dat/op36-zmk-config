@@ -708,7 +708,7 @@
 
         c_to_ru {
             bindings = <&m_to_ru>;
-            key-positions = <12 13>;
+            key-positions = <13 3>;
             layers = <0>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
@@ -716,7 +716,7 @@
 
         c_to_en {
             bindings = <&m_to_en>;
-            key-positions = <12 13>;
+            key-positions = <13 3>;
             layers = <1>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
@@ -736,7 +736,7 @@
 
         ssk_shift_l {
             bindings = <&ssk LSHFT>;
-            key-positions = <3 2>;
+            key-positions = <>;
             timeout-ms = <20>;
             require-prior-idle-ms = <200>;
             layers = <0 1>;
@@ -744,7 +744,7 @@
 
         ssk_shift {
             bindings = <&ssk LSHFT>;
-            key-positions = <16 17>;
+            key-positions = <16 6>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
             layers = <0 1>;
@@ -820,9 +820,9 @@
 
         alt {
             bindings = <
-  &m_to_ru  &m_warpd_hint  &kp ESC    &m_to_ru    &none                             &m_caps_word  &kp MINUS      &kp DQT   &kp COLON      &kp SEMI
-  &mo 12    &kp LALT       &kp LCTRL  &ssk LSHFT  &none                             &ssk LSHFT    &kp BACKSPACE  &kp RET   &m_warpd_hint  &m_to_ru
-  &none     &none          &none      &none       &none                             &kp QMARK     &kp EXCL       &m_comma  &m_dot         &kp SLASH
+  &m_to_ru  &m_warpd_hint  &kp ESC    &m_to_ru    &none                             &m_caps_word  &kp MINUS      &kp DQT   &kp COLON  &kp SEMI
+  &mo 12    &kp LALT       &kp LCTRL  &ssk LSHFT  &none                             &ssk LSHFT    &kp BACKSPACE  &kp RET   &kp SPACE  &kp ESC
+  &none     &none          &none      &none       &none                             &kp QMARK     &kp EXCL       &m_comma  &m_dot     &kp SLASH
                                       &nop        &lt 12 SPACE  &kp ESC    &kp RET  &kp SPACE     &nop
             >;
 
@@ -831,9 +831,9 @@
 
         alt_ru {
             bindings = <
-  &m_to_en  &m_warpd_hint  &kp ESC    &m_to_en    &none                             &m_caps_word     &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON   &kp RU_SEMICOLON
-  &mo 13    &kp LALT       &kp LCTRL  &ssk LSHFT  &none                             &ssk LSHFT       &kp BACKSPACE  &kp RET      &m_warpd_hint  &m_to_en
-  &none     &none          &none      &none       &none                             &kp RU_QUESTION  &kp EXCL       &m_comma_ru  &m_dot_ru      &kp RU_SLASH
+  &m_to_en  &m_warpd_hint  &kp ESC    &m_to_en    &none                             &m_caps_word     &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON  &kp RU_SEMICOLON
+  &mo 13    &kp LALT       &kp LCTRL  &ssk LSHFT  &none                             &ssk LSHFT       &kp BACKSPACE  &kp RET      &kp SPACE     &kp ESC
+  &none     &none          &none      &none       &none                             &kp RU_QUESTION  &kp EXCL       &m_comma_ru  &m_dot_ru     &kp RU_SLASH
                                       &nop        &lt 13 SPACE  &kp ESC    &kp RET  &kp SPACE        &nop
             >;
 
@@ -995,10 +995,10 @@
 
         x_cmd {
             bindings = <
-  &none     &none         &none      &none       &none                  &none  &none  &none  &none  &none
-  &m_to_ru  &m_caps_word  &kp SPACE  &ssk LSHFT  &none                  &none  &none  &none  &none  &none
-  &none     &none         &none      &none       &none                  &none  &none  &none  &none  &none
-                                     &nop        &none  &kp 0    &none  &none  &nop
+  &none     &none          &kp ESC       &none       &none                  &none  &none  &none  &none  &none
+  &m_to_ru  &m_warpd_hint  &m_caps_word  &ssk LSHFT  &none                  &none  &none  &none  &none  &none
+  &none     &none          &none         &none       &none                  &none  &none  &none  &none  &none
+                                         &nop        &none  &kp 0    &none  &none  &nop
             >;
 
             display-name = "X CMD";
@@ -1007,10 +1007,10 @@
         x_cmd_ru {
             display-name = "X CMD RU";
             bindings = <
-  &none     &none         &none      &none       &none                  &none  &none  &none  &none  &none
-  &m_to_en  &m_caps_word  &kp SPACE  &ssk LSHFT  &none                  &none  &none  &none  &none  &none
-  &none     &none         &none      &none       &none                  &none  &none  &none  &none  &none
-                                     &nop        &none  &kp 0    &none  &none  &nop
+  &none     &none          &kp ESC       &none       &none                  &none  &none  &none  &none  &none
+  &m_to_en  &m_warpd_hint  &m_caps_word  &ssk LSHFT  &none                  &none  &none  &none  &none  &none
+  &none     &none          &none         &none       &none                  &none  &none  &none  &none  &none
+                                         &nop        &none  &kp 0    &none  &none  &nop
             >;
         };
 

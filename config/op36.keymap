@@ -789,7 +789,7 @@
             bindings = <
   &kp Q     &hlt 4 W  &hlt 2 E  &hlt 4 R   &kp T                               &kp Y        &kp U  &kp I      &kp O    &kp P
   &hlt 9 A  &hlt 8 S  &hlt 6 D  &hlt 4 F   &hlt 2 G                            &kp H        &kp J  &kp K      &kp L    &kp SEMI
-  &kp Z     &kp X     &kp C     &hlt 16 V  &kp B                               &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH
+  &kp Z     &kp X     &kp C     &hlt 11 V  &kp B                               &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH
                                 &nop       &lt 2 SPACE  &kp ESC    &lt 10 RET  &lt 2 SPACE  &none
             >;
 
@@ -907,10 +907,10 @@
 
         hint {
             bindings = <
-  &kp Q  &kp W  &kp E  &kp R      &kp T                                  &kp Y  &kp U  &kp I      &kp O    &kp P
-  &kp A  &kp S  &kp D  &hlt 14 F  &kp G                                  &kp H  &kp J  &kp K      &kp L    &kp SEMI
-  &kp Z  &kp X  &kp C  &kp V      &kp B                                  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH
-                       &nop       &none  &m_warpd_esc    &m_warpd_click  &none  &nop
+  &kp Q  &kp W  &kp E  &kp R      &kp T                                   &kp Y  &kp U  &kp I      &kp O    &kp P
+  &kp A  &kp S  &kp D  &hlt 14 F  &kp G                                   &kp H  &kp J  &kp K      &kp L    &kp SEMI
+  &kp Z  &kp X  &kp C  &kp V      &kp B                                   &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH
+                       &nop       &mo 16  &m_warpd_esc    &m_warpd_click  &none  &nop
             >;
 
             display-name = "HINT";

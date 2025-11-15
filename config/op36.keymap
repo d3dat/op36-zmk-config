@@ -636,7 +636,7 @@
 
         combo_bs {
             bindings = <&kp BACKSPACE>;
-            key-positions = <>;
+            key-positions = <7 8>;
         };
 
         combo_spc {
@@ -719,7 +719,7 @@
 
         c_to_ru {
             bindings = <&m_to_ru>;
-            key-positions = <>;
+            key-positions = <21 22>;
             layers = <0>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
@@ -727,7 +727,7 @@
 
         c_to_en {
             bindings = <&m_to_en>;
-            key-positions = <>;
+            key-positions = <21 22>;
             layers = <1>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
@@ -740,7 +740,7 @@
 
         ret {
             bindings = <&kp RET>;
-            key-positions = <17 18>;
+            key-positions = <27 28>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
         };

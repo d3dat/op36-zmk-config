@@ -994,10 +994,10 @@
 
         x_mouse_alt {
             bindings = <
-  &msc SCRL_LEFT     &msc SCRL_DOWN     &msc SCRL_UP  &msc SCRL_RIGHT  &trans                               &trans            &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN    &msc SCRL_RIGHT
-  &mmv MOVE_X(-100)  &mmv MOVE_X(-600)  &mkp RCLK     &mkp LCLK        &trans                               &trans            &mkp LCLK       &mkp RCLK     &mmv MOVE_X(600)  &mmv MOVE_X(100)
-  &trans             &kp LALT           &kp LCTRL     &kp LSHFT        &trans                               &trans            &kp RSHFT       &kp RCTRL     &kp RALT          &trans
-                                                      &nop             &mmv MOVE_Y(-600)  &tog 28    &none  &mmv MOVE_Y(600)  &nop
+  &msc SCRL_LEFT     &msc SCRL_DOWN     &msc SCRL_UP  &msc SCRL_RIGHT  &trans                              &trans            &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN    &msc SCRL_RIGHT
+  &mmv MOVE_X(-100)  &mmv MOVE_X(-600)  &mkp RCLK     &mkp LCLK        &trans                              &trans            &mkp LCLK       &mkp RCLK     &mmv MOVE_X(600)  &mmv MOVE_X(100)
+  &trans             &kp LALT           &kp LCTRL     &kp LSHFT        &trans                              &trans            &kp RSHFT       &kp RCTRL     &kp RALT          &trans
+                                                      &nop             &mmv MOVE_Y(-600)  &tog 0    &none  &mmv MOVE_Y(600)  &nop
             >;
 
             display-name = "X MOUSE";
@@ -1035,72 +1035,6 @@
             >;
         };
 
-        x_sym {
-            bindings = <
-  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LT       &kp GT          &kp GRAVE                                     &kp SQT       &kp LPAR         &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-  &kp AMPERSAND   &kp HASH         &kp AT_SIGN  &kp PIPE        &kp TILDE                                     &kp PLUS      &kp MINUS        &kp DQT                &kp COLON         &kp SEMI
-  &kp PERCENT     &kp CARET        &kp DOLLAR   &kp UNDERSCORE  &kp BACKSLASH                                 &kp QUESTION  &kp EXCLAMATION  &kp COMMA              &kp DOT           &kp SLASH
-                                                &nop            &kp SPACE      &kp ASTERISK    &kp BACKSPACE  &kp RET       &nop
-            >;
-
-            display-name = "X SYM";
-        };
-
-        x_sym_ru {
-            bindings = <
-  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LT       &kp GT          &kp GRAVE                                     &kp SQT     &kp LPAR         &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-  &kp AMPERSAND   &kp HASH         &kp AT_SIGN  &kp PIPE        &kp TILDE                                     &kp PLUS    &kp MINUS        &kp LS(N2)             &kp LS(N6)        &kp LS(N4)
-  &kp PERCENT     &kp CARET        &kp DOLLAR   &kp UNDERSCORE  &kp BACKSLASH                                 &kp LS(N7)  &kp EXCLAMATION  &kp LS(SLASH)          &kp SLASH         &kp LS(BACKSLASH)
-                                                &nop            &kp SPACE      &kp ASTERISK    &kp BACKSPACE  &kp RET     &nop
-            >;
-
-            display-name = "X SYM RU";
-        };
-
-        x_alt_alt {
-            bindings = <
-  &none  &none  &none  &none  &none                     &kp TILDE     &kp EQUAL        &kp DQT    &kp HASH       &kp GRAVE
-  &none  &none  &none  &none  &none                     &kp PLUS      &kp MINUS        &kp COLON  &kp SEMICOLON  &kp SQT
-  &none  &none  &none  &none  &none                     &kp QUESTION  &kp EXCLAMATION  &trans     &trans         &trans
-                       &nop   &trans  &trans    &trans  &trans        &nop
-            >;
-
-            display-name = "X ALT ALT";
-        };
-
-        x_alt_alt_ru {
-            bindings = <
-  &none  &none  &none  &none  &none                     &kp GRAVE   &kp EQUAL        &kp LS(N2)     &kp LS(N3)  &kp LBKT
-  &none  &none  &none  &none  &none                     &kp PLUS    &kp MINUS        &kp LS(N6)     &kp LS(N4)  &kp SQT
-  &none  &none  &none  &none  &none                     &kp LS(N7)  &kp EXCLAMATION  &kp LS(SLASH)  &kp SLASH   &kp RBKT
-                       &nop   &trans  &trans    &trans  &trans      &nop
-            >;
-
-            display-name = "X ALT ALT RU";
-        };
-
-        x_cmd_alt {
-            bindings = <
-  &none  &tog 28  &m_warpd_hint  &none      &none                       &none   &none      &m_to_ru       &none     &none
-  &none  &none    &m_caps_word   &sk LSHFT  &none                       &none   &sk RSHFT  &sk RCTRL      &sk LALT  &sk LGUI
-  &none  &none    &none          &none      &none                       &none   &tog 28    &m_warpd_hint  &none     &none
-                                 &nop       &m_to_ru  &trans    &trans  &trans  &nop
-            >;
-
-            display-name = "X CMD ALT";
-        };
-
-        x_cmd_alt_ru {
-            bindings = <
-  &none  &tog 28  &m_warpd_hint  &none      &kp GRAVE                    &none   &none      &m_to_en       &none     &none
-  &none  &none    &m_caps_word   &sk LSHFT  &none                        &none   &sk LSHFT  &sk LCTRL      &sk LALT  &sk LGUI
-  &none  &none    &none          &none      &none                        &none   &tog 28    &m_warpd_hint  &none     &none
-                                 &nop       &m_to_en   &trans    &trans  &trans  &nop
-            >;
-
-            display-name = "X CMD ALT RU";
-        };
-
         x_num_alt {
             bindings = <
   &kp LS(N1)   &kp LS(N2)    &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                                         &kp LS(N6)     &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)
@@ -1112,23 +1046,13 @@
             display-name = "X NUM ALT";
         };
 
-        x_num_alt_ru {
+        alt2 {
+            display-name = "ALT 2";
             bindings = <
-  &kp LS(N1)   &kp LS(N2)    &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                                                  &kp LS(N6)     &kp LS(N7)  &kp LS(N8)     &kp LS(N9)  &kp LS(N0)
-  &kp N7       &kp N5        &kp N3      &kp N1      &kp N9                                                      &kp N8         &kp N0      &kp N2         &kp N4      &kp N6
-  &kp PERCENT  &kp ASTERISK  &kp MINUS   &kp PLUS    &m_kp_en LT                                                 &m_kp_en GT    &kp EQUAL   &kp LS(SLASH)  &kp SLASH   &kp LS(BACKSLASH)
-                                         &nop        &lt_num_ru 0 SPACE  &m_tog_num_ru ESC    &m_tog_num_ru RET  &kp BACKSPACE  &nop
-            >;
-
-            display-name = "X NUM ALT RU";
-        };
-
-        layer_28 {
-            bindings = <
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans  &trans    &trans  &trans  &trans
+  &m_to_ru  &m_warpd_hint  &lt 12 ESC  &m_to_ru    &none                                &kp PLUS      &kp MINUS      &kp DQT   &kp COLON   &kp SEMI
+  &mo 12    &kp LALT       &kp LCTRL   &ssk LSHFT  &none                                &m_caps_word  &kp BACKSPACE  &kp RET   &ssk LSHFT  &m_to_ru
+  &none     &none          &none       &none       &none                                &kp QMARK     &kp EXCL       &m_comma  &m_dot      &kp SLASH
+                                       &nop        &tp LSHFT SPACE  &kp ESC    &kp RET  &kp SPACE     &nop
             >;
         };
     };

@@ -821,7 +821,7 @@
         alt {
             bindings = <
   &m_to_ru  &m_warpd_hint  &kp ESC    &none       &none                                &kp PLUS   &kp MINUS      &kp DQT   &kp COLON      &kp SEMI
-  &kp LGUI  &kp LALT       &kp LCTRL  &ssk LSHFT  &none                                &kp TAB    &kp BACKSPACE  &kp RET   &m_warpd_hint  &kp ASTERISK
+  &kp LGUI  &kp LALT       &kp LCTRL  &ssk LSHFT  &none                                &kp TAB    &kp BACKSPACE  &kp RET   &m_warpd_hint  &kp ESC
   &none     &none          &none      &none       &none                                &kp QMARK  &kp EXCL       &m_comma  &m_dot         &kp SLASH
                                       &nop        &tp LSHFT SPACE  &kp ESC    &kp RET  &kp SPACE  &nop
             >;
@@ -832,7 +832,7 @@
         alt_ru {
             bindings = <
   &m_to_en  &m_warpd_hint  &kp ESC    &none       &none                                &kp PLUS         &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON   &kp RU_SEMICOLON
-  &kp LGUI  &kp LALT       &kp LCTRL  &ssk LSHFT  &none                                &kp TAB          &kp BACKSPACE  &kp RET      &m_warpd_hint  &kp RU_ASTERISK
+  &kp LGUI  &kp LALT       &kp LCTRL  &ssk LSHFT  &none                                &kp TAB          &kp BACKSPACE  &kp RET      &m_warpd_hint  &kp ESC
   &none     &none          &none      &none       &none                                &kp RU_QUESTION  &kp EXCL       &m_comma_ru  &m_dot_ru      &kp RU_SLASH
                                       &nop        &tp LSHFT SPACE  &kp ESC    &kp RET  &kp SPACE        &nop
             >;
@@ -844,7 +844,7 @@
             display-name = "ALT 2";
             bindings = <
   &none     &none     &none      &none       &none                                &kp GRAVE      &kp LPAR    &kp RPAR   &kp LS(N)  &kp SQT
-  &kp LGUI  &kp LALT  &kp LCTRL  &ssk LSHFT  &none                                &m_caps_word   &ssk LSHFT  &m_to_ru   &kp SPACE  &kp ESC
+  &kp LGUI  &kp LALT  &kp LCTRL  &ssk LSHFT  &none                                &m_caps_word   &ssk LSHFT  &m_to_ru   &kp SPACE  &kp ASTERISK
   &none     &none     &none      &none       &none                                &kp BACKSLASH  &kp PIPE    &kp COMMA  &kp DOT    &kp TILDE
                                  &nop        &tp LCTRL SPACE  &kp ESC    &kp RET  &kp SPACE      &nop
             >;
@@ -854,7 +854,7 @@
             display-name = "ALT 2 RU";
             bindings = <
   &none     &none     &none      &none       &none                                &kp GRAVE         &kp RU_LPAR  &kp RU_RPAR   &kp LS(N3)  &kp SQT
-  &kp LGUI  &kp LALT  &kp LCTRL  &ssk LSHFT  &none                                &m_caps_word      &ssk LSHFT   &m_to_en      &kp SPACE   &kp ESC
+  &kp LGUI  &kp LALT  &kp LCTRL  &ssk LSHFT  &none                                &m_caps_word      &ssk LSHFT   &m_to_en      &kp SPACE   &kp RU_ASTERISK
   &none     &none     &none      &none       &none                                &kp RU_BACKSLASH  &kp PIPE     &kp RU_COMMA  &kp RU_DOT  &kp TILDE
                                  &nop        &tp LCTRL SPACE  &kp ESC    &kp RET  &kp SPACE         &nop
             >;

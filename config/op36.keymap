@@ -617,6 +617,16 @@
             bindings = <&kp 0>;
             label = "M_CLEAR_MOD";
         };
+
+        m_release_mods: m_release_mods {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_release>,
+                <&kp LSHFT &kp LCTRL &kp LALT &kp LGUI>;
+
+            label = "M_RELEASE_MODS";
+        };
     };
 
     combos {
@@ -789,7 +799,7 @@
             bindings = <
   &kp Q      &hlt 2 W  &hlt 9 E  &kp R     &kp T                               &kp Y        &kp U  &kp I      &kp O    &kp P
   &hlt 10 A  &hlt 7 S  &hlt 5 D  &hlt 3 F  &kp G                               &kp H        &kp J  &kp K      &kp L    &kp SEMI
-  &kp Z      &kp X     &hlt 2 C  &kp V     &kp B                               &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH
+  &kp Z      &hlt 2 X  &kp C     &kp V     &kp B                               &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH
                                  &nop      &lt 2 SPACE  &kp ESC    &lt 11 RET  &lt 2 SPACE  &none
             >;
 
@@ -809,10 +819,10 @@
 
         nav {
             bindings = <
-  &none         &kp BACKSPACE  &kp ESCAPE  &kp DEL    &key_repeat                      &kp INS        &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
-  &sk LEFT_GUI  &sk LALT       &sk LCTRL   &sk LSHFT  &swap_win                        &kp TAB        &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
-  &kp LC(Z)     &kp LC(X)      &kp LC(C)   &kp LC(V)  &swap_tab                        &kp BACKSPACE  &kp RET   &kp ESC    &kp SPACE  &kp DEL
-                                           &nop       &kp SPACE    &kp ESC    &kp RET  &kp SPACE      &nop
+  &m_release_mods  &kp BACKSPACE  &kp ESCAPE  &kp DEL    &key_repeat                      &kp INS        &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
+  &sk LEFT_GUI     &sk LALT       &sk LCTRL   &sk LSHFT  &swap_win                        &kp TAB        &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
+  &kp LC(Z)        &kp LC(X)      &kp LC(C)   &kp LC(V)  &swap_tab                        &kp BACKSPACE  &kp RET   &kp ESC    &kp SPACE  &kp DEL
+                                              &nop       &kp SPACE    &kp ESC    &kp RET  &kp SPACE      &nop
             >;
 
             display-name = "NAV";
@@ -820,9 +830,9 @@
 
         alt {
             bindings = <
-  &m_to_ru  &m_warpd_hint  &kp ESC    &none       &none                                &kp PLUS   &kp MINUS      &kp DQT   &kp COLON      &kp SEMI
-  &kp LGUI  &kp LALT       &kp LCTRL  &ssk LSHFT  &none                                &kp TAB    &kp BACKSPACE  &kp RET   &m_warpd_hint  &kp ESC
-  &none     &none          &none      &none       &none                                &kp QMARK  &kp EXCL       &m_comma  &m_dot         &kp SLASH
+  &m_to_ru  &m_warpd_hint  &kp ESC    &none       &none                                &kp PLUS   &kp MINUS      &kp DQT   &kp COLON  &kp SEMI
+  &kp LGUI  &kp LALT       &kp LCTRL  &ssk LSHFT  &none                                &kp TAB    &kp BACKSPACE  &kp RET   &kp SPACE  &kp SPACE
+  &none     &none          &none      &none       &none                                &kp QMARK  &kp EXCL       &m_comma  &m_dot     &kp SLASH
                                       &nop        &tp LSHFT SPACE  &kp ESC    &kp RET  &kp SPACE  &nop
             >;
 
@@ -831,9 +841,9 @@
 
         alt_ru {
             bindings = <
-  &m_to_en  &m_warpd_hint  &kp ESC    &none       &none                                &kp PLUS         &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON   &kp RU_SEMICOLON
-  &kp LGUI  &kp LALT       &kp LCTRL  &ssk LSHFT  &none                                &kp TAB          &kp BACKSPACE  &kp RET      &m_warpd_hint  &kp ESC
-  &none     &none          &none      &none       &none                                &kp RU_QUESTION  &kp EXCL       &m_comma_ru  &m_dot_ru      &kp RU_SLASH
+  &m_to_en  &m_warpd_hint  &kp ESC    &none       &none                                &kp PLUS         &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON  &kp RU_SEMICOLON
+  &kp LGUI  &kp LALT       &kp LCTRL  &ssk LSHFT  &none                                &kp TAB          &kp BACKSPACE  &kp RET      &kp SPACE     &kp SPACE
+  &none     &none          &none      &none       &none                                &kp RU_QUESTION  &kp EXCL       &m_comma_ru  &m_dot_ru     &kp RU_SLASH
                                       &nop        &tp LSHFT SPACE  &kp ESC    &kp RET  &kp SPACE        &nop
             >;
 
@@ -843,9 +853,9 @@
         alt2 {
             display-name = "ALT 2";
             bindings = <
-  &none     &none     &none      &none       &none                                &kp GRAVE      &kp LPAR    &kp RPAR   &kp LS(N)  &kp SQT
-  &kp LGUI  &kp LALT  &kp LCTRL  &ssk LSHFT  &none                                &m_caps_word   &ssk LSHFT  &m_to_ru   &kp SPACE  &kp ASTERISK
-  &none     &none     &none      &none       &none                                &kp BACKSLASH  &kp PIPE    &kp COMMA  &kp DOT    &kp TILDE
+  &none     &none     &none      &none       &none                                &kp GRAVE      &kp LPAR    &kp RPAR   &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+  &kp LGUI  &kp LALT  &kp LCTRL  &ssk LSHFT  &none                                &m_caps_word   &ssk LSHFT  &m_to_ru   &kp SQT           &kp ASTERISK
+  &none     &none     &none      &none       &none                                &kp BACKSLASH  &kp PIPE    &kp COMMA  &kp DOT           &kp TILDE
                                  &nop        &tp LCTRL SPACE  &kp ESC    &kp RET  &kp SPACE      &nop
             >;
         };
@@ -853,9 +863,9 @@
         alt2_ru {
             display-name = "ALT 2 RU";
             bindings = <
-  &none     &none     &none      &none       &none                                &kp GRAVE         &kp RU_LPAR  &kp RU_RPAR   &kp LS(N3)  &kp SQT
-  &kp LGUI  &kp LALT  &kp LCTRL  &ssk LSHFT  &none                                &m_caps_word      &ssk LSHFT   &m_to_en      &kp SPACE   &kp RU_ASTERISK
-  &none     &none     &none      &none       &none                                &kp RU_BACKSLASH  &kp PIPE     &kp RU_COMMA  &kp RU_DOT  &kp TILDE
+  &none     &none     &none      &none       &none                                &kp GRAVE         &kp RU_LPAR  &kp RU_RPAR   &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+  &kp LGUI  &kp LALT  &kp LCTRL  &ssk LSHFT  &none                                &m_caps_word      &ssk LSHFT   &m_to_en      &kp SQT           &kp RU_ASTERISK
+  &none     &none     &none      &none       &none                                &kp RU_BACKSLASH  &kp PIPE     &kp RU_COMMA  &kp RU_DOT        &kp TILDE
                                  &nop        &tp LCTRL SPACE  &kp ESC    &kp RET  &kp SPACE         &nop
             >;
         };
@@ -885,10 +895,10 @@
         sym {
             display-name = "SYM";
             bindings = <
-  &none     &none     &none      &none      &none                               &kp GRAVE      &kp LBKT        &kp RBKT     &kp SQT   &kp PERCENT
-  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                               &kp CARET      &kp DOLLAR      &kp AT_SIGN  &kp HASH  &kp AMPERSAND
-  &none     &none     &none      &none      &none                               &kp BACKSLASH  &kp UNDERSCORE  &kp LT       &kp GT    &kp QUESTION
-                                 &nop       &tp LALT SPACE  &kp ESC    &kp RET  &kp SPACE      &nop
+  &none     &none     &none      &none      &none                               &none      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LS(N)  &kp PERCENT
+  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                               &kp CARET  &kp DOLLAR      &kp AT_SIGN      &kp HASH   &kp AMPERSAND
+  &none     &none     &none      &none      &none                               &none      &kp UNDERSCORE  &kp LT           &kp GT     &kp QUESTION
+                                 &nop       &tp LALT SPACE  &kp ESC    &kp RET  &kp SPACE  &nop
             >;
         };
 
@@ -927,9 +937,9 @@
 
         hint2 {
             bindings = <
-  &none  &none  &m_warpd_esc    &none  &none                                  &none  &none  &none           &none  &none
-  &none  &none  &m_warpd_click  &none  &none                                  &none  &none  &m_warpd_click  &none  &m_warpd_esc
-  &none  &none  &none           &none  &none                                  &none  &none  &none           &none  &none
+  &none  &none  &m_warpd_esc    &none  &none                                  &none  &none  &none           &none         &none
+  &none  &none  &m_warpd_click  &none  &none                                  &none  &none  &m_warpd_click  &m_warpd_esc  &none
+  &none  &none  &none           &none  &none                                  &none  &none  &none           &none         &none
                                 &none  &none  &m_warpd_esc    &m_warpd_click  &none  &none
             >;
 

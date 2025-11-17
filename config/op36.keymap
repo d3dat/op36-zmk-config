@@ -973,7 +973,7 @@
   &m_release_mods  &kp BACKSPACE  &kp ESCAPE  &kp DEL    &key_repeat                      &kp INS        &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
   &sk LEFT_GUI     &sk LALT       &sk LCTRL   &sk LSHFT  &swap_win                        &kp TAB        &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
   &kp LC(Z)        &kp LC(X)      &kp LC(C)   &kp LC(V)  &swap_tab                        &kp BACKSPACE  &kp RET   &kp ESC    &kp SPACE  &kp DEL
-                                              &nop       &kp SPACE    &kp ESC    &kp RET  &kp SPACE      &nop
+                                              &nop       &kp LSHFT    &kp ESC    &kp RET  &kp SPACE      &nop
             >;
         };
 

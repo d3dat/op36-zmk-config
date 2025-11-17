@@ -830,9 +830,9 @@
 
         alt {
             bindings = <
-  &m_to_ru  &m_warpd_hint  &kp ESC    &none       &none                                &kp PLUS   &kp MINUS  &kp DQT        &kp COLON  &kp SEMI
-  &kp LGUI  &kp LALT       &kp LCTRL  &ssk LSHFT  &none                                &kp TAB    &kp SPACE  &kp BACKSPACE  &kp RET    &kp DELETE
-  &none     &mo 16         &none      &none       &none                                &kp QMARK  &kp EXCL   &m_comma       &m_dot     &kp SLASH
+  &m_to_ru  &m_warpd_hint  &kp ESC    &none       &none                                &kp PLUS   &kp MINUS  &kp DQT   &kp COLON      &kp SEMI
+  &mo 16    &kp LALT       &kp LCTRL  &ssk LSHFT  &none                                &kp TAB    &kp SPACE  &kp RET   &kp BACKSPACE  &kp DELETE
+  &none     &none          &none      &none       &none                                &kp QMARK  &kp EXCL   &m_comma  &m_dot         &kp SLASH
                                       &nop        &tp LSHFT SPACE  &kp ESC    &kp RET  &kp SPACE  &nop
             >;
 
@@ -841,9 +841,9 @@
 
         alt_ru {
             bindings = <
-  &m_to_en  &m_warpd_hint  &kp ESC    &none       &none                                &kp PLUS         &kp RU_MINUS  &kp RU_DQT     &kp RU_COLON  &kp RU_SEMICOLON
-  &kp LGUI  &kp LALT       &kp LCTRL  &ssk LSHFT  &none                                &kp TAB          &kp SPACE     &kp BACKSPACE  &kp RET       &kp DELETE
-  &none     &none          &none      &none       &none                                &kp RU_QUESTION  &kp EXCL      &m_comma_ru    &m_dot_ru     &kp RU_SLASH
+  &m_to_en  &m_warpd_hint  &kp ESC    &none       &none                                &kp PLUS         &kp RU_MINUS  &kp RU_DQT   &kp RU_COLON   &kp RU_SEMICOLON
+  &mo 16    &kp LALT       &kp LCTRL  &ssk LSHFT  &none                                &kp TAB          &kp SPACE     &kp RET      &kp BACKSPACE  &kp DELETE
+  &none     &none          &none      &none       &none                                &kp RU_QUESTION  &kp EXCL      &m_comma_ru  &m_dot_ru      &kp RU_SLASH
                                       &nop        &tp LSHFT SPACE  &kp ESC    &kp RET  &kp SPACE        &nop
             >;
 

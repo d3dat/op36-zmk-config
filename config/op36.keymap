@@ -797,7 +797,7 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &kp Q      &kp W     &hlt 9 E  &kp R     &kp T                               &kp Y        &kp U  &kp I      &kp O    &kp P
+  &kp Q      &hlt 7 W  &hlt 9 E  &kp R     &kp T                               &kp Y        &kp U  &kp I      &kp O    &kp P
   &hlt 10 A  &hlt 2 S  &hlt 5 D  &hlt 3 F  &kp G                               &kp H        &kp J  &kp K      &kp L    &kp SEMI
   &kp Z      &hlt 7 X  &kp C     &kp V     &kp B                               &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH
                                  &nop      &lt 2 SPACE  &kp ESC    &lt 11 RET  &lt 2 SPACE  &none
@@ -808,7 +808,7 @@
 
         ru {
             bindings = <
-  &trans  &trans    &hlt_sym 0 E  &trans    &trans                              &trans       &trans      &trans  &tp LBKT O  &tp LBKT P
+  &trans  &hlt 8 W  &hlt_sym 0 E  &trans    &trans                              &trans       &trans      &trans  &tp LBKT O  &tp LBKT P
   &trans  &hlt 2 S  &hlt 6 D      &hlt 4 F  &trans                              &trans       &trans      &trans  &trans      &tp SQT SEMI
   &trans  &hlt 8 X  &trans        &trans    &trans                              &trans       &tp RBKT M  &trans  &trans      &trans
                                   &nop      &lt 2 SPACE  &kp ESC    &lt 11 RET  &lt 2 SPACE  &none

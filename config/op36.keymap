@@ -895,10 +895,10 @@
         sym {
             display-name = "SYM";
             bindings = <
-  &none     &none     &none      &none      &none                               &none      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LS(N)  &kp PERCENT
-  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                               &kp CARET  &kp DOLLAR      &kp AT_SIGN      &kp HASH   &kp AMPERSAND
-  &none     &none     &none      &none      &none                               &none      &kp UNDERSCORE  &kp LT           &kp GT     &kp QUESTION
-                                 &nop       &tp LALT SPACE  &kp ESC    &kp RET  &kp SPACE  &nop
+  &none     &none     &none      &none      &none                               &none        &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LS(N3)  &none
+  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                               &kp CARET    &kp DOLLAR      &kp AT_SIGN      &kp HASH    &kp AMPERSAND
+  &none     &none     &none      &none      &none                               &kp PERCENT  &kp UNDERSCORE  &kp LT           &kp GT      &kp QUESTION
+                                 &nop       &tp LALT SPACE  &kp ESC    &kp RET  &kp SPACE    &nop
             >;
         };
 

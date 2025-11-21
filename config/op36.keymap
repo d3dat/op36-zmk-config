@@ -869,6 +869,13 @@
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
         };
+
+        caps_word {
+            bindings = <&m_caps_word>;
+            key-positions = <16 26>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
+        };
     };
 
     keymap {

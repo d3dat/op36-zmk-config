@@ -627,6 +627,51 @@
 
             label = "M_RELEASE_MODS";
         };
+
+        m_ctrl: m_ctrl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &mo 12>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 12 &kp LCTRL>;
+
+            label = "M_CTRL";
+            wait-ms = <0>;
+            tap-ms = <0>;
+        };
+
+        m_alt: m_alt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT &mo 12>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 12 &kp LALT>;
+
+            label = "M_ALT";
+            wait-ms = <0>;
+            tap-ms = <0>;
+        };
+
+        m_gui: m_gui {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI &mo 12>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 12 &kp LGUI>;
+
+            label = "M_GUI";
+            wait-ms = <0>;
+            tap-ms = <0>;
+        };
     };
 
     combos {
@@ -757,18 +802,16 @@
 
         ssk_shift_l {
             bindings = <&ssk LSHFT>;
-            key-positions = <>;
+            key-positions = <3 13>;
             timeout-ms = <20>;
             require-prior-idle-ms = <200>;
-            layers = <0 1>;
         };
 
         ssk_shift {
             bindings = <&ssk LSHFT>;
-            key-positions = <>;
+            key-positions = <6 16>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
-            layers = <0 1>;
         };
 
         space {
@@ -781,6 +824,48 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
+        };
+
+        ctrl_l {
+            bindings = <&m_ctrl>;
+            key-positions = <2 12>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
+        };
+
+        ctrl_r {
+            bindings = <&m_ctrl>;
+            key-positions = <7 17>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
+        };
+
+        alt_l {
+            bindings = <&m_alt>;
+            key-positions = <1 11>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
+        };
+
+        alt_r {
+            bindings = <&m_alt>;
+            key-positions = <8 18>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
+        };
+
+        gui_l {
+            bindings = <&m_gui>;
+            key-positions = <0 10>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
+        };
+
+        gui_r {
+            bindings = <&m_gui>;
+            key-positions = <9 19>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
         };

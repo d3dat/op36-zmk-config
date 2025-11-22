@@ -691,7 +691,7 @@
 
         combo_bs {
             bindings = <&kp BACKSPACE>;
-            key-positions = <7 8>;
+            key-positions = <26 16>;
         };
 
         combo_spc {
@@ -774,7 +774,7 @@
 
         c_to_ru {
             bindings = <&m_to_ru>;
-            key-positions = <21 22>;
+            key-positions = <23 13>;
             layers = <0>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
@@ -782,7 +782,7 @@
 
         c_to_en {
             bindings = <&m_to_en>;
-            key-positions = <21 22>;
+            key-positions = <23 13>;
             layers = <1>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
@@ -795,7 +795,7 @@
 
         ret {
             bindings = <&kp RET>;
-            key-positions = <27 28>;
+            key-positions = <27 17>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
         };
@@ -816,7 +816,7 @@
 
         space {
             bindings = <&kp SPACE>;
-            key-positions = <>;
+            key-positions = <18 28>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
         };
@@ -872,9 +872,17 @@
 
         caps_word {
             bindings = <&m_caps_word>;
-            key-positions = <16 26>;
+            key-positions = <7 8>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
+        };
+
+        to_en {
+            bindings = <&m_to_en>;
+            key-positions = <12 22>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
+            layers = <1>;
         };
     };
 

@@ -877,14 +877,6 @@
             require-prior-idle-ms = <200>;
         };
 
-        to_en {
-            bindings = <&m_to_en>;
-            key-positions = <>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <200>;
-            layers = <1>;
-        };
-
         to_ru {
             bindings = <&m_to_ru>;
             key-positions = <31 13>;

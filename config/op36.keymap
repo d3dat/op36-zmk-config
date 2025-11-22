@@ -691,7 +691,7 @@
 
         combo_bs {
             bindings = <&kp BACKSPACE>;
-            key-positions = <26 16>;
+            key-positions = <>;
         };
 
         combo_spc {
@@ -774,7 +774,7 @@
 
         c_to_ru {
             bindings = <&m_to_ru>;
-            key-positions = <23 13>;
+            key-positions = <16 26>;
             layers = <0>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
@@ -782,7 +782,7 @@
 
         c_to_en {
             bindings = <&m_to_en>;
-            key-positions = <23 13>;
+            key-positions = <16 26>;
             layers = <1>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
@@ -795,7 +795,7 @@
 
         ret {
             bindings = <&kp RET>;
-            key-positions = <27 17>;
+            key-positions = <>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
         };
@@ -816,7 +816,7 @@
 
         space {
             bindings = <&kp SPACE>;
-            key-positions = <18 28>;
+            key-positions = <>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
         };
@@ -879,7 +879,23 @@
 
         to_en {
             bindings = <&m_to_en>;
-            key-positions = <12 22>;
+            key-positions = <>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
+            layers = <1>;
+        };
+
+        to_ru {
+            bindings = <&m_to_ru>;
+            key-positions = <31 13>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
+            layers = <0>;
+        };
+
+        to_en {
+            bindings = <&m_to_en>;
+            key-positions = <31 13>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
             layers = <1>;

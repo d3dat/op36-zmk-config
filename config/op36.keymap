@@ -774,7 +774,7 @@
 
         c_to_ru {
             bindings = <&m_to_ru>;
-            key-positions = <16 26>;
+            key-positions = <7 8>;
             layers = <0>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
@@ -782,7 +782,7 @@
 
         c_to_en {
             bindings = <&m_to_en>;
-            key-positions = <16 26>;
+            key-positions = <7 8>;
             layers = <1>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
@@ -872,7 +872,7 @@
 
         caps_word {
             bindings = <&m_caps_word>;
-            key-positions = <7 8>;
+            key-positions = <>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
         };

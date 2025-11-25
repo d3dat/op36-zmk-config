@@ -939,7 +939,7 @@
         alt {
             bindings = <
   &m_to_ru  &m_warpd_hint  &kp ESC    &none       &none                                &kp PLUS   &kp MINUS      &kp DQT   &kp COLON  &kp SEMI
-  &kp LALT  &mo 16         &kp LCTRL  &ssk LSHFT  &none                                &kp TAB    &kp BACKSPACE  &kp RET   &kp SPACE  &kp DELETE
+  &kp LALT  &mo 16         &kp LCTRL  &ssk LSHFT  &none                                &kp TAB    &kp BACKSPACE  &kp RET   &none      &kp ASTERISK
   &none     &none          &none      &none       &none                                &kp QMARK  &kp EXCL       &m_comma  &m_dot     &kp SLASH
                                       &nop        &tp LSHFT SPACE  &kp ESC    &kp RET  &kp SPACE  &nop
             >;
@@ -950,7 +950,7 @@
         alt_ru {
             bindings = <
   &m_to_en  &m_warpd_hint  &kp ESC    &none       &none                                &kp PLUS         &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON  &kp RU_SEMICOLON
-  &kp LALT  &mo 16         &kp LCTRL  &ssk LSHFT  &none                                &kp TAB          &kp BACKSPACE  &kp RET      &kp SPACE     &kp DELETE
+  &kp LALT  &mo 16         &kp LCTRL  &ssk LSHFT  &none                                &kp TAB          &kp BACKSPACE  &kp RET      &none         &kp RU_ASTERISK
   &none     &none          &none      &none       &none                                &kp RU_QUESTION  &kp EXCL       &m_comma_ru  &m_dot_ru     &kp RU_SLASH
                                       &nop        &tp LSHFT SPACE  &kp ESC    &kp RET  &kp SPACE        &nop
             >;
@@ -961,9 +961,9 @@
         alt2 {
             display-name = "ALT 2";
             bindings = <
-  &none     &none     &none      &none       &none                                &kp GRAVE      &kp LPAR    &kp RPAR   &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-  &kp LGUI  &kp LALT  &kp LCTRL  &ssk LSHFT  &none                                &m_caps_word   &ssk LSHFT  &m_to_ru   &kp SQT           &kp ASTERISK
-  &none     &none     &none      &none       &none                                &kp BACKSLASH  &kp PIPE    &kp COMMA  &kp DOT           &kp TILDE
+  &none     &none     &none      &none       &none                                &kp GRAVE      &kp LPAR        &kp RPAR   &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+  &kp LGUI  &kp LALT  &kp LCTRL  &ssk LSHFT  &none                                &m_caps_word   &ssk LSHFT      &m_to_ru   &m_warpd_hint     &kp SQT
+  &none     &none     &none      &none       &none                                &kp BACKSLASH  &kp UNDERSCORE  &kp COMMA  &kp DOT           &kp TILDE
                                  &nop        &tp LCTRL SPACE  &kp ESC    &kp RET  &kp SPACE      &nop
             >;
         };
@@ -971,9 +971,9 @@
         alt2_ru {
             display-name = "ALT 2 RU";
             bindings = <
-  &none     &none     &none      &none       &none                                &kp GRAVE         &kp RU_LPAR  &kp RU_RPAR   &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-  &kp LGUI  &kp LALT  &kp LCTRL  &ssk LSHFT  &none                                &m_caps_word      &ssk LSHFT   &m_to_en      &kp SQT           &kp RU_ASTERISK
-  &none     &none     &none      &none       &none                                &kp RU_BACKSLASH  &kp PIPE     &kp RU_COMMA  &kp RU_DOT        &kp TILDE
+  &none     &none     &none      &none       &none                                &kp GRAVE         &kp RU_LPAR        &kp RU_RPAR   &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+  &kp LGUI  &kp LALT  &kp LCTRL  &ssk LSHFT  &none                                &m_caps_word      &ssk LSHFT         &m_to_en      &m_warpd_hint     &kp SQT
+  &none     &none     &none      &none       &none                                &kp RU_BACKSLASH  &kp RU_UNDERSCORE  &kp RU_COMMA  &kp RU_DOT        &kp TILDE
                                  &nop        &tp LCTRL SPACE  &kp ESC    &kp RET  &kp SPACE         &nop
             >;
         };
@@ -1003,9 +1003,9 @@
         sym {
             display-name = "SYM";
             bindings = <
-  &none     &none     &none      &none      &none                               &none        &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LS(N3)  &none
-  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                               &kp CARET    &kp DOLLAR      &kp AT_SIGN      &kp HASH    &kp AMPERSAND
-  &none     &none     &none      &none      &none                               &kp PERCENT  &kp UNDERSCORE  &kp LT           &kp GT      &kp QUESTION
+  &none     &none     &none      &none      &none                               &kp GRAVE    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE
+  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                               &kp CARET    &kp DOLLAR        &kp AT_SIGN        &kp HASH        &kp AMPERSAND
+  &none     &none     &none      &none      &none                               &kp PERCENT  &kp PIPE          &kp LT             &kp GT          &kp QUESTION
                                  &nop       &tp LALT SPACE  &kp ESC    &kp RET  &kp SPACE    &nop
             >;
         };

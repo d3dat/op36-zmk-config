@@ -918,7 +918,7 @@
             bindings = <
   &trans  &hlt 8 W  &hlt_sym 0 E  &trans    &trans                              &trans       &trans      &trans  &tp LBKT O  &tp LBKT P
   &trans  &hlt 2 S  &hlt 6 D      &hlt 4 F  &trans                              &trans       &trans      &trans  &trans      &tp SQT SEMI
-  &trans  &hlt 8 X  &trans        &trans    &trans                              &trans       &tp RBKT M  &trans  &trans      &trans
+  &trans  &hlt 8 X  &trans        &trans    &trans                              &trans       &tp RBKT M  &trans  &trans      &kp LBKT
                                   &nop      &lt 2 SPACE  &kp ESC    &lt 11 RET  &lt 2 SPACE  &none
             >;
 

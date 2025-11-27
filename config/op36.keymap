@@ -1156,7 +1156,7 @@
             bindings = <
   &swap_win  &kp BACKSPACE  &kp ESCAPE  &kp DEL    &key_repeat                          &kp INS    &kp HOME       &kp PG_UP  &kp PG_DN  &kp END
   &none      &kp LALT       &sk LCTRL   &sk LSHFT  &swap_tab                            &kp TAB    &kp LEFT       &kp UP     &kp DOWN   &kp RIGHT
-  &kp LC(Z)  &kp LC(X)      &kp LC(C)   &kp LC(V)  &kp RET                              &kp SPACE  &kp BACKSPACE  &kp ESC    &kp DEL    &kp RET
+  &kp LC(Z)  &kp LC(X)      &kp LC(C)   &kp LC(V)  &kp RET                              &kp SPACE  &kp BACKSPACE  &kp RET    &kp DEL    &kp ESC
                                         &nop       &tp LSHFT SPACE  &kp ESC    &kp RET  &kp SPACE  &nop
             >;
         };

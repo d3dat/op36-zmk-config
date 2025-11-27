@@ -992,9 +992,9 @@
 
         ru {
             bindings = <
-  &trans     &trans    &trans    &trans    &trans                               &trans       &trans      &trans  &tp LBKT O  &tp LBKT P
-  &hlt 10 A  &hlt 8 S  &hlt 6 D  &hlt 4 F  &hlt_sym 0 G                         &trans       &trans      &trans  &trans      &tp SQT SEMI
-  &hlt 2 Z   &hlt 2 X  &trans    &trans    &trans                               &trans       &tp RBKT M  &trans  &trans      &kp LBKT
+  &trans     &trans    &trans    &trans    &trans                               &trans       &trans      &trans  &trans     &trans
+  &hlt 10 A  &hlt 8 S  &hlt 6 D  &hlt 4 F  &hlt_sym 0 G                         &trans       &trans      &trans  &tp SQT L  &trans
+  &hlt 2 Z   &hlt 2 X  &trans    &trans    &trans                               &trans       &tp RBKT M  &trans  &trans     &kp LBKT
                                  &nop      &lt 2 SPACE   &kp ESC    &lt 11 RET  &lt 2 SPACE  &none
             >;
 
@@ -1003,7 +1003,7 @@
 
         nav {
             bindings = <
-  &key_repeat   &kp BACKSPACE  &kp ESCAPE  &kp RET    &kp DEL                        &kp INS    &kp HOME       &kp PG_UP  &kp PG_DN  &kp END
+  &key_repeat   &kp BACKSPACE  &kp ESCAPE  &kp DEL    &kp RET                        &kp INS    &kp HOME       &kp PG_UP  &kp PG_DN  &kp END
   &sk LEFT_GUI  &sk LALT       &sk LCTRL   &sk LSHFT  &swap_win                      &kp TAB    &kp LEFT       &kp UP     &kp DOWN   &kp RIGHT
   &kp LC(Z)     &kp LC(X)      &kp LC(C)   &kp LC(V)  &swap_tab                      &kp SPACE  &kp BACKSPACE  &kp RET    &kp DEL    &kp ESC
                                            &nop       &kp LALT   &kp ESC    &kp RET  &kp SPACE  &nop
@@ -1154,10 +1154,10 @@
         nav2 {
             display-name = "NAV 2";
             bindings = <
-  &swap_win  &kp BACKSPACE  &kp ESCAPE  &kp DEL    &key_repeat                          &kp INS    &kp HOME       &kp PG_UP  &kp PG_DN  &kp END
-  &none      &kp LALT       &sk LCTRL   &sk LSHFT  &swap_tab                            &kp TAB    &kp LEFT       &kp UP     &kp DOWN   &kp RIGHT
-  &kp LC(Z)  &kp LC(X)      &kp LC(C)   &kp LC(V)  &kp RET                              &kp SPACE  &kp BACKSPACE  &kp RET    &kp DEL    &kp ESC
-                                        &nop       &tp LSHFT SPACE  &kp ESC    &kp RET  &kp SPACE  &nop
+  &key_repeat  &kp BACKSPACE  &kp ESCAPE  &kp DEL    &kp RET                              &kp INS    &kp HOME       &kp PG_UP  &kp PG_DN  &kp END
+  &none        &kp LALT       &sk LCTRL   &sk LSHFT  &swap_win                            &kp TAB    &kp LEFT       &kp UP     &kp DOWN   &kp RIGHT
+  &kp LC(Z)    &kp LC(X)      &kp LC(C)   &kp LC(V)  &swap_tab                            &kp SPACE  &kp BACKSPACE  &kp RET    &kp DEL    &kp ESC
+                                          &nop       &tp LSHFT SPACE  &kp ESC    &kp RET  &kp SPACE  &nop
             >;
         };
 

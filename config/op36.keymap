@@ -793,10 +793,11 @@
             #binding-cells = <1>;
             bindings =
                 <&macro_press>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &mo 12 &kp CAPS>,
+                <&kp CAPS &macro_param_1to1 &kp MACRO_PLACEHOLDER &mo 12>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&kp LS(CAPS) &mo 12 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+                <&mo 12 &macro_param_1to1 &kp MACRO_PLACEHOLDER &kp LS(CAPS)>,
+                <&macro_press>;
 
             label = "MOD_RU";
             wait-ms = <0>;

@@ -940,7 +940,7 @@
             require-prior-idle-ms = <200>;
         };
 
-        ssk_shift {
+        ssk_shift_r {
             bindings = <&ssk LSHFT>;
             key-positions = <6 16>;
             timeout-ms = <30>;
@@ -963,42 +963,42 @@
 
         ctrl_l {
             bindings = <&m_ctrl>;
-            key-positions = <2 12>;
+            key-positions = <>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
         };
 
         ctrl_r {
             bindings = <&m_ctrl>;
-            key-positions = <7 17>;
+            key-positions = <>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
         };
 
         alt_l {
             bindings = <&m_alt>;
-            key-positions = <1 11>;
+            key-positions = <>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
         };
 
         alt_r {
             bindings = <&m_alt>;
-            key-positions = <8 18>;
+            key-positions = <>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
         };
 
         gui_l {
             bindings = <&m_gui>;
-            key-positions = <0 10>;
+            key-positions = <>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
         };
 
         gui_r {
             bindings = <&m_gui>;
-            key-positions = <9 19>;
+            key-positions = <>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
         };
@@ -1012,7 +1012,7 @@
 
         to_ru {
             bindings = <&m_to_ru>;
-            key-positions = <31 13>;
+            key-positions = <>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
             layers = <0>;
@@ -1020,10 +1020,17 @@
 
         to_en {
             bindings = <&m_to_en>;
-            key-positions = <31 13>;
+            key-positions = <>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
             layers = <1>;
+        };
+
+        ssk_shift {
+            bindings = <&ssk LSHFT>;
+            key-positions = <16 15>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
         };
     };
 

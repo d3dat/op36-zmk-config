@@ -1045,10 +1045,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &mod_tap LGUI Q  &mod_tap LALT W  &mod_tap LCTRL E  &mod_tap LSHFT R  &kp T                                &kp Y        &mod_tap LSHFT U  &mod_tap LCTRL I  &mod_tap LALT O  &mod_tap LGUI P
-  &hlt 10 A        &hlt 7 S         &hlt 5 D          &hlt 3 F          &hlt_sym 0 G                         &kp H        &kp J             &kp K             &kp L            &kp SEMI
-  &hlt 2 Z         &hlt 2 X         &kp C             &kp V             &kp B                                &kp N        &kp M             &kp COMMA         &kp DOT          &kp FSLH
-                                                      &nop              &lt 2 SPACE   &kp ESC    &lt 11 RET  &lt 2 SPACE  &none
+  &ht LGUI Q  &ht LALT W  &ht LCTRL E  &ht LSHFT R  &kp T                                &kp Y        &ht LSHFT U  &ht LCTRL I  &ht LALT O  &ht LGUI P
+  &hlt 10 A   &hlt 7 S    &hlt 5 D     &hlt 3 F     &hlt_sym 0 G                         &kp H        &kp J        &kp K        &kp L       &kp SEMI
+  &hlt 2 Z    &hlt 2 X    &kp C        &kp V        &kp B                                &kp N        &kp M        &kp COMMA    &kp DOT     &kp FSLH
+                                       &nop         &lt 2 SPACE   &kp ESC    &lt 11 RET  &lt 2 SPACE  &none
             >;
 
             display-name = "EN";
@@ -1056,10 +1056,10 @@
 
         ru {
             bindings = <
-  &mod_ru_tap LGUI Q  &mod_ru_tap LALT W  &mod_ru_tap LCTRL E  &mod_ru_tap LSHFT R  &trans                               &trans       &mod_ru_tap LSHFT U  &mod_ru_tap LCTRL I  &mod_ru_tap LALT O  &mod_ru_tap LGUI P
-  &hlt 10 A           &hlt 8 S            &hlt 6 D             &hlt 4 F             &hlt_sym 0 G                         &trans       &trans               &trans               &trans              &ht SQT SEMICOLON
-  &hlt 2 Z            &hlt 2 X            &trans               &trans               &trans                               &trans       &tp RBKT M           &trans               &trans              &kp LBKT
-                                                               &nop                 &lt 2 SPACE   &kp ESC    &lt 11 RET  &lt 2 SPACE  &none
+  &ht LGUI Q  &ht LALT W  &ht LCTRL E  &ht LSHFT R  &trans                               &trans       &ht LSHFT U  &ht LCTRL I  &ht LALT O  &ht LGUI P
+  &hlt 10 A   &hlt 8 S    &hlt 6 D     &hlt 4 F     &hlt_sym 0 G                         &trans       &trans       &trans       &trans      &ht SQT SEMICOLON
+  &hlt 2 Z    &hlt 2 X    &trans       &trans       &trans                               &trans       &tp RBKT M   &trans       &trans      &kp LBKT
+                                       &nop         &lt 2 SPACE   &kp ESC    &lt 11 RET  &lt 2 SPACE  &none
             >;
 
             display-name = "RU";

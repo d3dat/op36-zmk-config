@@ -1067,10 +1067,10 @@
 
         nav {
             bindings = <
-  &key_repeat   &kp BACKSPACE  &kp ESCAPE  &kp DEL    &kp RET                        &kp INS        &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
-  &sk LEFT_GUI  &sk LALT       &sk LCTRL   &sk LSHFT  &swap_win                      &kp TAB        &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
-  &kp LC(Z)     &kp LC(X)      &kp LC(C)   &kp LC(V)  &swap_tab                      &kp BACKSPACE  &kp RET   &kp DEL    &kp ESC    &kp SPACE
-                                           &nop       &kp SPACE  &kp ESC    &kp RET  &kp SPACE      &nop
+  &key_repeat   &kp BACKSPACE  &kp ESCAPE  &kp DEL    &kp RET                        &kp INS    &kp HOME       &kp PG_UP  &kp PG_DN  &kp END
+  &sk LEFT_GUI  &sk LALT       &sk LCTRL   &sk LSHFT  &swap_win                      &kp TAB    &kp LEFT       &kp UP     &kp DOWN   &kp RIGHT
+  &kp LC(Z)     &kp LC(X)      &kp LC(C)   &kp LC(V)  &swap_tab                      &kp SPACE  &kp BACKSPACE  &kp RET    &kp DEL    &kp ESC
+                                           &nop       &kp SPACE  &kp ESC    &kp RET  &kp SPACE  &nop
             >;
 
             display-name = "NAV";

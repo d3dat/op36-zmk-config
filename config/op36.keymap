@@ -979,7 +979,7 @@
 
         c_ru_alt {
             bindings = <&tog 16>;
-            key-positions = <32 31 30>;
+            key-positions = <33 34>;
         };
 
         ret {

@@ -483,10 +483,10 @@
             bindings =
                 <&m_en>,
                 <&macro_press>,
-                <&mo 0 &mo 6>,
+                <&mo 0 &mo 7>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 6 &mo 0>,
+                <&mo 7 &mo 0>,
                 <&macro_tap>,
                 <&m_ru>;
 
@@ -516,7 +516,7 @@
         m_warpd_hint: macro_warpd_hint {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F17 &tog 11>;
+            bindings = <&kp F17 &tog 12>;
             label = "MACRO_WARPD_HINT";
             wait-ms = <0>;
             tap-ms = <0>;
@@ -525,7 +525,7 @@
         m_warpd_esc: macro_warpd_esc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ESC &tog 11>;
+            bindings = <&kp ESC &tog 12>;
             label = "MACRO_WARPD_ESC";
             wait-ms = <0>;
             tap-ms = <0>;
@@ -534,7 +534,7 @@
         m_warpd_click: macro_warpd_click {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ESC &mkp LCLK &tog 11>;
+            bindings = <&kp ESC &mkp LCLK &tog 12>;
             label = "MACRO_WARPD_CLICK";
             wait-ms = <0>;
             tap-ms = <0>;
@@ -543,7 +543,7 @@
         m_warpd_normal: macro_warpd_normal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F18 &tog 11>;
+            bindings = <&kp F18 &tog 12>;
             label = "X MACRO_WARPD_NORMAL";
             wait-ms = <0>;
             tap-ms = <0>;
@@ -561,7 +561,7 @@
         m_fn: macro_fn {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&tog 9 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&tog 10 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "MACRO_FN";
             wait-ms = <0>;
             tap-ms = <0>;
@@ -570,7 +570,7 @@
         m_tog_num: tog_multi {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&tog 7 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&tog 8 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TOG_NUM";
             wait-ms = <0>;
             tap-ms = <0>;
@@ -579,7 +579,7 @@
         m_tog_num_ru: tog_multi_ru {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&tog 7 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&tog 8 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TOG_NUM_RU";
             wait-ms = <0>;
             tap-ms = <0>;
@@ -589,12 +589,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog 7>,
+                <&tog 8>,
                 <&macro_press>,
-                <&mo 2>,
+                <&mo 3>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 2>;
+                <&mo 3>;
 
             label = "MO_NUM";
             wait-ms = <0>;
@@ -605,7 +605,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog 8>,
+                <&tog 9>,
                 <&macro_press>,
                 <&mo 0>,
                 <&macro_pause_for_release>,
@@ -689,10 +689,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &mo 11>,
+                <&kp LCTRL &mo 12>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 11 &kp LCTRL>;
+                <&mo 12 &kp LCTRL>;
 
             label = "M_CTRL";
             wait-ms = <0>;
@@ -704,10 +704,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT &mo 11>,
+                <&kp LALT &mo 12>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 11 &kp LALT>;
+                <&mo 12 &kp LALT>;
 
             label = "M_ALT";
             wait-ms = <0>;
@@ -719,10 +719,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LGUI &mo 11>,
+                <&kp LGUI &mo 12>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 11 &kp LGUI>;
+                <&mo 12 &kp LGUI>;
 
             label = "M_GUI";
             wait-ms = <0>;
@@ -734,11 +734,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 11>,
+                <&mo 12>,
                 <&macro_tap>,
                 <&kp Z>,
                 <&macro_release>,
-                <&mo 11>;
+                <&mo 12>;
 
             label = "M_C_Z";
             wait-ms = <0>;
@@ -750,11 +750,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 11>,
+                <&mo 12>,
                 <&macro_tap>,
                 <&kp X>,
                 <&macro_release>,
-                <&mo 11>;
+                <&mo 12>;
 
             label = "M_C_X";
             wait-ms = <0>;
@@ -766,11 +766,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 11>,
+                <&mo 12>,
                 <&macro_tap>,
                 <&kp C>,
                 <&macro_release>,
-                <&mo 11>;
+                <&mo 12>;
 
             label = "M_C_C";
             wait-ms = <0>;
@@ -782,11 +782,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 11>,
+                <&mo 12>,
                 <&macro_tap>,
                 <&kp V>,
                 <&macro_release>,
-                <&mo 11>;
+                <&mo 12>;
 
             label = "M_C_V";
             wait-ms = <0>;
@@ -798,10 +798,10 @@
             #binding-cells = <1>;
             bindings =
                 <&macro_press>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &mo 11>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &mo 12>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 11 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+                <&mo 12 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
 
             label = "MOD";
             wait-ms = <0>;
@@ -814,10 +814,10 @@
             bindings =
                 <&kp CAPS>,
                 <&macro_press>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &mo 11>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &mo 12>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 11 &macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+                <&mo 12 &macro_param_1to1 &kp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
                 <&kp LS(CAPS)>;
 
@@ -832,10 +832,10 @@
             bindings =
                 <&m_en>,
                 <&macro_press>,
-                <&mo 0 &mo 5>,
+                <&mo 0 &mo 6>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 5 &mo 0>,
+                <&mo 6 &mo 0>,
                 <&macro_tap>,
                 <&m_ru>;
 
@@ -850,10 +850,10 @@
             bindings =
                 <&m_en>,
                 <&macro_press>,
-                <&mo 0 &mo 3>,
+                <&mo 0 &mo 4>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 3 &mo 0>,
+                <&mo 4 &mo 0>,
                 <&macro_tap>,
                 <&m_ru>;
 
@@ -894,15 +894,15 @@
         };
 
         combo_mouse_l {
-            bindings = <&tog 10>;
+            bindings = <&tog 11>;
             key-positions = <>;
-            layers = <2 0 1>;
+            layers = <3 0 1>;
         };
 
         combo_mouse_r {
-            bindings = <&tog 10>;
+            bindings = <&tog 11>;
             key-positions = <>;
-            layers = <2 0 1>;
+            layers = <3 0 1>;
         };
 
         combo_bootloader_l {
@@ -916,7 +916,7 @@
         };
 
         c_fn {
-            bindings = <&mo 9>;
+            bindings = <&mo 10>;
             key-positions = <>;
             layers = <0 1>;
         };
@@ -978,7 +978,7 @@
         };
 
         c_ru_alt {
-            bindings = <&tog 16>;
+            bindings = <&tog 2>;
             key-positions = <33 34>;
         };
 
@@ -1107,9 +1107,9 @@
 
             bindings = <
   &ht LGUI Q  &ht LALT W  &ht LCTRL E  &ht LSHFT R  &kp T                            &kp Y        &ht LSHFT U  &ht LCTRL I  &ht LALT O  &ht LGUI P
-  &hlt 9 A    &hlt 7 S    &hlt 5 D     &hlt 3 F     &hlt 6 G                         &kp H        &kp J        &kp K        &kp L       &kp SEMI
-  &kp Z       &hlt 10 X   &kp C        &kp V        &kp B                            &kp N        &kp M        &kp COMMA    &kp DOT     &kp FSLH
-                                       &nop         &lt 2 SPACE  &kp ESC    &kp RET  &lt 2 SPACE  &none
+  &hlt 10 A   &hlt 8 S    &hlt 6 D     &hlt 4 F     &hlt 7 G                         &kp H        &kp J        &kp K        &kp L       &kp SEMI
+  &kp Z       &hlt 11 X   &kp C        &kp V        &kp B                            &kp N        &kp M        &kp COMMA    &kp DOT     &kp FSLH
+                                       &nop         &lt 3 SPACE  &kp ESC    &kp RET  &lt 3 SPACE  &none
             >;
 
             display-name = "EN";
@@ -1118,12 +1118,23 @@
         ru {
             bindings = <
   &ht LGUI Q  &ht LALT W  &ht LCTRL E    &ht LSHFT R  &trans                             &trans       &ht LSHFT U  &ht LCTRL I  &ht LALT O  &ht LGUI P
-  &hlt 9 A    &hlt 8 S    &hlt_sym1 0 D  &hlt 4 F     &hlt_sym2 0 G                      &trans       &trans       &trans       &tp SQT L   &trans
-  &trans      &hlt 10 X   &trans         &trans       &trans                             &trans       &tp RBKT M   &trans       &trans      &kp LBKT
-                                         &nop         &lt 2 SPACE    &kp ESC    &kp RET  &lt 2 SPACE  &none
+  &hlt 10 A   &hlt 9 S    &hlt_sym1 0 D  &hlt 5 F     &hlt_sym2 0 G                      &trans       &trans       &trans       &tp SQT L   &trans
+  &trans      &hlt 11 X   &trans         &trans       &trans                             &trans       &tp RBKT M   &trans       &trans      &kp LBKT
+                                         &nop         &lt 3 SPACE    &kp ESC    &kp RET  &lt 3 SPACE  &none
             >;
 
             display-name = "RU";
+        };
+
+        ru_alt {
+            bindings = <
+  &kp RU_CYRILLIC_ZHE     &kp RU_CYRILLIC_DE      &kp RU_CYRILLIC_ER          &kp RU_CYRILLIC_PE     &kp RU_CYRILLIC_GHE                             &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_YA   &kp RU_CYRILLIC_I                                &kp RU_CYRILLIC_CHE              &kp RU_CYRILLIC_HA
+  &hlt 10 RU_CYRILLIC_VE  &hlt 9 RU_CYRILLIC_ES   &hlt_sym1 0 RU_CYRILLIC_TE  &hlt 5 RU_CYRILLIC_EN  &hlt_sym2 0 RU_CYRILLIC_EL                      &kp RU_CYRILLIC_U     &kp RU_CYRILLIC_O    &ht RU_CYRILLIC_E RU_CYRILLIC_IE                 &ht RU_CYRILLIC_E RU_CYRILLIC_A  &kp RU_CYRILLIC_KA
+  &kp RU_CYRILLIC_TSE     &hlt 11 RU_CYRILLIC_BE  &kp RU_CYRILLIC_ZE          &kp RU_CYRILLIC_EM     &kp RU_CYRILLIC_SHORT_I                         &kp RU_CYRILLIC_EF    &kp RU_CYRILLIC_SHA  &ht RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_YU               &kp RU_CYRILLIC_SHCHA
+                                                                              &nop                   &lt 0 SPACE                 &kp ESC    &kp RET  &lt 0 SPACE           &nop
+            >;
+
+            display-name = "RU ALT";
         };
 
         nav {
@@ -1140,7 +1151,7 @@
         alt {
             bindings = <
   &none   &m_warpd_hint  &kp ESC           &none  &none                                &kp PLUS   &kp MINUS      &kp DQT   &kp COLON  &kp SEMI
-  &mo 15  &kp LALT       &tp_caps LCTRL 0  &none  &none                                &kp TAB    &kp BACKSPACE  &kp RET   &kp DEL    &kp ASTERISK
+  &mo 16  &kp LALT       &tp_caps LCTRL 0  &none  &none                                &kp TAB    &kp BACKSPACE  &kp RET   &kp DEL    &kp ASTERISK
   &none   &none          &none             &none  &none                                &kp QMARK  &kp EXCL       &m_comma  &m_dot     &kp SLASH
                                            &nop   &tp LSHFT SPACE  &kp ESC    &kp RET  &kp SPACE  &nop
             >;
@@ -1151,7 +1162,7 @@
         alt_ru {
             bindings = <
   &none   &m_warpd_hint  &kp ESC           &none  &none                                &kp PLUS         &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON  &kp RU_SEMICOLON
-  &mo 15  &kp LALT       &tp_caps LCTRL 0  &none  &none                                &kp TAB          &kp BACKSPACE  &kp RET      &kp DEL       &kp RU_ASTERISK
+  &mo 16  &kp LALT       &tp_caps LCTRL 0  &none  &none                                &kp TAB          &kp BACKSPACE  &kp RET      &kp DEL       &kp RU_ASTERISK
   &none   &none          &none             &none  &none                                &kp RU_QUESTION  &kp EXCL       &m_comma_ru  &m_dot_ru     &kp RU_SLASH
                                            &nop   &tp LSHFT SPACE  &kp ESC    &kp RET  &kp SPACE        &nop
             >;
@@ -1226,9 +1237,9 @@
         hint {
             bindings = <
   &kp Q  &kp W  &kp E  &kp R      &kp T                                   &kp Y  &kp U  &kp I      &kp O    &kp P
-  &kp A  &kp S  &kp D  &hlt 12 F  &kp G                                   &kp H  &kp J  &kp K      &kp L    &kp SEMI
+  &kp A  &kp S  &kp D  &hlt 13 F  &kp G                                   &kp H  &kp J  &kp K      &kp L    &kp SEMI
   &kp Z  &kp X  &kp C  &kp V      &kp B                                   &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH
-                       &nop       &mo 14  &m_warpd_esc    &m_warpd_click  &none  &nop
+                       &nop       &mo 15  &m_warpd_esc    &m_warpd_click  &none  &nop
             >;
 
             display-name = "HINT";
@@ -1262,7 +1273,7 @@
   &kp Q        &kp W        &kp E         &kp R         &kp T                   &kp Y  &kp U         &kp I         &kp O        &kp P
   &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrm LSHFT F  &kp G                   &kp H  &hrm LSHFT J  &hrm LCTRL K  &hrm LALT L  &hrm LGUI SEMI
   &kp Z        &kp X        &kp C         &kp V         &kp B                   &kp N  &kp M         &kp COMMA     &kp DOT      &kp SLASH
-                                          &nop          &mo 14  &none    &none  &none  &nop
+                                          &nop          &mo 15  &none    &none  &none  &nop
             >;
         };
 
@@ -1274,17 +1285,6 @@
   &kp LC(Z)    &kp LC(X)      &kp LC(C)   &kp LC(V)  &swap_tab                            &kp SPACE  &kp BACKSPACE  &kp RET    &kp DEL    &kp ESC
                                           &nop       &tp LSHFT SPACE  &kp ESC    &kp RET  &kp SPACE  &nop
             >;
-        };
-
-        ru_alt {
-            bindings = <
-  &kp RU_CYRILLIC_ZHE    &kp RU_CYRILLIC_DE      &kp RU_CYRILLIC_ER          &kp RU_CYRILLIC_PE     &kp RU_CYRILLIC_GHE                             &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_YA   &kp RU_CYRILLIC_I                                &kp RU_CYRILLIC_CHE              &kp RU_CYRILLIC_HA
-  &hlt 9 RU_CYRILLIC_VE  &hlt 8 RU_CYRILLIC_ES   &hlt_sym1 0 RU_CYRILLIC_TE  &hlt 4 RU_CYRILLIC_EN  &hlt_sym2 0 RU_CYRILLIC_EL                      &kp RU_CYRILLIC_U     &kp RU_CYRILLIC_O    &ht RU_CYRILLIC_E RU_CYRILLIC_IE                 &ht RU_CYRILLIC_E RU_CYRILLIC_A  &kp RU_CYRILLIC_KA
-  &kp RU_CYRILLIC_TSE    &hlt 10 RU_CYRILLIC_BE  &kp RU_CYRILLIC_ZE          &kp RU_CYRILLIC_EM     &kp RU_CYRILLIC_SHORT_I                         &kp RU_CYRILLIC_EF    &kp RU_CYRILLIC_SHA  &ht RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_YU               &kp RU_CYRILLIC_SHCHA
-                                                                             &nop                   &lt 0 SPACE                 &kp ESC    &kp RET  &lt 0 SPACE           &nop
-            >;
-
-            display-name = "RU ALT";
         };
 
         x_mouse_l {

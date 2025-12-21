@@ -883,6 +883,7 @@
             key-positions = <1 2>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
+            layers = <0 1 2>;
         };
 
         combo_ret {
@@ -1109,6 +1110,12 @@
         combo_warpd_hint {
             bindings = <&m_warpd_hint>;
             key-positions = <1 11>;
+        };
+
+        combo_warpd_esc {
+            bindings = <&m_warpd_esc>;
+            key-positions = <1 2>;
+            layers = <12 13>;
         };
     };
 

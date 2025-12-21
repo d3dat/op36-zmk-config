@@ -1119,8 +1119,8 @@
 
             bindings = <
   &ht LGUI Q  &ht LALT W  &ht LCTRL E  &ht_ssk LSHFT R  &kp T                            &kp Y        &ht_ssk LSHFT U  &ht LCTRL I  &ht LALT O  &ht LGUI P
-  &hlt 10 A   &hlt 8 S    &hlt 6 D     &hlt 4 F         &hlt 7 G                         &kp H        &kp J            &kp K        &kp L       &kp SEMI
-  &kp Z       &hlt 11 X   &kp C        &ht_ssk LSHFT V  &kp B                            &kp N        &ht_ssk LSHFT M  &kp COMMA    &kp DOT     &kp FSLH
+  &hlt 10 A   &hlt 11 S   &hlt 8 D     &hlt 4 F         &hlt 7 G                         &kp H        &kp J            &kp K        &kp L       &kp SEMI
+  &kp Z       &kp X       &kp C        &hlt 6 V         &kp B                            &kp N        &kp M            &kp COMMA    &kp DOT     &kp FSLH
                                        &nop             &lt 3 SPACE  &kp ESC    &kp RET  &lt 3 SPACE  &none
             >;
 
@@ -1129,10 +1129,10 @@
 
         ru {
             bindings = <
-  &ht LGUI RU_CYRILLIC_SHORT_I  &ht LALT RU_CYRILLIC_TSE  &ht LCTRL RU_CYRILLIC_U     &ht_ssk LSHFT RU_CYRILLIC_KA  &trans                                          &trans       &ht_ssk LSHFT RU_CYRILLIC_GHE        &ht LCTRL RU_CYRILLIC_SHA                 &ht LALT RU_CYRILLIC_SHCHA        &ht LGUI RU_CYRILLIC_ZE
-  &hlt 10 RU_CYRILLIC_EF        &hlt 9 RU_CYRILLIC_YERU   &hlt_sym1 0 RU_CYRILLIC_VE  &hlt 5 RU_CYRILLIC_A          &hlt_sym2 0 RU_CYRILLIC_PE                      &trans       &trans                               &tp RU_CYRILLIC_IO RU_CYRILLIC_EL         &tp RU_CYRILLIC_E RU_CYRILLIC_DE  &trans
-  &trans                        &hlt 11 RU_CYRILLIC_CHE   &trans                      &ht_ssk LSHFT RU_CYRILLIC_EM  &trans                                          &trans       &ht_ssk LSHFT RU_CYRILLIC_SOFT_SIGN  &tp RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_BE  &trans                            &kp RU_CYRILLIC_HA
-                                                                                      &nop                          &lt 3 SPACE                 &kp ESC    &kp RET  &lt 3 SPACE  &none
+  &ht LGUI RU_CYRILLIC_SHORT_I  &ht LALT RU_CYRILLIC_TSE  &ht LCTRL RU_CYRILLIC_U  &ht_ssk LSHFT RU_CYRILLIC_KA  &trans                                          &trans       &ht_ssk LSHFT RU_CYRILLIC_GHE  &ht LCTRL RU_CYRILLIC_SHA                 &ht LALT RU_CYRILLIC_SHCHA        &ht LGUI RU_CYRILLIC_ZE
+  &hlt 10 RU_CYRILLIC_EF        &hlt 11 RU_CYRILLIC_YERU  &hlt 9 RU_CYRILLIC_VE    &hlt 5 RU_CYRILLIC_A          &hlt_sym2 0 RU_CYRILLIC_PE                      &trans       &trans                         &tp RU_CYRILLIC_IO RU_CYRILLIC_EL         &tp RU_CYRILLIC_E RU_CYRILLIC_DE  &trans
+  &trans                        &trans                    &trans                   &hlt_sym1 0 RU_CYRILLIC_EM    &trans                                          &trans       &trans                         &tp RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_BE  &trans                            &kp RU_CYRILLIC_HA
+                                                                                   &nop                          &lt 3 SPACE                 &kp ESC    &kp RET  &lt 3 SPACE  &none
             >;
 
             display-name = "RU";
@@ -1140,10 +1140,10 @@
 
         ru_alt {
             bindings = <
-  &kp RU_CYRILLIC_ZHE     &kp RU_CYRILLIC_DE      &kp RU_CYRILLIC_ER          &kp RU_CYRILLIC_PE     &kp RU_CYRILLIC_GHE                             &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_YA   &kp RU_CYRILLIC_I                                &kp RU_CYRILLIC_CHE              &kp RU_CYRILLIC_HA
-  &hlt 10 RU_CYRILLIC_VE  &hlt 9 RU_CYRILLIC_ES   &hlt_sym1 0 RU_CYRILLIC_TE  &hlt 5 RU_CYRILLIC_EN  &hlt_sym2 0 RU_CYRILLIC_EL                      &kp RU_CYRILLIC_U     &kp RU_CYRILLIC_O    &tp RU_CYRILLIC_IO RU_CYRILLIC_IE                &tp RU_CYRILLIC_E RU_CYRILLIC_A  &kp RU_CYRILLIC_KA
-  &kp RU_CYRILLIC_TSE     &hlt 11 RU_CYRILLIC_BE  &kp RU_CYRILLIC_ZE          &kp RU_CYRILLIC_EM     &kp RU_CYRILLIC_SHORT_I                         &kp RU_CYRILLIC_EF    &kp RU_CYRILLIC_SHA  &tp RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_YU               &kp RU_CYRILLIC_SHCHA
-                                                                              &nop                   &lt 3 SPACE                 &kp ESC    &kp RET  &lt 0 SPACE           &nop
+  &kp RU_CYRILLIC_ZHE     &kp RU_CYRILLIC_DE      &kp RU_CYRILLIC_ER     &kp RU_CYRILLIC_PE          &kp RU_CYRILLIC_GHE                             &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_YA   &kp RU_CYRILLIC_I                                &kp RU_CYRILLIC_CHE              &kp RU_CYRILLIC_HA
+  &hlt 10 RU_CYRILLIC_VE  &hlt 11 RU_CYRILLIC_ES  &hlt 9 RU_CYRILLIC_TE  &hlt 5 RU_CYRILLIC_EN       &hlt_sym2 0 RU_CYRILLIC_EL                      &kp RU_CYRILLIC_U     &kp RU_CYRILLIC_O    &tp RU_CYRILLIC_IO RU_CYRILLIC_IE                &tp RU_CYRILLIC_E RU_CYRILLIC_A  &kp RU_CYRILLIC_KA
+  &kp RU_CYRILLIC_TSE     &kp RU_CYRILLIC_BE      &kp RU_CYRILLIC_ZE     &hlt_sym1 0 RU_CYRILLIC_EM  &kp RU_CYRILLIC_SHORT_I                         &kp RU_CYRILLIC_EF    &kp RU_CYRILLIC_SHA  &tp RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_YU               &kp RU_CYRILLIC_SHCHA
+                                                                         &nop                        &lt 3 SPACE                 &kp ESC    &kp RET  &lt 0 SPACE           &nop
             >;
 
             display-name = "RU ALT";
@@ -1188,7 +1188,7 @@
   &none     &none     &none      &none      &none                                &kp GRAVE      &kp LBKT        &kp RBKT     &kp LPAR  &kp RPAR
   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                                &kp SQT        &kp UNDERSCORE  &kp AT_SIGN  &kp HASH  &kp AMPERSAND
   &none     &none     &none      &none      &none                                &kp BACKSLASH  &kp PIPE        &kp COMMA    &kp DOT   &kp TILDE
-                                 &nop       &tp LCTRL SPACE  &kp ESC    &kp RET  &kp SPACE      &nop
+                                 &nop       &tp LSHFT SPACE  &kp ESC    &kp RET  &kp SPACE      &nop
             >;
         };
 
@@ -1204,10 +1204,10 @@
 
         num {
             bindings = <
-  &none     &none  &kp BACKSPACE  &kp RET     &none                               &kp SLASH   &kp N9  &kp N0  &kp MINUS  &kp EQUAL
-  &kp LGUI  &none  &kp LCTRL      &kp LSHIFT  &none                               &kp PERIOD  &kp N5  &kp N6  &kp N7     &kp N8
-  &none     &none  &none          &none       &none                               &kp COMMA   &kp N1  &kp N2  &kp N3     &kp N4
-                                  &nop        &tp LALT SPACE  &kp ESC    &kp RET  &kp SPACE   &nop
+  &none     &kp BACKSPACE  &none      &kp RET     &none                                &kp SLASH   &kp N9  &kp N0  &kp MINUS  &kp EQUAL
+  &kp LGUI  &kp LALT       &kp LCTRL  &kp LSHIFT  &none                                &kp PERIOD  &kp N5  &kp N6  &kp N7     &kp N8
+  &none     &none          &none      &none       &none                                &kp COMMA   &kp N1  &kp N2  &kp N3     &kp N4
+                                      &nop        &tp LCTRL SPACE  &kp ESC    &kp RET  &kp SPACE   &nop
             >;
 
             display-name = "NUM";
@@ -1215,10 +1215,10 @@
 
         num_ru {
             bindings = <
-  &none     &none  &kp BACKSPACE  &kp RET    &none                               &kp LS(BACKSLASH)  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
-  &kp LGUI  &none  &kp LCTRL      &kp LSHFT  &none                               &kp SLASH          &kp N5  &kp N6  &kp N7     &kp N8
-  &none     &none  &none          &none      &none                               &kp LS(SLASH)      &kp N1  &kp N2  &kp N3     &kp N4
-                                  &nop       &tp LALT SPACE  &kp ESC    &kp RET  &kp SPACE          &nop
+  &none     &kp BACKSPACE  &none      &kp RET    &none                                &kp LS(BACKSLASH)  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
+  &kp LGUI  &kp LALT       &kp LCTRL  &kp LSHFT  &none                                &kp SLASH          &kp N5  &kp N6  &kp N7     &kp N8
+  &none     &none          &none      &none      &none                                &kp LS(SLASH)      &kp N1  &kp N2  &kp N3     &kp N4
+                                      &nop       &tp LCTRL SPACE  &kp ESC    &kp RET  &kp SPACE          &nop
             >;
 
             display-name = "NUM RU";
@@ -1237,10 +1237,10 @@
 
         mouse {
             bindings = <
-  &none     &none  &msc SCRL_DOWN  &msc SCRL_UP  &none                        &none  &msc SCRL_LEFT     &msc SCRL_UP       &msc SCRL_DOWN    &msc SCRL_RIGHT
-  &kp ESC   &none  &mkp RCLK       &mkp LCLK     &none                        &none  &mmv MOVE_LEFT     &mmv MOVE_UP       &mmv MOVE_DOWN    &mmv MOVE_RIGHT
-  &kp LALT  &none  &kp LCTRL       &kp LSHFT     &none                        &none  &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_Y(200)  &mmv MOVE_X(200)
-                                   &nop          &kp LSHFT  &kp ESC    &none  &none  &nop
+  &none    &none  &msc SCRL_DOWN  &msc SCRL_UP  &none                       &none  &msc SCRL_LEFT     &msc SCRL_UP       &msc SCRL_DOWN    &msc SCRL_RIGHT
+  &kp ESC  &none  &mkp RCLK       &mkp LCLK     &none                       &none  &mmv MOVE_LEFT     &mmv MOVE_UP       &mmv MOVE_DOWN    &mmv MOVE_RIGHT
+  &none    &none  &kp LCTRL       &kp LSHFT     &none                       &none  &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_Y(200)  &mmv MOVE_X(200)
+                                  &nop          &kp LALT  &kp ESC    &none  &none  &nop
             >;
 
             display-name = "MOUSE";

@@ -29,6 +29,7 @@
         lock_morph_example: lock_morph_example {
             compatible = "zmk,behavior-lock-morph";
             bindings = <&kp A>, <&kp B>;
+
             lock-states = <0x00 0x04>;  // 0x00 = no locks, 0x01 = Caps Lock
         };
 
@@ -1147,6 +1148,11 @@
             bindings = <&m_warpd_click>;
             key-positions = <7 8>;
             layers = <12 13>;
+        };
+
+        scrolllock {
+            bindings = <&lock_morph_example>;
+            key-positions = <5 15>;
         };
     };
 

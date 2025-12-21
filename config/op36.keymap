@@ -1109,7 +1109,7 @@
 
         combo_warpd_hint {
             bindings = <&m_warpd_hint>;
-            key-positions = <1 11>;
+            key-positions = <2 12>;
         };
 
         combo_warpd_esc {

@@ -26,6 +26,12 @@
 
 / {
     behaviors {
+        lock_morph_example: lock_morph_example {
+            compatible = "zmk,behavior-lock-morph";
+            bindings = <&kp A>, <&kp B>;
+            lock-states = <0x00 0x04>;  // 0x00 = no locks, 0x01 = Caps Lock
+        };
+
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;

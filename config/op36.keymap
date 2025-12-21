@@ -1117,6 +1117,12 @@
             key-positions = <1 2>;
             layers = <12 13>;
         };
+
+        combo_warpd_click {
+            bindings = <&m_warpd_click>;
+            key-positions = <18 17>;
+            layers = <12 13>;
+        };
     };
 
     keymap {

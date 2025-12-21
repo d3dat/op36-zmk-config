@@ -1105,6 +1105,11 @@
             bindings = <&kp RET>;
             key-positions = <26 27>;
         };
+
+        combo_warpd_hint {
+            bindings = <&m_warpd_hint>;
+            key-positions = <1 11>;
+        };
     };
 
     keymap {

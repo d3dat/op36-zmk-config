@@ -888,7 +888,7 @@
 
         combo_ret {
             bindings = <&kp RET>;
-            key-positions = <22 21>;
+            key-positions = <7 17>;
         };
 
         combo_bs {

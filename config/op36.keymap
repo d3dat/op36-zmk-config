@@ -1237,10 +1237,10 @@
 
         mouse {
             bindings = <
-  &none    &none  &msc SCRL_UP  &msc SCRL_DOWN  &none                       &none  &msc SCRL_LEFT     &msc SCRL_UP       &msc SCRL_DOWN    &msc SCRL_RIGHT
-  &kp ESC  &none  &mkp RCLK     &mkp LCLK       &none                       &none  &mmv MOVE_LEFT     &mmv MOVE_UP       &mmv MOVE_DOWN    &mmv MOVE_RIGHT
-  &none    &none  &kp LCTRL     &kp LSHFT       &none                       &none  &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_Y(200)  &mmv MOVE_X(200)
-                                &nop            &kp LALT  &kp ESC    &none  &none  &nop
+  &kp LSHFT  &none  &msc SCRL_UP  &msc SCRL_DOWN  &none                            &none  &msc SCRL_LEFT     &msc SCRL_UP       &msc SCRL_DOWN    &msc SCRL_RIGHT
+  &kp ESC    &none  &mkp RCLK     &mkp LCLK       &m_warpd_hint                    &none  &mmv MOVE_LEFT     &mmv MOVE_UP       &mmv MOVE_DOWN    &mmv MOVE_RIGHT
+  &none      &none  &kp LCTRL     &kp LSHFT       &none                            &none  &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_Y(200)  &mmv MOVE_X(200)
+                                  &nop            &kp LALT       &kp ESC    &none  &none  &nop
             >;
 
             display-name = "MOUSE";

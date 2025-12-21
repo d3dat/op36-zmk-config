@@ -1120,7 +1120,7 @@
 
         combo_warpd_click {
             bindings = <&m_warpd_click>;
-            key-positions = <18 17>;
+            key-positions = <7 8>;
             layers = <12 13>;
         };
     };

@@ -30,6 +30,7 @@
             compatible = "zmk,behavior-lock-morph";
             #binding-cells = <0>;
             bindings = <&kp A>, <&kp B>;
+
             lock-states = <0x00 0x04>;  // 0x00 = no locks, 0x01 = Caps Lock
         };
 
@@ -1151,7 +1152,7 @@
         };
 
         scrolllock {
-            bindings = <&lock_morph_example>;
+            bindings = <&kp SCROLLLOCK>;
             key-positions = <5 15>;
         };
     };
@@ -1244,10 +1245,10 @@
         sym2 {
             display-name = "SYM 2";
             bindings = <
-  &none     &none     &none      &none      &none                          &none      &kp LEFT_BRACE  &kp RIGHT_BRACE  &none       &none
-  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                          &none      &none           &kp CARET        &kp DOLLAR  &kp PERCENT
-  &none     &none     &none      &none      &none                          &none      &none           &kp LT           &kp GT      &kp QUESTION
-                                 &nop       &kp LCTRL  &kp ESC    &kp RET  &kp SPACE  &nop
+  &none     &none     &none      &none      &none                          &none                &kp LEFT_BRACE  &kp RIGHT_BRACE  &none       &none
+  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                          &lock_morph_example  &none           &kp CARET        &kp DOLLAR  &kp PERCENT
+  &none     &none     &none      &none      &none                          &none                &none           &kp LT           &kp GT      &kp QUESTION
+                                 &nop       &kp LCTRL  &kp ESC    &kp RET  &kp SPACE            &nop
             >;
         };
 

@@ -1163,10 +1163,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &ht LGUI Q  &ht LALT W  &ht LCTRL E  &ht_ssk LSHFT R  &kp T                                   &kp Y                &ht_ssk LSHFT U  &ht LCTRL I  &ht LALT O  &ht LGUI P
-  &hlt 10 A   &hlt 11 S   &hlt 8 D     &hlt 4 F         &hlt 7 G                                &kp H                &kp J            &kp K        &kp L       &kp SEMI
-  &kp Z       &kp X       &kp C        &hlt 6 V         &kp B                                   &kp N                &kp M            &kp COMMA    &kp DOT     &kp FSLH
-                                       &nop             &lt 3 SPACE  &kp ESC    &kp SCROLLLOCK  &lock_morph_example  &none
+  &ht LGUI Q  &ht LALT W  &ht LCTRL E  &ht_ssk LSHFT R  &kp T                            &kp Y        &ht_ssk LSHFT U  &ht LCTRL I  &ht LALT O  &ht LGUI P
+  &hlt 10 A   &hlt 11 S   &hlt 8 D     &hlt 4 F         &hlt 7 G                         &kp H        &kp J            &kp K        &kp L       &kp SEMI
+  &kp Z       &kp X       &kp C        &hlt 6 V         &kp B                            &kp N        &kp M            &kp COMMA    &kp DOT     &kp FSLH
+                                       &nop             &lt 3 SPACE  &kp ESC    &kp RET  &lt 3 SPACE  &none
             >;
 
             display-name = "EN";

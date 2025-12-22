@@ -28,8 +28,8 @@
     behaviors {
         lock_morph_example: lock_morph_example {
             compatible = "zmk,behavior-lock-morph";
+            #binding-cells = <0>;
             bindings = <&kp A>, <&kp B>;
-
             lock-states = <0x00 0x04>;  // 0x00 = no locks, 0x01 = Caps Lock
         };
 

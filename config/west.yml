@@ -4,8 +4,6 @@ manifest:
       url-base: https://github.com/ergohaven
     - name: urob
       url-base: https://github.com/urob
-    - name: d3dat
-      url-base: https://github.com/d3dat
   projects:
     - name: ergohaven-zmk
       remote: ergohaven
@@ -13,9 +11,6 @@ manifest:
       import: config/west.yml
     - name: zmk-tri-state
       remote: urob
-      revision: main
-    - name: zmk-lock-morph
-      remote: d3dat
       revision: main
   self:
     path: config

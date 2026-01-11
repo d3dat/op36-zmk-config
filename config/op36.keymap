@@ -528,7 +528,7 @@
         m_warpd_hint: macro_warpd_hint {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F17 &tog 16>;
+            bindings = <&kp F17 &tog 15>;
             label = "MACRO_WARPD_HINT";
             wait-ms = <0>;
             tap-ms = <0>;
@@ -537,7 +537,7 @@
         m_warpd_esc: macro_warpd_esc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ESC &tog 16>;
+            bindings = <&kp ESC &tog 15>;
             label = "MACRO_WARPD_ESC";
             wait-ms = <0>;
             tap-ms = <0>;
@@ -546,7 +546,7 @@
         m_warpd_click: macro_warpd_click {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ESC &mkp LCLK &tog 16>;
+            bindings = <&kp ESC &mkp LCLK &tog 15>;
             label = "MACRO_WARPD_CLICK";
             wait-ms = <0>;
             tap-ms = <0>;
@@ -555,7 +555,7 @@
         m_warpd_normal: macro_warpd_normal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F18 &tog 16>;
+            bindings = <&kp F18 &tog 15>;
             label = "X MACRO_WARPD_NORMAL";
             wait-ms = <0>;
             tap-ms = <0>;

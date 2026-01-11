@@ -903,7 +903,7 @@
 
         combo_ret {
             bindings = <&kp RET>;
-            key-positions = <7 17>;
+            key-positions = <>;
             layers = <0 1 2 3 4 5 6 7 8 9 10 12>;
         };
 
@@ -914,7 +914,7 @@
 
         combo_spc {
             bindings = <&kp SPACE>;
-            key-positions = <15 25>;
+            key-positions = <>;
         };
 
         combo_caps_word {
@@ -957,7 +957,7 @@
 
         c_bootloader_r {
             bindings = <&bootloader>;
-            key-positions = <9 19 29>;
+            key-positions = <>;
         };
 
         c_l_click {
@@ -1126,19 +1126,19 @@
 
         combo_warpd_hint {
             bindings = <&m_warpd_hint>;
-            key-positions = <31 32>;
+            key-positions = <>;
         };
 
         combo_warpd_esc {
             bindings = <&m_warpd_esc>;
             key-positions = <1 2>;
-            layers = <16 16>;
+            layers = <15 16>;
         };
 
         combo_warpd_click {
             bindings = <&m_warpd_click>;
-            key-positions = <7 17>;
-            layers = <16 16>;
+            key-positions = <6 16>;
+            layers = <15 16>;
         };
 
         esc {
@@ -1150,19 +1150,7 @@
         warpd_esc {
             bindings = <&m_warpd_esc>;
             key-positions = <12 2>;
-            layers = <16 16>;
-        };
-
-        warpd_click {
-            bindings = <&m_warpd_click>;
-            key-positions = <7 8>;
-            layers = <16 16>;
-        };
-
-        m_warpd_click2 {
-            bindings = <&m_warpd_click>;
-            key-positions = <6 16>;
-            layers = <16 16>;
+            layers = <15 16>;
         };
     };
 
@@ -1210,7 +1198,7 @@
 
         nav {
             bindings = <
-  &m_warpd_hint  &kp BACKSPACE  &kp ESCAPE  &kp DEL    &key_repeat                      &kp INS    &kp HOME       &kp PG_UP  &kp PG_DN  &kp END
+  &kp BACKSPACE  &m_warpd_hint  &kp ESCAPE  &kp DEL    &key_repeat                      &kp INS    &kp HOME       &kp PG_UP  &kp PG_DN  &kp END
   &sk LEFT_GUI   &sk LALT       &sk LCTRL   &sk LSHFT  &swap_win                        &kp TAB    &kp LEFT       &kp UP     &kp DOWN   &kp RIGHT
   &kp LC(Z)      &kp LC(X)      &kp LC(C)   &kp LC(V)  &swap_tab                        &kp SPACE  &kp BACKSPACE  &kp RET    &kp DEL    &kp ESC
                                             &nop       &kp SPACE    &kp ESC    &kp RET  &kp SPACE  &nop
@@ -1307,9 +1295,9 @@
 
         mouse {
             bindings = <
-  &kp LALT   &m_warpd_hint   &kp ESC          &none      &none                        &none     &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_Y(200)  &mmv MOVE_X(200)
-  &mkp RCLK  &msc SCRL_DOWN  &msc SCRL_UP     &mkp LCLK  &none                        &kp LALT  &mmv MOVE_LEFT     &mmv MOVE_UP       &mmv MOVE_DOWN    &mmv MOVE_RIGHT
-  &kp LGUI   &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp LSHFT  &none                        &none     &mkp LCLK          &kp LCTRL          &kp LALT          &mkp RCLK
+  &kp LALT   &m_warpd_hint   &kp ESC          &kp LCTRL  &none                        &none     &mkp LCLK          &msc SCRL_UP       &msc SCRL_DOWN    &mkp RCLK
+  &mkp RCLK  &msc SCRL_DOWN  &msc SCRL_UP     &mkp LCLK  &none                        &none     &mmv MOVE_LEFT     &mmv MOVE_UP       &mmv MOVE_DOWN    &mmv MOVE_RIGHT
+  &kp LGUI   &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp LSHFT  &none                        &none     &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_Y(200)  &mmv MOVE_X(200)
                                               &nop       &tog 12  &kp ESC    &kp RET  &kp LALT  &nop
             >;
 
@@ -1319,10 +1307,10 @@
         mouse2 {
             display-name = "MOUSE 2";
             bindings = <
-  &kp LALT        &m_warpd_hint   &kp ESC       &none            &none                        &none      &none      &none         &none           &none
-  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none                        &none      &mkp LCLK  &msc SCRL_UP  &msc SCRL_DOWN  &mkp RCLK
-  &none           &kp LALT        &mkp RCLK     &mkp LCLK        &none                        &none      &none      &none         &none           &none
-                                                &nop             &tog 13  &kp ESC    &kp RET  &mkp RCLK  &nop
+  &kp LALT        &m_warpd_hint   &kp ESC          &none            &none                        &none      &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
+  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &msc SCRL_UP     &mmv MOVE_RIGHT  &none                        &none      &mkp LCLK       &msc SCRL_UP  &msc SCRL_DOWN  &mkp RCLK
+  &mkp RCLK       &msc SCRL_LEFT  &msc SCRL_RIGHT  &mkp LCLK        &none                        &none      &none           &none         &none           &none
+                                                   &nop             &tog 13  &kp ESC    &kp RET  &mkp RCLK  &nop
             >;
         };
 

@@ -924,7 +924,7 @@
 
         combo_mouse_l {
             bindings = <&tog 12>;
-            key-positions = <>;
+            key-positions = <23 13>;
             layers = <3 0 1>;
         };
 

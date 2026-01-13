@@ -930,7 +930,7 @@
 
         combo_mouse_r {
             bindings = <&tog 12>;
-            key-positions = <16 17>;
+            key-positions = <12 11>;
             layers = <3 0 1>;
         };
 

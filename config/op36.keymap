@@ -1159,9 +1159,15 @@
             layers = <15 16>;
         };
 
-        c_speech {
+        c_speech_start {
             bindings = <&kp F17>;
             key-positions = <23 13>;
+            layers = <3>;
+        };
+
+        c_speech_stop {
+            bindings = <&kp F18>;
+            key-positions = <12 22>;
             layers = <3>;
         };
     };

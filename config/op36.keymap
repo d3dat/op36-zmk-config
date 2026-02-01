@@ -1160,7 +1160,7 @@
         };
 
         c_speech {
-            bindings = <&m_speech>;
+            bindings = <&kp F17>;
             key-positions = <23 13>;
             layers = <3>;
         };

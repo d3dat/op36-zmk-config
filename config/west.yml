@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/ergohaven
     - name: urob
       url-base: https://github.com/urob
+    - name: eintim
+      url-base: https://github.com/eintim
   projects:
     - name: ergohaven-zmk
       remote: ergohaven
@@ -11,6 +13,9 @@ manifest:
       import: config/west.yml
     - name: zmk-tri-state
       remote: urob
+      revision: main
+    - name: zmk-behavior-battery-typer
+      remote: eintim
       revision: main
   self:
     path: config
